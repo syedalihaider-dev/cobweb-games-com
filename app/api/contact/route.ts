@@ -1,97 +1,112 @@
-interface ContactPayload {
-  name?: string;
-  email?: string;
-  phone?: string;
-  msg?: string;
-  formName?: string;
-  pageUrl?: string;
-  location?: {
-    ip?: string;
-    isp?: string;
-    org?: string;
-    country?: string;
-    region?: string;
-    city?: string;
-  };
-}
-
-function escapeHtml(value: string | undefined) {
-  return (value ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
-}
+import { NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
-  const username = process.env.CONTACT_SMTP_USER;
-  const password = process.env.CONTACT_SMTP_PASSWORD;
-
-  if (!username || !password) {
-    return Response.json(
-      { success: false, message: 'Contact email is not configured.' },
-      { status: 503 },
-    );
-  }
-
-  let payload: ContactPayload;
   try {
-    payload = (await request.json()) as ContactPayload;
-  } catch {
-    return Response.json({ success: false, message: 'Invalid form data.' }, { status: 400 });
-  }
+    const data = await request.json();
 
-  if (!payload.name?.trim() || !payload.email?.trim() || !payload.phone?.trim() || !payload.msg?.trim()) {
-    return Response.json({ success: false, message: 'Please complete all required fields.' }, { status: 400 });
-  }
+    const name = data.name || data.n || 'not fill by user';
+    const email = data.email || data.e || 'not fill by user';
+    const phone = data.phone || data.p || 'not fill by user';
+    const msg = data.msg || data.m || data.description || 'not fill by user';
+    const service = data.service || data.s || 'not fill by user';
+    const pkg = data.package || data.pa || 'not fill by user';
+    const interest = data.interest || data.i || 'not fill by user';
+    const ftype = data.ftype || data.Form_name || 'Form fill buy user verified';
+    const ip = data.ip2loc_ip || 'not fill by user';
+    const cn = data.ip2loc_country || 'not fill by user';
+    const re = data.ip2loc_region || 'not fill by user';
+    const ci = data.ip2loc_city || 'not fill by user';
+    const url = data.pageurl || data.pageUrl || 'not fill by user';
+    const Form_name = data.Form_name || data.formName || data.ftype || 'not fill by user';
 
-  const location = payload.location ?? {};
-  const html = `
-    <h3>Contact Details</h3>
-    <p><strong>Name:</strong> ${escapeHtml(payload.name)}</p>
-    <p><strong>Email:</strong> ${escapeHtml(payload.email)}</p>
-    <p><strong>Phone:</strong> ${escapeHtml(payload.phone)}</p>
-    <p><strong>Message:</strong> ${escapeHtml(payload.msg)}</p>
-    <hr />
-    <h3>Meta Details</h3>
-    <p><strong>Form Name:</strong> ${escapeHtml(payload.formName)}</p>
-    <p><strong>Page URL:</strong> ${escapeHtml(payload.pageUrl)}</p>
-    <p><strong>IP:</strong> ${escapeHtml(location.ip)}</p>
-    <p><strong>ISP:</strong> ${escapeHtml(location.isp)}</p>
-    <p><strong>Org:</strong> ${escapeHtml(location.org)}</p>
-    <p><strong>Country:</strong> ${escapeHtml(location.country)}</p>
-    <p><strong>Region:</strong> ${escapeHtml(location.region)}</p>
-    <p><strong>City:</strong> ${escapeHtml(location.city)}</p>
-  `;
-
-  try {
-    const response = await fetch(
-      process.env.CONTACT_EMAIL_API_URL ?? 'https://for-send-email-moeed.vercel.app/api/send',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          from: process.env.CONTACT_SMTP_FROM ?? username,
-          to: process.env.CONTACT_SMTP_TO ?? 'support@cobwebgames.com',
-          subject: 'New Contact Form Submission',
-          smtphost: process.env.CONTACT_SMTP_HOST ?? 'smtp.gmail.com',
-          smtpport: Number(process.env.CONTACT_SMTP_PORT ?? 465),
-          username,
-          password,
-          html,
-        }),
-        cache: 'no-store',
+    // Construct SMTP Transporter
+    const transporter = nodemailer.createTransport({
+      host: 'maltaserver.stagingtestserver.com',
+      port: 465,
+      secure: true, // true for 465, false for other ports
+      auth: {
+        user: 'no-reply@cobwebgames.com',
+        pass: 'w&fmaUg8[uqF',
       },
-    );
-    const result = (await response.json()) as { success?: boolean; message?: string };
-    const success = Boolean(response.ok && result.success);
+    });
 
-    return Response.json(
-      { success, message: result.message },
-      { status: success ? 200 : 502 },
-    );
-  } catch {
-    return Response.json({ success: false, message: 'Email service is unavailable.' }, { status: 502 });
+    // Construct HTML Email Content
+    let htmlContent = '';
+
+    // 1. Core form fields
+    htmlContent += `<p><strong>Name:</strong> ${name}</p>`;
+    htmlContent += `<p><strong>Email:</strong> ${email}</p>`;
+    htmlContent += `<p><strong>Phone:</strong> ${phone}</p>`;
+    htmlContent += `<p><strong>Message:</strong> ${msg}</p>`;
+    if (service !== 'not fill by user') htmlContent += `<p><strong>Service:</strong> ${service}</p>`;
+    if (pkg !== 'not fill by user') htmlContent += `<p><strong>Package:</strong> ${pkg}</p>`;
+    if (interest !== 'not fill by user') htmlContent += `<p><strong>Interest:</strong> ${interest}</p>`;
+
+    // 2. Dynamically include any other properties passed in the request body to ensure all fields are captured
+    const mappedKeys = [
+      'name', 'email', 'phone', 'msg', 'service', 'package', 'interest', 'ftype',
+      'ip2loc_ip', 'ip2loc_country', 'ip2loc_region', 'ip2loc_city', 'pageurl', 'pageUrl', 'Form_name', 'formName',
+      'n', 'e', 'p', 'm', 's', 'pa', 'i',
+      'first_landing_url', 'lead_source', 'utm_source', 'utm_medium', 'utm_campaign', 'gclid', 'original_referrer', 'form_submission_url'
+    ];
+    for (const [key, value] of Object.entries(data)) {
+      if (!mappedKeys.includes(key) && value) {
+        htmlContent += `<p><strong>${key}:</strong> ${value}</p>`;
+      }
+    }
+
+    // Extract Tracking Fields
+    const first_landing_url = data.first_landing_url || 'not fill by user';
+    const lead_source = data.lead_source || 'Organic';
+    const utm_source = data.utm_source || 'not fill by user';
+    const utm_medium = data.utm_medium || 'not fill by user';
+    const utm_campaign = data.utm_campaign || 'not fill by user';
+    const gclid = data.gclid || 'not fill by user';
+    const original_referrer = data.original_referrer || 'not fill by user';
+    const form_submission_url = data.form_submission_url || 'not fill by user';
+
+    // 3. User Geolocation & Form Metadata + Tracking Details (at the very end)
+    htmlContent += `<hr />`;
+    htmlContent += `<p><strong>IpAddress:</strong> ${ip}</p>`;
+    htmlContent += `<p><strong>Country:</strong> ${cn}</p>`;
+    htmlContent += `<p><strong>State:</strong> ${re}</p>`;
+    htmlContent += `<p><strong>City:</strong> ${ci}</p>`;
+    htmlContent += `<p><strong>Url:</strong> ${url}</p>`;
+    htmlContent += `<p><strong>Form Name:</strong> ${Form_name}</p>`;
+
+    htmlContent += `<hr />`;
+    htmlContent += `<h3>Traffic / PPC Tracking Details</h3>`;
+    htmlContent += `<p><strong>Lead Source:</strong> ${lead_source}</p>`;
+    htmlContent += `<p><strong>First Landing URL:</strong> ${first_landing_url}</p>`;
+    htmlContent += `<p><strong>Form Submission URL:</strong> ${form_submission_url}</p>`;
+    htmlContent += `<p><strong>UTM Source:</strong> ${utm_source}</p>`;
+    htmlContent += `<p><strong>UTM Medium:</strong> ${utm_medium}</p>`;
+    htmlContent += `<p><strong>UTM Campaign:</strong> ${utm_campaign}</p>`;
+    htmlContent += `<p><strong>GCLID:</strong> ${gclid}</p>`;
+    htmlContent += `<p><strong>Original Referrer:</strong> ${original_referrer}</p>`;
+
+    // Recipients list
+    const recipients = [
+      'zain@iceanimations.com',
+      'murtaza.khan@sybrid.com',
+      'ppc@iceanimations.com',
+      'abdullah.ppc@iceanimations.com',
+      'hassan.ali@iceanimations.com',
+      'ali.haider@canvasdigital.org'
+    ];
+
+    // Send Mail
+    await transporter.sendMail({
+      from: '"Cobweb Games | Website Lead" <no-reply@cobwebgames.com>',
+      to: recipients.join(', '),
+      subject: `New Website Lead - ${Form_name}`,
+      html: htmlContent,
+    });
+
+    return NextResponse.json({ success: true, message: 'Email sent successfully' }, { status: 200 });
+  } catch (error: any) {
+    console.error('SMTP Error:', error);
+    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }

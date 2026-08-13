@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import LiveChatButton from '@/components/LiveChatButton';
 import styles from './FooterForm.module.css';
 
@@ -79,6 +80,7 @@ const FooterForm: React.FC<FooterFormProps> = ({
   showAwards = true,
   showForm = true
 }) => {
+  const router = useRouter();
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -118,6 +120,7 @@ const FooterForm: React.FC<FooterFormProps> = ({
 
       setResult('Email sent successfully!');
       setForm({ name: '', email: '', phone: '', msg: '' });
+      router.push('/thank-you');
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : 'Failed to send email';
       setResult('Error: ' + message);
