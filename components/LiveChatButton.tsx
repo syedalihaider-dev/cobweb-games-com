@@ -12,11 +12,23 @@ export default function LiveChatButton({ children, className = '', ...props }: L
       Tawk_API?: { maximize?: () => void };
       Intercom?: (action: string) => void;
       $zopim?: { livechat?: { window?: { show?: () => void } } };
+      zE?: any;
     };
 
     if (typeof chatWindow.Tawk_API?.maximize === 'function') {
       chatWindow.Tawk_API.maximize();
       return;
+    }
+
+    if (typeof chatWindow.zE === 'function') {
+      try {
+        chatWindow.zE('webWidget', 'open');
+        return;
+      } catch (e) {}
+      try {
+        chatWindow.zE('messenger', 'open');
+        return;
+      } catch (e) {}
     }
 
     if (typeof chatWindow.$zopim?.livechat?.window?.show === 'function') {

@@ -8,6 +8,7 @@ declare global {
     $zopim: any;
     setButtonURL: () => void;
     toggleChat: () => void;
+    zE: any;
   }
 }
 
@@ -15,12 +16,32 @@ export default function ZendeskChat() {
   useEffect(() => {
     // Define helper functions on the window object
     window.setButtonURL = function () {
+      if (typeof window.zE === 'function') {
+        try {
+          window.zE('webWidget', 'open');
+          return;
+        } catch (e) {}
+        try {
+          window.zE('messenger', 'open');
+          return;
+        } catch (e) {}
+      }
       if (window.$zopim?.livechat?.window) {
         window.$zopim.livechat.window.show();
       }
     };
 
     window.toggleChat = function () {
+      if (typeof window.zE === 'function') {
+        try {
+          window.zE('webWidget', 'toggle');
+          return;
+        } catch (e) {}
+        try {
+          window.zE('messenger', 'open');
+          return;
+        } catch (e) {}
+      }
       if (window.$zopim?.livechat?.window) {
         window.$zopim.livechat.window.toggle();
       }
