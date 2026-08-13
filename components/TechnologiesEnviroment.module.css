@@ -1,0 +1,65 @@
+.portfolio {
+  overflow: clip;
+}
+
+@media (max-width: 767px) {
+  .portfolio :global(.portfolio-grid) {
+    row-gap: 12px;
+  }
+
+  .portfolio :global(a.port-img) {
+    width: 100% !important;
+    height: clamp(190px, 62vw, 270px) !important;
+    padding: 5px !important;
+  }
+
+  .portfolio :global(a.port-img > img:not(.next-port-arrow)),
+  .portfolio :global(a.port-img > video) {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    background: transparent !important;
+  }
+
+  .portfolio :global(a.port-img .overlay) {
+    inset: auto 5px 5px !important;
+    min-height: 42%;
+    padding: 28px 14px 12px !important;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, transparent, rgba(8, 9, 16, 0.92));
+    border-radius: 0 0 10px 10px;
+    opacity: 1;
+    transform: none;
+    pointer-events: none;
+  }
+
+  .portfolio :global(a.port-img .overlay .icon) {
+    display: none;
+  }
+
+  .portfolio :global(a.port-img .overlay h3),
+  .portfolio :global(a.port-img .overlay p) {
+    width: 100%;
+    margin: 0;
+    transform: none;
+  }
+
+  .portfolio :global(a.port-img .overlay h3) {
+    font-size: 16px !important;
+    line-height: 1.2;
+  }
+
+  .portfolio :global(a.port-img .overlay p) {
+    margin-top: 5px;
+    font-size: 12px !important;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio :global(a.port-img) {
+    height: clamp(180px, 66vw, 235px) !important;
+  }
+}

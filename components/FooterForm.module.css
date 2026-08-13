@@ -1,0 +1,225 @@
+.section {
+  overflow: clip;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.contentRow {
+  z-index: 2;
+  align-items: stretch;
+}
+
+.intro,
+.formColumn {
+  min-width: 0;
+}
+
+.description {
+  display: block;
+  max-width: 620px;
+  line-height: 1.55;
+}
+
+.actions {
+  flex-wrap: wrap;
+}
+
+.whiteButton {
+  color: #5339f8 !important;
+}
+
+.whiteButton:hover,
+.whiteButton:focus-visible {
+  color: #fff !important;
+}
+
+.badges {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  margin: 18px 0 0;
+}
+
+.badgeItem,
+.badgeLink {
+  min-width: 0;
+}
+
+.badgeLink {
+  display: flex;
+  min-height: 82px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.badgeImage {
+  display: block;
+  width: 100% !important;
+  height: 64px !important;
+  margin: 0 !important;
+  padding: 10px 4px 0 !important;
+  object-fit: contain;
+}
+
+.submitButton {
+  color: #5339f8 !important;
+}
+
+.submitButton:hover,
+.submitButton:focus-visible {
+  color: #fff !important;
+}
+
+.fieldControl {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff;
+}
+
+.fieldControl::placeholder {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  opacity: 0.8 !important;
+}
+
+.fieldControl::-webkit-input-placeholder {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  opacity: 0.8 !important;
+}
+
+.fieldControl::-moz-placeholder {
+  color: #fff !important;
+  opacity: 0.8 !important;
+}
+
+@media (max-width: 1199px) {
+  .badges {
+    gap: 10px;
+  }
+
+  .badgeImage {
+    height: 58px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .contentRow {
+    row-gap: 42px;
+  }
+
+  .formColumn {
+    padding-top: 32px;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .badges {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section {
+    margin: 32px 10px !important;
+  }
+
+  .container {
+    padding: 30px 18px !important;
+  }
+
+  .contentRow {
+    row-gap: 28px;
+  }
+
+  .description {
+    font-size: 14px !important;
+    line-height: 1.55;
+  }
+
+  .actions {
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    margin: 20px 0 28px !important;
+  }
+
+  .badges {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .badgeLink {
+    min-height: 64px;
+    font-size: 11px;
+  }
+
+  .badgeImage {
+    height: 52px !important;
+    padding-top: 8px !important;
+  }
+
+  .formColumn {
+    padding-top: 22px;
+  }
+
+  .formWrapper {
+    padding-left: 10px !important;
+    text-align: left !important;
+  }
+
+  .formEyebrow,
+  .formHeading {
+    width: 100%;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+  }
+
+  .section :global(form .field-wrap input),
+  .section :global(form .field-wrap textarea) {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    border-bottom-color: #333 !important;
+    caret-color: #111;
+  }
+
+  .section :global(form .field-wrap input::placeholder),
+  .section :global(form .field-wrap textarea::placeholder) {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Mobile only: keep form copy readable on the green single-column layout. */
+@media screen and (max-width: 767px) {
+  .fieldControl {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    caret-color: #111 !important;
+  }
+
+  .fieldControl::placeholder {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    opacity: 1 !important;
+  }
+
+  .fieldControl::-webkit-input-placeholder {
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+    opacity: 1 !important;
+  }
+
+  .fieldControl::-moz-placeholder {
+    color: #111 !important;
+    opacity: 1 !important;
+  }
+}

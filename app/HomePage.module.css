@@ -1,0 +1,67 @@
+.hero {
+  overflow: clip;
+}
+
+.heroContent {
+  min-width: 0;
+}
+
+.heroHeading,
+.heroDescription {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  .hero :global(.container) {
+    width: 100%;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .hero :global(.row) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .hero :global(.row > *) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .heroHeading {
+    margin: 14px 0 18px;
+    font-size: clamp(27px, 8.5vw, 36px) !important;
+    line-height: 1.13 !important;
+    letter-spacing: -0.025em !important;
+  }
+
+  .heroHeading b {
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  .heroDescription {
+    width: 100% !important;
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+  .heroStats {
+    width: 100%;
+    margin-top: 28px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero :global(.container) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .heroHeading {
+    font-size: clamp(25px, 8vw, 31px) !important;
+  }
+}

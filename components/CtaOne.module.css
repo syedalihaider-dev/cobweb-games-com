@@ -1,0 +1,87 @@
+.section {
+  overflow: hidden;
+}
+
+.row {
+  position: relative;
+  min-height: 420px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.visualColumn {
+  position: relative;
+  align-self: stretch;
+  min-height: 420px;
+}
+
+.visual {
+  position: relative;
+  display: flex !important;
+  width: 100% !important;
+  height: 100%;
+  min-height: 420px;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.character {
+  position: relative !important;
+  inset: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  display: block;
+  width: min(100%, 620px) !important;
+  max-width: 100%;
+  height: auto !important;
+  max-height: 420px;
+  margin: auto auto 0 !important;
+  object-fit: contain;
+  object-position: center bottom;
+  transform: rotateY(-180deg);
+}
+
+@media (max-width: 991px) {
+  .section {
+    margin-left: 30px !important;
+    padding: 60px 30px 0 !important;
+  }
+
+  .row,
+  .visualColumn,
+  .visual {
+    min-height: 340px;
+  }
+
+  .character {
+    max-height: 340px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    margin-left: 0 !important;
+    padding: 48px 20px 0 !important;
+  }
+
+  .row {
+    min-height: 0;
+  }
+
+  .visualColumn,
+  .visual {
+    min-height: 280px;
+  }
+
+  .visual {
+    margin-top: 24px;
+  }
+
+  .character {
+    max-height: 280px;
+  }
+}

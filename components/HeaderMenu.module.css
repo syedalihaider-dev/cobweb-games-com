@@ -1,0 +1,229 @@
+.menu {
+  background: #111318;
+  overflow-x: hidden;
+}
+
+.backgroundLayer {
+  position: fixed !important;
+  inset: 0;
+  width: 100%;
+  height: 100dvh !important;
+}
+
+.hexGrid {
+  opacity: 0.76;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100%;
+}
+
+.headerRow,
+.navigationRow,
+.contactRow {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.headerRow,
+.navigationRow,
+.contactRow {
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.menuColumn,
+.contactColumn {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.contactCard {
+  width: 100%;
+  padding: 24px;
+  background: rgba(12, 14, 19, 0.42) !important;
+}
+
+.socialCard :global(.ssm-icons) {
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu :global(.social-svg-icon) {
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  width: 18px !important;
+  height: 18px !important;
+  transform: none;
+}
+
+.menu :global(.menu-list-wrapper ul.list-item li a):hover,
+.menu :global(.menu-list-wrapper ul.list-item li a):focus-visible {
+  color: #3cfe38 !important;
+  padding-left: 30px;
+}
+
+.menu :global(.menu-list-wrapper ul.list-item li a)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  left: -15px;
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #4bf648;
+  margin: 0;
+  transform: translateY(-50%);
+  transition: width 0.3s ease;
+}
+
+.menu :global(.menu-list-wrapper ul.list-item li a):hover::before,
+.menu :global(.menu-list-wrapper ul.list-item li a):focus-visible::before {
+  width: 40px;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: #111318;
+  }
+
+  .backgroundLayer .hexGrid {
+    display: block !important;
+    opacity: 0.2;
+  }
+
+  .content {
+    padding: 0 16px 32px;
+  }
+
+  .menuColumn {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .menu :global(.menu-list-wrapper) {
+    height: 100% !important;
+    min-height: 0 !important;
+    padding: 28px 20px !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.24);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    border-left: 0;
+    background: rgba(15, 17, 23, 0.66);
+    backdrop-filter: blur(10px);
+  }
+
+  .menu :global(.menu-list-wrapper h3) {
+    margin: 0;
+    padding: 0 0 18px;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .menu :global(.menu-list-wrapper ul.list-item li a) {
+    display: inline-block;
+    padding: 4px 0;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .menu :global(.menu-list-wrapper ul.list-item li a):hover,
+  .menu :global(.menu-list-wrapper ul.list-item li a):focus-visible {
+    padding-left: 22px;
+  }
+
+  .menu :global(.menu-list-wrapper ul.list-item li a):hover::before,
+  .menu :global(.menu-list-wrapper ul.list-item li a):focus-visible::before {
+    width: 28px;
+  }
+
+  .contactCard {
+    height: auto !important;
+    min-height: 145px;
+    border-top: 0 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.24) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  }
+
+  .menu :global(button.close-menu) {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    padding: 0 12px 24px;
+  }
+
+  .menuColumn,
+  .contactColumn {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .menu :global(.logo-wrapper) {
+    padding: 6px 56px 6px 16px;
+  }
+
+  .menu :global(.logo-wrapper img) {
+    width: 96px !important;
+    height: auto;
+  }
+
+  .menu :global(.menu-list-wrapper) {
+    padding: 22px 16px !important;
+    text-align: left !important;
+    border-right: 0;
+  }
+
+  .menu :global(.menu-list-wrapper h3) {
+    padding-bottom: 12px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menu :global(.menu-list-wrapper ul.list-item) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu :global(.menu-list-wrapper ul.list-item li a) {
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .contactCard {
+    min-height: 112px;
+    padding: 18px 16px !important;
+    border-right: 0 !important;
+  }
+
+  .menu :global(.contact-wraper h4) {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .menu :global(.contact-wraper a) {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 340px) {
+  .menu :global(.menu-list-wrapper ul.list-item) {
+    grid-template-columns: 1fr;
+  }
+}

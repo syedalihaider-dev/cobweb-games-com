@@ -1,0 +1,78 @@
+.section {
+  overflow-x: clip;
+}
+
+.panel,
+.panelRow,
+.visualColumn,
+.contentColumn {
+  min-width: 0;
+}
+
+.panelRow {
+  position: relative;
+  z-index: 1;
+}
+
+/* Keep the decorative label inside the purple artwork panel. */
+.section .panel .verticalLabel {
+  inset: 50% auto auto 82px;
+  width: 420px;
+  margin: 0;
+  display: block;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.section .panel .verticalLabel h3 {
+  margin: 0;
+  font-size: 70px;
+  line-height: 1;
+  white-space: nowrap;
+  writing-mode: horizontal-tb;
+  transform: none;
+}
+
+.section .panel .verticalLabel h3 span {
+  display: inline;
+}
+
+.content {
+  padding-right: 28px;
+}
+
+.section .title {
+  max-width: 520px;
+  white-space: normal;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .section .panel .verticalLabel {
+    left: 64px;
+    width: 330px;
+  }
+
+  .section .panel .verticalLabel h3 {
+    font-size: 46px;
+  }
+
+  .content {
+    padding-right: 8px;
+  }
+
+  .section .content p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .section .panel .verticalLabel {
+    display: none;
+  }
+
+  .content {
+    padding-right: 0;
+  }
+
+}

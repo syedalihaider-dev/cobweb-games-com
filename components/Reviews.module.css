@@ -1,0 +1,42 @@
+.eyebrow {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyebrow::before,
+.eyebrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block !important;
+  width: 55px;
+  height: 4px;
+  background: #4bf648;
+  clip-path: polygon(0 0, calc(100% - 0.1em) 0, 100% 0.1em, 100% 100%, 0.1em 100%, 0 calc(100% - 0.1em));
+  transform: translateY(-50%);
+}
+
+.eyebrow::before {
+  left: -70px;
+}
+
+.eyebrow::after {
+  right: -70px;
+}
+
+@media (max-width: 767px) {
+  .eyebrow::before,
+  .eyebrow::after {
+    width: 35px;
+  }
+
+  .eyebrow::before {
+    left: -45px;
+  }
+
+  .eyebrow::after {
+    right: -45px;
+  }
+}

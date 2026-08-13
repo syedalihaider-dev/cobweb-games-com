@@ -1,0 +1,6 @@
+import RouteLayout from '@/components/RouteLayout';
+import { createPageMetadata } from '@/lib/seo';
+
+export const metadata = createPageMetadata('/game-prototyping');
+
+export default RouteLayout;

@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/*
+ * Keep migrated Next.js background images in the same visual layer as the
+ * former CSS backgrounds. The host establishes a local stacking context so
+ * the absolutely positioned image stays behind the section content without
+ * escaping behind neighbouring sections.
+ */
+.next-image-background-host {
+  position: relative;
+  isolation: isolate;
+  background-image: none !important;
+}
+
+.next-image-background {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.next-image-background--top {
+  object-position: top center;
+}
+
+.next-image-background--bottom {
+  object-position: bottom center;
+}
+
+.next-service-edge {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 28px !important;
+  height: 306px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+
+.home-services .slider-sec ul.thumb-slider li a .next-port-arrow,
+.inner-portfolio a.port-img .next-port-arrow {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0;
+  width: 187px !important;
+  height: 187px !important;
+  max-width: 187px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  object-fit: contain !important;
+  opacity: 1 !important;
+  transform-origin: center;
+  transform: scale(0) rotate(-180deg);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.6));
+  transition: 0.4s linear;
+  pointer-events: none;
+}
+
+.home-services .slider-sec ul.thumb-slider li a:hover .next-port-arrow {
+  z-index: 1;
+  transform: scale(0.7) rotate(0);
+}
+
+.inner-portfolio a.port-img:hover .next-port-arrow {
+  z-index: 1;
+  transform: scale(0.9) rotate(0);
+  opacity: 1 !important;
+}
+
+.next-platform-decoration {
+  position: absolute !important;
+  top: 0;
+  right: -140px;
+  z-index: -1;
+  width: 330px !important;
+  height: 390px !important;
+  max-width: none !important;
+  margin: 0 !important;
+  pointer-events: none;
+}
+
+.footer-form .container .next-footer-form-decoration {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 50% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  object-fit: none;
+  object-position: top left;
+  pointer-events: none;
+}
+
+.next-cta-shape {
+  position: absolute !important;
+  z-index: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none;
+}
+
+.next-cta-shape--top {
+  top: 0;
+  right: 0;
+  width: 180px !important;
+  height: 66px !important;
+}
+
+.next-cta-shape--side {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 28px !important;
+  height: 306px !important;
+  margin: auto 0 !important;
+}
+
+.next-menu-texture-host {
+  isolation: isolate;
+}
+
+.next-menu-texture {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover;
+  object-position: 75% top;
+  transform: scale(1.4);
+  transform-origin: 75% top;
+  pointer-events: none;
+}
+
+.chat-button-reset {
+  appearance: none;
+  border: 0;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+/* White CTA buttons keep their brand-purple label across contextual link rules. */
+.btn-white,
+a.btn-white,
+button.btn-white {
+  color: #5339f8 !important;
+}
+
+.btn-white:hover,
+.btn-white:focus-visible,
+a.btn-white:hover,
+a.btn-white:focus-visible,
+button.btn-white:hover,
+button.btn-white:focus-visible {
+  color: #fff !important;
+}
+
+/* Green CTAs start with a black label and invert to white on interaction. */
+.btn-green,
+a.btn-green,
+button.btn-green,
+.btn-green * {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.btn-green:hover,
+.btn-green:focus-visible,
+.btn-green:active,
+a.btn-green:hover,
+a.btn-green:focus-visible,
+a.btn-green:active,
+button.btn-green:hover,
+button.btn-green:focus-visible,
+button.btn-green:active,
+.btn-green:hover *,
+.btn-green:focus-visible *,
+.btn-green:active * {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Keep the original purple platform panel inside its local stacking context. */
+.h-sec-3 .container {
+  isolation: isolate;
+}
+
+.h-sec-3 .container::before {
+  background: linear-gradient(4deg, #5339f8 28.39%, #312192 100%) !important;
+}
+
+/* Standalone section link is green; it is not a filled CTA button. */
+.h-sec-2-read-more,
+.h-sec-2-read-more:hover,
+.h-sec-2-read-more:focus,
+.h-sec-2-read-more:active,
+.h-sec-2-read-more:visited,
+.h-sec-2-read-more i {
+  color: #2cff28 !important;
+  -webkit-text-fill-color: #2cff28 !important;
+}
+
+.social-svg-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  transition: transform 0.4s linear;
+}
+
+.menu-wapper ul.ssm-icons li a:hover .social-svg-icon,
+footer ul.ssm-icons li a:hover .social-svg-icon {
+  transform: perspective(400px) rotateY(360deg);
+}
