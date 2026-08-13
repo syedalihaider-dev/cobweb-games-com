@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -89,6 +89,17 @@ const FooterForm: React.FC<FooterFormProps> = ({
   });
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState('');
+  const [geoData, setGeoData] = useState<any>(null);
+
+  useEffect(() => {
+    fetch('https://ipapi.co/json/')
+      .then(res => res.json())
+      .then(data => {
+        setGeoData(data);
+      })
+      .catch(err => console.error('Failed to fetch geo data', err));
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setForm(prev => ({
@@ -110,6 +121,10 @@ const FooterForm: React.FC<FooterFormProps> = ({
           ...form,
           formName: 'Website Contact Form',
           pageUrl: window.location.href,
+          ip2loc_ip: geoData?.ip || 'not fill by user',
+          ip2loc_country: geoData?.country_name || 'not fill by user',
+          ip2loc_region: geoData?.region || 'not fill by user',
+          ip2loc_city: geoData?.city || 'not fill by user',
         }),
       });
       const data = (await response.json()) as { success?: boolean; message?: string };

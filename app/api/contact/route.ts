@@ -66,7 +66,7 @@ export async function POST(request: Request) {
     const original_referrer = data.original_referrer || 'not fill by user';
     const form_submission_url = data.form_submission_url || 'not fill by user';
 
-    // 3. User Geolocation & Form Metadata + Tracking Details (at the very end)
+    // 3. User Geolocation & Form Metadata (at the very end)
     htmlContent += `<hr />`;
     htmlContent += `<p><strong>IpAddress:</strong> ${ip}</p>`;
     htmlContent += `<p><strong>Country:</strong> ${cn}</p>`;
@@ -74,17 +74,6 @@ export async function POST(request: Request) {
     htmlContent += `<p><strong>City:</strong> ${ci}</p>`;
     htmlContent += `<p><strong>Url:</strong> ${url}</p>`;
     htmlContent += `<p><strong>Form Name:</strong> ${Form_name}</p>`;
-
-    htmlContent += `<hr />`;
-    htmlContent += `<h3>Traffic / PPC Tracking Details</h3>`;
-    htmlContent += `<p><strong>Lead Source:</strong> ${lead_source}</p>`;
-    htmlContent += `<p><strong>First Landing URL:</strong> ${first_landing_url}</p>`;
-    htmlContent += `<p><strong>Form Submission URL:</strong> ${form_submission_url}</p>`;
-    htmlContent += `<p><strong>UTM Source:</strong> ${utm_source}</p>`;
-    htmlContent += `<p><strong>UTM Medium:</strong> ${utm_medium}</p>`;
-    htmlContent += `<p><strong>UTM Campaign:</strong> ${utm_campaign}</p>`;
-    htmlContent += `<p><strong>GCLID:</strong> ${gclid}</p>`;
-    htmlContent += `<p><strong>Original Referrer:</strong> ${original_referrer}</p>`;
 
     // Recipients list
     const recipients = [
