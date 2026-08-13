@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 import ClientInitializer from "../components/ClientInitializer";
 import SiteAnalytics from "../components/SiteAnalytics";
 import StructuredData from "../components/StructuredData";
+import ZendeskChat from "../components/ZendeskChat";
 import {
   LEGACY_SOCIAL_DESCRIPTION,
   LEGACY_SOCIAL_IMAGE,
@@ -106,6 +107,7 @@ export default function RootLayout({
         </div>
         <ClientInitializer />
         <SiteAnalytics />
+        <ZendeskChat />
       </body>
     </html>
   );
