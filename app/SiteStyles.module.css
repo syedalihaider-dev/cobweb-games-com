@@ -4000,7 +4000,7 @@
 }
 
 :global(.footer-form ul li a) {
-  color: #000;
+  color: #000 !important;
 }
 
 /* Main Banner Slider Styles - Grid Crossfade */

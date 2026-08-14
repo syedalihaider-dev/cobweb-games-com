@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -60,6 +60,31 @@ const defaultBadges = [
   }
 ];
 
+const services = [
+  'Mobile App Development',
+  'Web App Development',
+  'SaaS Platform',
+  'MVP Development',
+  'Game Development',
+  'Blockchain Solutions',
+  'Business Proposal',
+];
+
+const standardBudgets = [
+  '$3,000 to $5,000',
+  '$5,000 to $10,000',
+  '$10,000 to $25,000',
+  '$25,000 to $50,000',
+  'Request a custom quote',
+];
+
+const proposalBudgets = [
+  '$999 – Starter Proposal',
+  '$2,499 – Investor Ready Proposal',
+  '$4,900 – Corporate Proposal Pack',
+  'Request a custom quote (Corporate / Enterprise)',
+];
+
 const FooterForm: React.FC<FooterFormProps> = ({
   sectionClass = 'footer-form',
   heading = 'Looking to Hire A Battle-Tested Game Development Team?',
@@ -85,26 +110,40 @@ const FooterForm: React.FC<FooterFormProps> = ({
     name: '',
     email: '',
     phone: '',
-    msg: ''
+    service: '',
+    budget: '',
+    customQuote: '',
+    msg: '',
   });
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState('');
-  const [geoData, setGeoData] = useState<any>(null);
+  const isBusinessProposal = form.service === 'Business Proposal';
+  const budgetOptions = isBusinessProposal ? proposalBudgets : standardBudgets;
+  const isCustomQuote = form.budget.startsWith('Request a custom quote');
+  const customQuoteIsValid = Number(form.customQuote) >= 30000;
 
-  useEffect(() => {
-    fetch('https://ipapi.co/json/')
-      .then(res => res.json())
-      .then(data => {
-        setGeoData(data);
-      })
-      .catch(err => console.error('Failed to fetch geo data', err));
-  }, []);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setForm(prev => ({
       ...prev,
       [name]: value
+    }));
+  };
+
+  const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setForm(prev => ({
+      ...prev,
+      service: e.target.value,
+      budget: '',
+      customQuote: '',
+    }));
+  };
+
+  const handleBudgetChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setForm(prev => ({
+      ...prev,
+      budget: e.target.value,
+      customQuote: '',
     }));
   };
 
@@ -119,12 +158,16 @@ const FooterForm: React.FC<FooterFormProps> = ({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...form,
+          estimatedBudget: form.budget,
+          customQuote: isCustomQuote ? form.customQuote : '',
           formName: 'Website Contact Form',
           pageUrl: window.location.href,
-          ip2loc_ip: geoData?.ip || 'not fill by user',
-          ip2loc_country: geoData?.country_name || 'not fill by user',
-          ip2loc_region: geoData?.region || 'not fill by user',
-          ip2loc_city: geoData?.city || 'not fill by user',
+          // Location enrichment is optional. Avoid client-side third-party IP
+          // lookups, which browsers and privacy extensions commonly block.
+          ip2loc_ip: 'not fill by user',
+          ip2loc_country: 'not fill by user',
+          ip2loc_region: 'not fill by user',
+          ip2loc_city: 'not fill by user',
         }),
       });
       const data = (await response.json()) as { success?: boolean; message?: string };
@@ -134,7 +177,7 @@ const FooterForm: React.FC<FooterFormProps> = ({
       }
 
       setResult('Email sent successfully!');
-      setForm({ name: '', email: '', phone: '', msg: '' });
+      setForm({ name: '', email: '', phone: '', service: '', budget: '', customQuote: '', msg: '' });
       router.push('/thank-you');
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : 'Failed to send email';
@@ -224,14 +267,51 @@ const FooterForm: React.FC<FooterFormProps> = ({
                     {/* <span id="phone_error" className="error-message">Invalid Phone Number</span> */}
                   </div>
                   <div className="field-wrap">
-                    {/* Select fields commented out as per original */}
+                    <select
+                      className={styles.fieldControl}
+                      name="service"
+                      value={form.service}
+                      onChange={handleServiceChange}
+                      required
+                    >
+                      <option value="" disabled>Select Service</option>
+                      {services.map((service) => (
+                        <option key={service} value={service}>{service}</option>
+                      ))}
+                    </select>
                   </div>
                   <div className="field-wrap">
-                    {/* Budget dropdown commented out as per original */}
+                    <select
+                      className={styles.fieldControl}
+                      name="budget"
+                      value={form.budget}
+                      onChange={handleBudgetChange}
+                      required
+                      disabled={!form.service}
+                    >
+                      <option value="" disabled>Estimated Budget / Scope</option>
+                      {budgetOptions.map((budget) => (
+                        <option key={budget} value={budget}>{budget}</option>
+                      ))}
+                    </select>
                   </div>
-                  <div className="field-wrap" id="custom_quote_field" style={{ display: 'none' }}>
-                    <input className={styles.fieldControl} type="number" name="custom_quote" id="custom_quote_input" min="30000" placeholder="Enter Custom Quote (Min $30,000)" />
-                    <span id="quote_error" className="error-message">Minimum quote amount must be $30,000 or more.</span>
+                  <div className={`${styles.customQuoteField} ${isCustomQuote ? styles.customQuoteFieldVisible : ''}`} aria-hidden={!isCustomQuote}>
+                    <input
+                      className={styles.fieldControl}
+                      type="number"
+                      name="customQuote"
+                      id="custom_quote_input"
+                      min="30000"
+                      step="1"
+                      placeholder="Enter Custom Quote (Min $30,000)"
+                      value={form.customQuote}
+                      onChange={handleChange}
+                      required={isCustomQuote}
+                      disabled={!isCustomQuote}
+                    />
+                    {isCustomQuote && !customQuoteIsValid && (
+                      <span className={styles.quoteError} role="alert">Minimum quote amount must be $30,000 or more.</span>
+                    )}
                   </div>
                   <div className="field-wrap">
                     <textarea
@@ -247,8 +327,8 @@ const FooterForm: React.FC<FooterFormProps> = ({
                     <button
                       type="submit"
                       className={`btn-size btn-white ${styles.submitButton}`}
-                      disabled={loading}
-                      style={{ cursor: loading ? 'not-allowed' : 'pointer' }}
+                      disabled={loading || (isCustomQuote && !customQuoteIsValid)}
+                      style={{ cursor: loading || (isCustomQuote && !customQuoteIsValid) ? 'not-allowed' : 'pointer' }}
                     >
                       {loading ? 'Sending...' : buttonText}
                     </button>

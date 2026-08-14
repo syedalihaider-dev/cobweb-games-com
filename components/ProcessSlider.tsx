@@ -24,8 +24,7 @@ export default function ProcessSlider() {
           slidesToShow: 1,
           arrows: false,
           autoplay: true,
-          fade: true,
-          asNavFor: '.process-slider-lft'
+          fade: true
         });
 
         // Initialize left slider
@@ -42,6 +41,8 @@ export default function ProcessSlider() {
           focusOnSelect: true,
           asNavFor: '.process-slider-rht'
         });
+
+        $('.process-slider-rht.slick-initialized').slick('slickSetOption', 'asNavFor', '.process-slider-lft', false);
 
         processHighlight.refresh();
 

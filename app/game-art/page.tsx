@@ -41,8 +41,7 @@ export default function GameArt() {
           vertical: true,
           autoplay: true,
           verticalSwiping: true,
-          focusOnSelect: true,
-          asNavFor: '.slider-rht'
+          focusOnSelect: true
         });
 
         // Initialize right slider
@@ -56,6 +55,8 @@ export default function GameArt() {
           fade: true,
           asNavFor: '.slider-lft'
         });
+
+        $('.slider-lft.slick-initialized').slick('slickSetOption', 'asNavFor', '.slider-rht', false);
 
         // Initialize mob slider
         $('.mob-slider').not('.slick-initialized').slick({
@@ -89,8 +90,7 @@ export default function GameArt() {
           slidesToShow: 1,
           arrows: false,
           autoplay: true,
-          fade: true,
-          asNavFor: '.process-slider-lft'
+          fade: true
         });
 
         $('.process-slider-lft').not('.slick-initialized').slick({
@@ -106,6 +106,8 @@ export default function GameArt() {
           focusOnSelect: true,
           asNavFor: '.process-slider-rht'
         });
+
+        $('.process-slider-rht.slick-initialized').slick('slickSetOption', 'asNavFor', '.process-slider-lft', false);
 
         serviceHighlight.refresh();
         processHighlight.refresh();

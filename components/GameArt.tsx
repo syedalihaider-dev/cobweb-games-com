@@ -93,8 +93,7 @@ export default function GameArt() {
           speed: 300,
           slidesToShow: 1,
           arrows: false,
-          autoplay: true,
-          asNavFor: '.art-slider-content'
+          autoplay: true
         });
 
         // Initialize art main slider
@@ -111,6 +110,8 @@ export default function GameArt() {
           focusOnSelect: true,
           asNavFor: '.art-thumb-slider'
         });
+
+        $('.art-thumb-slider.slick-initialized').slick('slickSetOption', 'asNavFor', '.art-slider-content', false);
 
         artHighlight.refresh();
 

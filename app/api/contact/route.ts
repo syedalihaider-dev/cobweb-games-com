@@ -10,6 +10,8 @@ export async function POST(request: Request) {
     const phone = data.phone || data.p || 'not fill by user';
     const msg = data.msg || data.m || data.description || 'not fill by user';
     const service = data.service || data.s || 'not fill by user';
+    const estimatedBudget = data.estimatedBudget || data.budget || 'not fill by user';
+    const customQuote = data.customQuote || 'not fill by user';
     const pkg = data.package || data.pa || 'not fill by user';
     const interest = data.interest || data.i || 'not fill by user';
     const ftype = data.ftype || data.Form_name || 'Form fill buy user verified';
@@ -19,6 +21,14 @@ export async function POST(request: Request) {
     const ci = data.ip2loc_city || 'not fill by user';
     const url = data.pageurl || data.pageUrl || 'not fill by user';
     const Form_name = data.Form_name || data.formName || data.ftype || 'not fill by user';
+
+    const customQuoteRequested = typeof estimatedBudget === 'string' && estimatedBudget.startsWith('Request a custom quote');
+    if (customQuoteRequested && Number(customQuote) < 30000) {
+      return NextResponse.json(
+        { success: false, message: 'Minimum custom quote amount is $30,000.' },
+        { status: 400 }
+      );
+    }
 
     // Construct SMTP Transporter
     const transporter = nodemailer.createTransport({
@@ -38,14 +48,16 @@ export async function POST(request: Request) {
     htmlContent += `<p><strong>Name:</strong> ${name}</p>`;
     htmlContent += `<p><strong>Email:</strong> ${email}</p>`;
     htmlContent += `<p><strong>Phone:</strong> ${phone}</p>`;
+    htmlContent += `<p><strong>Service:</strong> ${service}</p>`;
+    htmlContent += `<p><strong>Estimated Budget / Scope:</strong> ${estimatedBudget}</p>`;
+    if (customQuote !== 'not fill by user') htmlContent += `<p><strong>Custom Quote:</strong> $${customQuote}</p>`;
     htmlContent += `<p><strong>Message:</strong> ${msg}</p>`;
-    if (service !== 'not fill by user') htmlContent += `<p><strong>Service:</strong> ${service}</p>`;
     if (pkg !== 'not fill by user') htmlContent += `<p><strong>Package:</strong> ${pkg}</p>`;
     if (interest !== 'not fill by user') htmlContent += `<p><strong>Interest:</strong> ${interest}</p>`;
 
     // 2. Dynamically include any other properties passed in the request body to ensure all fields are captured
     const mappedKeys = [
-      'name', 'email', 'phone', 'msg', 'service', 'package', 'interest', 'ftype',
+      'name', 'email', 'phone', 'msg', 'service', 'budget', 'estimatedBudget', 'customQuote', 'package', 'interest', 'ftype',
       'ip2loc_ip', 'ip2loc_country', 'ip2loc_region', 'ip2loc_city', 'pageurl', 'pageUrl', 'Form_name', 'formName',
       'n', 'e', 'p', 'm', 's', 'pa', 'i',
       'first_landing_url', 'lead_source', 'utm_source', 'utm_medium', 'utm_campaign', 'gclid', 'original_referrer', 'form_submission_url'

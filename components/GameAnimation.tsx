@@ -74,8 +74,7 @@ export default function GameAnimation() {
           speed: 300,
           slidesToShow: 1,
           arrows: false,
-          autoplay: true,
-          asNavFor: '.anim-slider-content'
+          autoplay: true
         });
 
         // Initialize anim main slider
@@ -92,6 +91,8 @@ export default function GameAnimation() {
           focusOnSelect: true,
           asNavFor: '.anim-thumb-slider'
         });
+
+        $('.anim-thumb-slider.slick-initialized').slick('slickSetOption', 'asNavFor', '.anim-slider-content', false);
 
         animationHighlight.refresh();
       } else {

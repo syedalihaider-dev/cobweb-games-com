@@ -86,8 +86,7 @@ export default function GameDevelopment() {
           speed: 300,
           slidesToShow: 1,
           arrows: false,
-          autoplay: true,
-          asNavFor: '.dev-slider-content'
+          autoplay: true
         });
 
         // Initialize dev main slider
@@ -104,6 +103,8 @@ export default function GameDevelopment() {
           focusOnSelect: true,
           asNavFor: '.dev-thumb-slider'
         });
+
+        $('.dev-thumb-slider.slick-initialized').slick('slickSetOption', 'asNavFor', '.dev-slider-content', false);
 
         developmentHighlight.refresh();
       } else {
