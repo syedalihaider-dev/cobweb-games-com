@@ -92,7 +92,6 @@ export async function POST(request: Request) {
       'zain@iceanimations.com',
       'murtaza.khan@sybrid.com',
       'ppc@iceanimations.com',
-      'abdullah.ppc@iceanimations.com',
       'hassan.ali@iceanimations.com',
       'ali.haider@canvasdigital.org'
     ];
