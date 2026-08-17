@@ -214,6 +214,10 @@ export const PAGE_SEO: Record<string, { title: string; description: string }> = 
     title: 'High-Quality Game Asset Packs – Explore Cobweb\'s Premium Collection',
     description: 'High-Quality Game Asset Packs – Explore Cobweb\'s Premium Collection',
   },
+  '/term-and-condition': {
+    title: 'Terms & Conditions | Cobweb Games',
+    description: 'Read the terms and conditions for Cobweb Games services.',
+  },
   '/ui-ux-design': {
     title: 'UI/UX Design Services | Cob Web',
     description: 'UI/UX Design Services',
