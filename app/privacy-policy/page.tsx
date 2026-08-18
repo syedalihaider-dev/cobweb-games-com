@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
           </article>)}
           <article className={`${styles.policyCard} ${styles.contactCard}`}>
             <span className={styles.number}>12</span>
-            <div><h3>Contact Us</h3><p>For questions about this privacy policy or to exercise your rights, contact us at <a href="mailto:info@cobweb.com">info@cobweb.com</a>.</p></div>
+            <div><h3>Contact Us</h3><p>For questions about this privacy policy or to exercise your rights, contact us at <a href="mailto:info@cobwebgames.com">info@cobwebgames.com</a>.</p></div>
           </article>
         </div>
       </div>
