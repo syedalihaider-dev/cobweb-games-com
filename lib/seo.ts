@@ -111,40 +111,40 @@ export const LEGACY_RESOURCE_PACK_SEO: Record<string, { title: string; descripti
 
 export const PAGE_SEO: Record<string, { title: string; description: string }> = {
   '/': {
-    title: 'Homepage | Cob Web',
-    description: 'Homepage',
+    title: 'Game Development and Art Studio in the USA | Cobweb Games',
+    description: 'Cobweb Games is a USA-based game development company and art studio delivering full-cycle game development, 3D character art, environments, and animation for indie and AA studios.',
   },
   '/2d-animation': {
     title: '2D Animation | Cob Web',
     description: '2D Animation',
   },
   '/2d-art': {
-    title: '2D Game Art Development | Cob Web',
-    description: '2D Game Art Development',
+    title: '2D Game Art Studio for High-Quality Game Assets & Design | Cobweb Games',
+    description: 'Need a 2D game art studio that delivers production-ready assets? Cobweb Games builds custom 2D game art for mobile, PC, and VR. Characters, environments, UI, animation.',
   },
   '/3d-animation': {
     title: '3D Animation | Cob Web',
     description: '3D Animation',
   },
   '/3d-art': {
-    title: '3D Art | Cob Web',
-    description: '3D Art',
+    title: ' 3D Game Art Studio for Custom Models, Characters & Environments | Cobweb Games',
+    description: 'Need a 3D game art studio that delivers game-ready assets without the topology problems? Cobweb Games builds 3D characters, environments, and hard surface models for Unity and Unreal.',
   },
   '/3d-character-modeling': {
-    title: '3D Character Modeling Design | Cob Web',
-    description: '3D Character Modeling Design',
+    title: 'Professional 3D Character Modeling Services | Cobweb Games',
+    description: 'Need 3D character modeling that delivers animation-ready characters without the retopology rework? Cobweb Games builds game-ready characters in ZBrush, Maya, and Blender.',
   },
   '/3d-environment-design': {
-    title: '3D Environment Design | Cob Web',
-    description: '3D Environment Design',
+    title: '3D Environment Design Services for Immersive Game Worlds | Cobweb Games',
+    description: 'Need a 3D environment design without the frame budget disaster? Cobweb Games builds performance-first environments for Unity and Unreal Engine across every genre and platform.',
   },
   '/3d-game-development': {
-    title: '3D Game Development | Cob Web',
-    description: '3D Game Development',
+    title: '3D Game Development Services | Cobweb Games',
+    description: 'Need a 3D game development company that ships games, not just milestones? Cobweb Games provides full-cycle 3D game development for PC, mobile, and console across Unity and Unreal Engine.',
   },
   '/3d-game-modeling': {
-    title: '3D Game Modeling | Cob Web',
-    description: '3D Game Modeling',
+    title: '3D Game Modeling Services for High-Quality Game Assets | Cobweb ',
+    description: 'Need 3D game modeling that ships game-ready, not portfolio-ready? Cobweb Games delivers custom 3D game models, characters, environments, and props for any platform or engine.',
   },
   '/3d-illustration-services': {
     title: '3D Illustration Services | Cob Web',
@@ -155,16 +155,16 @@ export const PAGE_SEO: Record<string, { title: string; description: string }> = 
     description: 'About Us',
   },
   '/character-design': {
-    title: 'Character Design | Cob Web',
-    description: 'Character Design',
+    title: ' Character Design Services for Games',
+    description: 'Need character design that survives the animation rig and holds up across a 60-hour campaign? Cobweb Games builds game characters from concept through production-ready delivery.',
   },
   '/contact-us': {
     title: 'Contact Us | Cob Web',
     description: 'Contact Us',
   },
   '/environment-design': {
-    title: 'Environment Design | Cob Web',
-    description: 'Environment Design',
+    title: 'Environment Design Services for Games & Interactive Worlds | Cobweb Games',
+    description: ' Need an environment design that makes players believe in the world before they enter it? Cobweb Games builds game environment concept art, visual development, and world-building documentation for any genre.',
   },
   '/game-animation': {
     title: 'Game Animation | Cob Web',
@@ -183,28 +183,28 @@ export const PAGE_SEO: Record<string, { title: string; description: string }> = 
     description: 'Game Level Design',
   },
   '/game-prototyping': {
-    title: 'Game Prototyping | Cob Web',
-    description: 'Game Prototyping',
+    title: ' Game Prototyping Services for Faster Game Validation | Cobweb Games',
+    description: 'Game prototyping services that answer whether your game is fun before you spend a production budget finding out. Cobweb Games builds playable prototypes, vertical slices, and MVPs for studios, publishers, and startups.',
   },
   '/game-testing': {
-    title: 'Game Testing Services | Cob Web',
-    description: 'Game Testing Services',
+    title: 'Game Testing Services by Gamers | Cobweb Games ',
+    description: 'Game testing services run by people who play games, not just run scripts. Cobweb Games provides QA across mobile, PC, console, AR/VR, and every platform your game ships on.',
   },
   '/game-ui-ux-design': {
-    title: 'UI/UX Design Services | Cob Web',
-    description: 'UI/UX Design Services',
+    title: ' Game UI/UX Design Services Geared Toward Your Players | Cobweb Games ',
+    description: 'Game UI/UX design that serves gameplay rather than decorating it. Cobweb Games builds wireframes, mobile UI, video game UI, and UX systems for PC, VR, and mobile.',
   },
   '/mobile-game-development': {
-    title: 'Mobile Game Development | Cob Web',
-    description: 'Mobile Game Development',
+    title: 'Mobile Game Development Services for iOS & Android | Cobweb Games',
+    description: ' Mobile game development services calibrated for the devices players actually own. Cobweb Games builds, optimizes, ships, and maintains iOS and Android games that survive contact with real hardware.',
   },
   '/our-process': {
     title: 'Our process | Cob Web',
     description: 'Our process',
   },
   '/play-to-earn-game': {
-    title: 'Play To Earn Game Development | Cob Web',
-    description: 'Play To Earn Game Development',
+    title: 'Play to Earn Game Development Services | Cobweb Games',
+    description: 'P2E game development services with the tokenomics discipline that separates functional Web3 games from vaporware. Cobweb Games builds NFT games, GameFi platforms, and blockchain economies that survive their own success.',
   },
   '/portfolio': {
     title: 'Portfolio | Cob Web',
@@ -223,12 +223,12 @@ export const PAGE_SEO: Record<string, { title: string; description: string }> = 
     description: 'UI/UX Design Services',
   },
   '/unity-game-development': {
-    title: 'Unity Game Development | Cob Web',
-    description: 'Unity Game Development',
+    title: ' Unity Game Development Company | Cobweb Games  ',
+    description: ' Unity game development company that ships across ten platforms from one codebase. Cobweb Games builds 2D, 3D, multiplayer, and AR/VR Unity games with full source code ownership.',
   },
   '/unreal-engine-game-development': {
-    title: 'Unreal Engine Game Development | Cob Web',
-    description: 'Unreal Engine Game Development',
+    title: 'Unreal Engine Game Development Company | Cobweb Games ',
+    description: 'Unreal Engine game development company for teams that want Nanite and Lumen doing real work, not demo-reel decoration. UE5 development, multiplayer, porting, and dedicated Unreal developers.',
   },
 };
 

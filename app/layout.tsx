@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
   title: {
-    default: "Homepage | Cob Web",
+    default: "Game Development and Art Studio in the USA | Cobweb Games",
     template: "%s",
   },
-  description: "Homepage",
+  description: " Cobweb Games is a USA-based game development company and art studio delivering full-cycle game development, 3D character art, environments, and animation for indie and AA studios.",
   keywords: [
     "game development company",
     "game art studio",
