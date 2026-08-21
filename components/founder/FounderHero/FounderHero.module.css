@@ -1,0 +1,155 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url('/assets/images/founder/banner-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(13, 16, 43, 0.9) 100%);
+  z-index: 1;
+}
+
+.contentRow {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.solidText {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.outlineText {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 84px;
+  line-height: 70px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background-color: #5d3ce6;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #4a2ec2;
+  color: #ffffff;
+}
+
+.btnSecondary {
+  background-color: #00ff2b;
+  color: #000000;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background-color: #00cc22;
+  color: #000000;
+}
+
+.rightContent {
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .heroSection {
+    height: auto;
+    padding-top: 150px;
+  }
+
+  .contentRow {
+    padding-bottom: 40px;
+  }
+
+  .rightContent {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .solidText,
+  .outlineText {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .heroSection {
+    background-position: 70% center;
+    /* Adjust focus point for mobile if needed */
+  }
+}

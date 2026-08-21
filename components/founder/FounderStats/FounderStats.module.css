@@ -1,0 +1,147 @@
+.statsSection {
+  background-color: #111320; /* Dark background matching the theme */
+  position: relative;
+  width: 100%;
+}
+
+.topTextWrapper {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.mainText {
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.solidText {
+  color: #ffffff;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.outlineText {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.gridWrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gridBox {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1c29;
+}
+
+.imageBox {
+  padding: 0;
+}
+
+.officeImage {
+  object-fit: cover;
+}
+
+.borderRight {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.borderBottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.patternBox {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.05) 10px,
+    rgba(255, 255, 255, 0.05) 11px
+  );
+}
+
+.statItem {
+  text-align: center;
+  padding: 20px;
+}
+
+.statNumber {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.textPurple {
+  color: #5d3ce6;
+}
+
+.textGreen {
+  color: #00ff2b;
+}
+
+.statLabel {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .gridBox {
+    height: 300px;
+  }
+  
+  .borderRight {
+    border-right: none;
+  }
+  
+  .borderBottom {
+    border-bottom: none;
+  }
+  
+  /* Re-apply borders for tablet grid */
+  .col-md-6:nth-child(odd) .gridBox {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .col-md-6 .gridBox {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Remove bottom border from last two items */
+  .col-md-6:nth-last-child(-n+2) .gridBox {
+    border-bottom: none;
+  }
+  
+  .patternBox {
+    display: none; /* Often decorative boxes are hidden on smaller screens, but let's keep it just in case, or hide it to save space */
+  }
+}
+
+@media (max-width: 575px) {
+  .gridBox {
+    height: 250px;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .col-sm-6:last-child .gridBox {
+    border-bottom: none !important;
+  }
+}

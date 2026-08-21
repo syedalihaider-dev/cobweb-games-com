@@ -1,0 +1,32 @@
+import React from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import FounderHero from '../../components/founder/FounderHero/FounderHero';
+import FounderStory from '../../components/founder/FounderStory/FounderStory';
+import FounderStats from '../../components/founder/FounderStats/FounderStats';
+import FounderStatements from '../../components/founder/FounderStatements/FounderStatements';
+import FounderJourney from '../../components/founder/FounderJourney/FounderJourney';
+import FounderTeam from '../../components/founder/FounderTeam/FounderTeam';
+import RouteLayout from '../../components/RouteLayout';
+
+export const metadata = {
+  title: 'Founder | Cobweb Games',
+  description: 'The story behind Cobweb Games.',
+};
+
+export default function FounderPage() {
+  return (
+    <RouteLayout>
+      <Header />
+      <main>
+        <FounderHero />
+        <FounderStory />
+        <FounderStats />
+        <FounderStatements />
+        <FounderJourney />
+        <FounderTeam />
+      </main>
+      <Footer />
+    </RouteLayout>
+  );
+}

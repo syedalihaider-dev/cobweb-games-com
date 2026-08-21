@@ -1,0 +1,232 @@
+/* ===========================
+   FounderTeam Section
+   =========================== */
+
+.teamSection {
+  background-color: #111320;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* ---------- Background decorations ---------- */
+
+.vectorBgWrapper {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.vectorBgImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ---------- Left Column: Founder Info ---------- */
+
+.founderInfoBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.founderName {
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.founderTitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.founderBio {
+  color: #ffffffb3;
+    margin-bottom: 25px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.linkedinBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.linkedinBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.smallImagesGrid {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.smallImageWrapper {
+  position: relative;
+  width: 190px;
+  height: 220px;
+}
+
+/* ---------- Shared Image Styling (Chamfered Top Right) ---------- */
+
+.chamferedImg {
+  object-fit: cover;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%);
+}
+
+/* ---------- Right Column: Team Grid ---------- */
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.teamImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 20px;
+}
+
+.memberName {
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.memberTitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+
+@media (max-width: 1400px) {
+  .founderName {
+    font-size: 50px;
+  }
+  .founderBio {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .founderName {
+    font-size: 42px;
+  }
+  .memberName {
+    font-size: 22px;
+  }
+  .smallImageWrapper {
+    width: 90px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 991px) {
+  .teamSection {
+    padding: 80px 0;
+  }
+  .founderName {
+    font-size: 38px;
+  }
+  .founderBio {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .linkedinBtn {
+    margin-bottom: 30px;
+  }
+  .smallImagesGrid {
+    justify-content: flex-start;
+  }
+  .smallImageWrapper {
+    width: 80px;
+    height: 100px;
+  }
+  .teamCard {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .teamSection {
+    padding: 60px 0;
+  }
+  .founderName {
+    font-size: 32px;
+  }
+  .founderBio {
+    font-size: 15px;
+  }
+  .smallImageWrapper {
+    width: calc(33.333% - 10px);
+    height: 120px;
+  }
+  .teamImageWrapper {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 575px) {
+  .founderName {
+    font-size: 28px;
+  }
+  .smallImageWrapper {
+    height: 100px;
+  }
+  .teamImageWrapper {
+    aspect-ratio: 3 / 2;
+  }
+  .memberName {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .founderName {
+    font-size: 24px;
+  }
+  .founderBio {
+    font-size: 14px;
+  }
+  .smallImageWrapper {
+    height: 80px;
+  }
+  .linkedinBtn {
+    width: 44px;
+    height: 40px;
+  }
+}

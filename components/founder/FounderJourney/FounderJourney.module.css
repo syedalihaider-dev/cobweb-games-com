@@ -1,0 +1,431 @@
+/* ===========================
+   FounderJourney Section
+   =========================== */
+
+.journeySection {
+  background-color: #111320;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+/* ---------- Background decorations ---------- */
+
+.vectorBgWrapper {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.vectorBgImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+.logoVectorWrapper {
+  position: absolute;
+  top: 40px;
+  left: -60px;
+  width: 420px;
+  height: 420px;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.logoVectorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---------- Heading ---------- */
+
+.mainHeading {
+  margin-bottom: 0;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.outlineText {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.solidText {
+  color: #00ff2b;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* ---------- Arc Timeline ---------- */
+
+.arcArea {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+/*
+ * Large invisible circle — only the top arc is visible.
+ * The circle is centred horizontally and pushed down so the top edge
+ * sits where we want the arc to appear.
+ */
+.arcCircle {
+  border: 1px solid #ffffff1f;
+    border-radius: 50%;
+    width: 1900px;
+    height: 2050px;
+    margin: 100px auto -1840px;
+    position: relative;
+}
+
+/*
+ * Each yearSlot is a thin radial arm from the circle centre.
+ * Rotating it fans the year outward along the arc.
+ */
+.yearSlot {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: 0;
+  height: 47%;            /* reaches from edge to centre */
+  transform-origin: bottom center;
+}
+
+/*
+ * yearInner sits at the TOP of the radial arm (i.e. on the arc edge).
+ * It holds the year label above the dot, and the dot itself sits on the arc.
+ */
+.yearInner {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.yearInner:hover {
+  opacity: 1 !important;
+}
+
+.yearInner:hover .yearLabel {
+  color: #ffffff;
+}
+
+.yearInner:hover .yearDot {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* Year text */
+.yearLabel {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+/* Dot on the arc */
+.yearDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* Active year */
+.yearActive .yearLabel {
+  color: #5d3ce6;
+  font-weight: 500;
+}
+
+.dotActive {
+  width: 18px;
+  height: 18px;
+  background-color: #5d3ce6;
+  box-shadow: 0 0 14px rgba(93, 60, 230, 0.6);
+}
+
+/* ---------- Content Area ---------- */
+
+.contentArea {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.journeyPara {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  line-height: 1.65;
+  margin: 0;
+  animation: fadeUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Marquee ---------- */
+
+.marqueeContainer {
+  background-color: #5d3ce6;
+  padding: 12px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  z-index: 3;
+}
+
+.marqueeTrack {
+  display: inline-flex;
+  align-items: center;
+  animation: scroll 18s linear infinite;
+  will-change: transform;
+}
+
+.marqueeContainer:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+.marqueeItem {
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  padding: 0 20px;
+}
+
+.marqueeStar {
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+
+@media (max-width: 1600px) {
+  .arcCircle {
+    width: 2000px;
+    height: 2000px;
+    margin-bottom: -1700px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .outlineText,
+  .solidText {
+    font-size: 48px;
+  }
+  .arcCircle {
+    width: 1800px;
+    height: 1800px;
+    margin-bottom: -1520px;
+  }
+  .yearLabel {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .outlineText,
+  .solidText {
+    font-size: 38px;
+  }
+  .arcCircle {
+    width: 1500px;
+    height: 1500px;
+    margin-bottom: -1250px;
+  }
+  .yearLabel {
+    font-size: 36px;
+  }
+  .journeyPara {
+    font-size: 20px;
+  }
+  .marqueeItem {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 991px) {
+  .journeySection {
+    padding-top: 70px;
+  }
+  .outlineText,
+  .solidText {
+    font-size: 30px;
+  }
+  .arcCircle {
+    width: 1200px;
+    height: 1200px;
+    margin-bottom: -980px;
+  }
+  .yearLabel {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .yearDot {
+    width: 10px;
+    height: 10px;
+  }
+  .dotActive {
+    width: 14px;
+    height: 14px;
+  }
+  .journeyPara {
+    font-size: 18px;
+  }
+  .marqueeItem {
+    font-size: 36px;
+  }
+  .logoVectorWrapper {
+    width: 280px;
+    height: 280px;
+  }
+  .contentArea {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .journeySection {
+    padding-top: 50px;
+  }
+  .outlineText,
+  .solidText {
+    font-size: 24px;
+  }
+  .arcCircle {
+    width: 900px;
+    height: 900px;
+    margin-bottom: -700px;
+    margin-top: -30px;
+  }
+  .yearLabel {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .yearDot {
+    width: 8px;
+    height: 8px;
+  }
+  .dotActive {
+    width: 12px;
+    height: 12px;
+  }
+  .journeyPara {
+    font-size: 16px;
+  }
+  .marqueeItem {
+    font-size: 28px;
+    padding: 0 12px;
+  }
+  .logoVectorWrapper {
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: -40px;
+  }
+  .arcArea {
+    padding-bottom: 60px;
+  }
+  .contentArea {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .outlineText,
+  .solidText {
+    font-size: 20px;
+  }
+  .arcCircle {
+    width: 700px;
+    height: 700px;
+    margin-bottom: -530px;
+    margin-top: -20px;
+  }
+  .yearLabel {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .yearDot {
+    width: 6px;
+    height: 6px;
+  }
+  .dotActive {
+    width: 10px;
+    height: 10px;
+  }
+  .journeyPara {
+    font-size: 14px;
+  }
+  .marqueeItem {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+  .arcArea {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .outlineText,
+  .solidText {
+    font-size: 17px;
+  }
+  .arcCircle {
+    width: 600px;
+    height: 600px;
+    margin-bottom: -440px;
+  }
+  .yearLabel {
+    font-size: 14px;
+  }
+  .marqueeItem {
+    font-size: 18px;
+  }
+}
