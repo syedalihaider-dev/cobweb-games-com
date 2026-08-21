@@ -21,7 +21,6 @@ export const metadata = {
 export default function FounderPage() {
   return (
     <RouteLayout>
-      <Header />
       <main>
         <FounderHero />
         <FounderStory />
@@ -34,7 +33,6 @@ export default function FounderPage() {
         <FounderTestimonials />
         <FounderFaqs />
       </main>
-      <Footer />
     </RouteLayout>
   );
 }
