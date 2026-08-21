@@ -60,13 +60,11 @@
 }
 
 .patternBox {
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 10px,
-    rgba(255, 255, 255, 0.05) 10px,
-    rgba(255, 255, 255, 0.05) 11px
-  );
+  background: repeating-linear-gradient(45deg,
+      transparent,
+      transparent 10px,
+      rgba(255, 255, 255, 0.05) 10px,
+      rgba(255, 255, 255, 0.05) 11px);
 }
 
 .statItem {
@@ -81,7 +79,7 @@
   margin-bottom: 15px;
 }
 
-.statNumber span{
+.statNumber span {
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -105,44 +103,67 @@
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
-  .gridBox {
-    height: 300px;
+  .topTextWrapper {
+    padding: 40px 0;
   }
-  
+
+  .mainText {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .mainText br {
+    display: none;
+  }
+
+  .statNumber {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .statLabel {
+    font-size: 18px;
+  }
+
+  .gridBox {
+    height: 150px;
+  }
+
   .borderRight {
     border-right: none;
   }
-  
+
   .borderBottom {
     border-bottom: none;
   }
-  
+
   /* Re-apply borders for tablet grid */
   .col-md-6:nth-child(odd) .gridBox {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   .col-md-6 .gridBox {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   /* Remove bottom border from last two items */
   .col-md-6:nth-last-child(-n+2) .gridBox {
     border-bottom: none;
   }
-  
+
   .patternBox {
-    display: none; /* Often decorative boxes are hidden on smaller screens, but let's keep it just in case, or hide it to save space */
+    display: none;
+    /* Often decorative boxes are hidden on smaller screens, but let's keep it just in case, or hide it to save space */
   }
 }
 
 @media (max-width: 575px) {
   .gridBox {
-    height: 250px;
     border-right: none !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
-  
+
   .col-sm-6:last-child .gridBox {
     border-bottom: none !important;
   }

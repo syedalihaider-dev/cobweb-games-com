@@ -17,7 +17,7 @@ const FounderStory = () => {
       </div>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-7 col-md-12 mb-5 mb-lg-0">
+          <div className="col-lg-7 col-md-12 mb-lg-0">
             <div className={styles.textContent}>
               <h2 className={styles.title}>
                 <span className={styles.outlineText}>A GAME STUDIO</span>

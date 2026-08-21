@@ -133,22 +133,31 @@
 }
 
 @media (max-width: 767px) {
+  .mainTitle {
+    margin-bottom: 10px;
+  }
 
   .solidText,
   .outlineText {
     -webkit-text-stroke: 1px #ffffff;
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .subTitle {
-    font-size: 1.5rem;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .heroSection {
-    background-position: 70% center;
-    /* Adjust focus point for mobile if needed */
+    background-position: left;
+  }
+
+  .rightContent {
+    margin-top: 0px;
   }
 }
