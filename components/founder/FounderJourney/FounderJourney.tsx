@@ -46,10 +46,10 @@ const FounderJourney = () => {
       {/* Top Left Logo Vector */}
       <div className={styles.logoVectorWrapper}>
         <Image
-          src="/assets/images/founder/logo-vector.png"
+          src="/assets/images/founder/logo-vector-left.png"
           alt=""
-          width={400}
-          height={400}
+          width={516}
+          height={605}
           className={styles.logoVectorImage}
           aria-hidden="true"
         />

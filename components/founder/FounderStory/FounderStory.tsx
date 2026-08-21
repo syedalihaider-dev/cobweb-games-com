@@ -5,13 +5,22 @@ import styles from './FounderStory.module.css';
 const FounderStory = () => {
   return (
     <section className={styles.storySection}>
+      <div className={styles.afterWrapper}>
+        <Image 
+          src="/assets/images/founder/logo-vector.png"
+          alt="Vector Logo Image" 
+          width={406} 
+          height={436}
+          className={styles.afterImage} 
+          priority 
+        />
+      </div>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-7 col-md-12 mb-5 mb-lg-0">
             <div className={styles.textContent}>
               <h2 className={styles.title}>
                 <span className={styles.outlineText}>A GAME STUDIO</span>
-                <br />
                 <span className={styles.solidText}>WITHOUT BOUNDS</span>
               </h2>
               

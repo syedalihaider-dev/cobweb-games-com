@@ -15,7 +15,7 @@ interface FaqsProps {
   footerText?: string;
 }
 
-const defaultFaqs = [
+export const defaultFaqs = [
   {
     id: 1,
     question: 'How much budget do I need to build a mobile game?',

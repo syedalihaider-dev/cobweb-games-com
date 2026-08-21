@@ -1,5 +1,5 @@
 .statsSection {
-  background-color: #111320; /* Dark background matching the theme */
+  background-color: #1b1e26;
   position: relative;
   width: 100%;
 }
@@ -10,10 +10,8 @@
 }
 
 .mainText {
-  font-family: 'Kanit', sans-serif;
-  line-height: 1.4;
-  margin: 0;
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .solidText {
@@ -21,12 +19,14 @@
   font-weight: 700;
   display: inline-block;
   margin-bottom: 15px;
+  font-family: Orbitron, sans-serif;
 }
 
 .outlineText {
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
   font-weight: 500;
+  font-family: Orbitron, sans-serif;
 }
 
 .gridWrapper {
@@ -40,7 +40,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-color: #1a1c29;
+  background-color: #1b1e26;
 }
 
 .imageBox {
@@ -75,11 +75,14 @@
 }
 
 .statNumber {
-  font-family: 'Orbitron', sans-serif;
   font-weight: 900;
-  font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 1;
+  font-size: 100px;
+  line-height: 100px;
   margin-bottom: 15px;
+}
+
+.statNumber span{
+  font-family: 'Orbitron', sans-serif;
 }
 
 .textPurple {
@@ -92,8 +95,7 @@
 
 .statLabel {
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 24px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin: 0;

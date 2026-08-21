@@ -1,8 +1,27 @@
 .storySection {
-  background-color: #111320; /* Dark background matching the theme */
+  background-color: #1b1e26; /* Dark background matching the theme */
+  background-image: url('/assets/images/founder/vector-line.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 0;
   position: relative;
-  overflow: hidden;
+  z-index: 1;
+}
+
+.afterWrapper{
+  width: 406px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: -200px;
+  z-index: -1;
+}
+
+.afterImage{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .textContent {
@@ -10,9 +29,9 @@
 }
 
 .title {
-  margin-bottom: 30px;
-  line-height: 1.1;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  line-height: 60px;
 }
 
 .outlineText {
@@ -21,27 +40,27 @@
   font-family: 'Kanit', sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-  line-height: 1.1;
+  font-size: 60px;
+  line-height: 70px;
   display: block;
+  opacity: .8;
 }
 
 .solidText {
-  color: #00ff2b;
+  color: #2CFF28;
   font-family: 'Orbitron', sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-  line-height: 1.1;
+  font-size: 60px;
+  line-height: 70px;
   display: block;
 }
 
 .paragraphs {
   color: #d1d1d1;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  font-family: 'Inter', sans-serif;
-  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .paragraphs p {
@@ -49,7 +68,7 @@
 }
 
 .textHighlight {
-  color: #00ff2b;
+  color: #2CFF28;
   font-weight: 600;
 }
 
@@ -58,19 +77,17 @@
 }
 
 .authorName {
-  color: #00ff2b;
+  color: #2CFF28;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 5px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .authorTitle {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 16px;
   margin: 0;
-  opacity: 0.9;
-  font-family: 'Inter', sans-serif;
 }
 
 .imageWrapper {

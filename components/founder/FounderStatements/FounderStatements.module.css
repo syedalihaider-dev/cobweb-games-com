@@ -1,5 +1,9 @@
 .statementsSection {
-  background-color: #111320; /* Matches global dark theme */
+  background-color: #1b1e26; /* Matches global dark theme */
+  background-image: url('/assets/images/founder/vector-line.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -7,14 +11,7 @@
 
 /* Background Vector Line */
 .vectorLineWrapper {
-  position: absolute;
-  bottom: -100px;
-  left: -100px;
-  width: 600px;
-  height: 600px;
-  z-index: 1;
-  opacity: 0.5; /* Adjust based on exact visual match */
-  pointer-events: none;
+  display: none;
 }
 
 .vectorLineImage {
@@ -25,14 +22,12 @@
 
 /* Typography */
 .mainTitle {
-  margin-bottom: 25px;
-  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 .outlineText {
   color: transparent;
   -webkit-text-stroke: 1px #ffffff;
-  font-family: 'Kanit', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
@@ -42,7 +37,6 @@
 .solidText {
   color: #00ff2b;
   font-family: 'Orbitron', sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 60px;
   text-transform: uppercase;
@@ -50,7 +44,6 @@
 
 .mainDescription {
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.8;
   max-width: 900px;
@@ -101,7 +94,6 @@
 
 .cardDescription {
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   margin: 0;

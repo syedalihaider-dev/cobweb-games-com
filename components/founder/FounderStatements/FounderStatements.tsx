@@ -5,7 +5,6 @@ import styles from './FounderStatements.module.css';
 const FounderStatements = () => {
   return (
     <section className={styles.statementsSection}>
-      {/* Decorative Vector Line Background */}
       <div className={styles.vectorLineWrapper}>
         <Image 
           src="/assets/images/founder/vector-line.png" 

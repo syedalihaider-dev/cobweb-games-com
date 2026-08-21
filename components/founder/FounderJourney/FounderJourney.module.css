@@ -3,21 +3,22 @@
    =========================== */
 
 .journeySection {
-  background-color: #111320;
+  background-color: #1b1e26;
+  background-image: url('/assets/images/founder/vector-line.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   padding-top: 100px;
   padding-bottom: 0;
+  z-index: 1;
 }
 
 /* ---------- Background decorations ---------- */
 
 .vectorBgWrapper {
-  position: absolute;
-  inset: 0;
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 
 .vectorBgImage {
@@ -26,14 +27,12 @@
 }
 
 .logoVectorWrapper {
+  width: 516px;
+  height: auto;
   position: absolute;
-  top: 40px;
-  left: -60px;
-  width: 420px;
-  height: 420px;
-  opacity: 0.12;
-  pointer-events: none;
-  z-index: 1;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .logoVectorImage {
@@ -137,7 +136,6 @@
 /* Year text */
 .yearLabel {
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 1;
@@ -178,7 +176,6 @@
 
 .journeyPara {
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'Inter', sans-serif;
   font-size: 25px;
   line-height: 1.65;
   margin: 0;
