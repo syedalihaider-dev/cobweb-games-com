@@ -13,6 +13,17 @@ import LiveChatButton from '@/components/LiveChatButton';
 import Link from 'next/link';
 import { bindSlickNavHighlight } from '@/components/slickNavHighlight';
 
+const gameDevelopmentFaqs = [
+  ['How much does game development cost?', 'Simple 2D or casual games typically run $25,000 to $80,000. Mid-tier titles with custom systems land between $80,000 and $250,000. Feature-complete multiplayer or AAA-grade productions start around $500,000, with scope deciding the final number during discovery.'],
+  ['How long does it take to develop a game?', 'Simple mobile games take three to six months. Mid-tier mobile or PC titles run eight to eighteen months. VR titles or larger-scope productions can stretch from twelve to thirty-six months, with content volume moving the timeline more than any single feature.'],
+  ['What makes Cobweb different from a typical game development agency?', 'A typical game development agency introduces talent and steps back once the match is made. Cobweb runs the production itself, with art, engineering, and QA operating inside one pipeline under a single point of contact, removing the coordination tax that quietly eats into most outsourced budgets.'],
+  ['Can I hire dedicated game developers for a project that is already underway?', 'Yes. You can hire dedicated game developers as an embedded extension of your existing team, following a technical audit of your current codebase and pipeline. We will tell you honestly what already exists and what shipping actually requires before agreeing to scope.'],
+  ['Are you a game development company in the USA, or do you work with international teams too?', 'Both. Cobweb Games operates as a game development company in the USA market while running a delivery pipeline built for remote collaboration worldwide, with structured overlap hours and documented milestone reviews that hold up across time zones.'],
+  ['Which engine do you recommend, Unity or Unreal?', 'Whichever one the project actually calls for. Unity tends to suit mobile, 2D, and mid-scope 3D work best, with faster builds and a lighter footprint. Unreal earns its overhead when console-grade fidelity, Lumen, or Nanite genuinely matter to the game being built.'],
+  ['I need a game developer but do not have a full brief ready yet. What do you need from me?', 'A game concept, target platform, core feature list, reference titles, target audience, and a rough timeline get you most of the way there. If you have less than that, our discovery session builds the brief with you from scratch.'],
+  ['What happens after my game launches?', 'The live phase begins. Player feedback starts arriving immediately, platforms update their requirements, and content updates keep the audience you worked to acquire actually engaged. Post-launch support and development retainers get scoped before launch, so nothing stalls once the game is live.'],
+].map(([question, answer], index) => ({ id: index + 1, question, answer }));
+
 export default function GameDevelopment() {
   useEffect(() => {
     let slickTimer: NodeJS.Timeout;
@@ -156,10 +167,9 @@ export default function GameDevelopment() {
         <div className="container align-self-center">
           <div className="row">
             <div className="col-lg-6">
-              <h5>Game Development</h5>
-              <h1>Development <br /><b>COMPANY</b></h1>
-              <p>We offer end-to-end game art production services ranging from casual 2D characters to
-                breathtaking 3D environments, masterfully crafted to convey your game vision</p>
+              <h5>Top Rated Game Development Company</h5>
+              <h1>Game Development <br /><b>Company &amp; Studio in the USA.</b></h1>
+              <p>You have a game worth building. Cobweb Games is considered to be the best game development company in the USA that builds it, ships it, and keeps supporting it after launch. Our game development services cover mobile, PC, VR, and web, for founders, AA studios, and gaming brands who need a production partner ready to move now, not another quote to file away.</p>
               <ul className="btn-wrap d-flex align-items-center mt-4">
                 <li>
                   <Link href="/contact-us" className="btn-size btn-purple popup">Get Started</Link>
@@ -210,11 +220,8 @@ export default function GameDevelopment() {
               </figure>
             </div>
             <div className="col-lg-6">
-              <h2 className="main-heading">Game Art And <strong className="c-green">Design</strong> <b>Services</b></h2>
-              <p>Starloop Studios has end-to-end art support with multiple game art solutions to back the project
-                on all production stages, securing synergy between teams and completing milestones on time and
-                budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and our understanding of how great games
-                should sound, feel, and look.</p>
+              <h2 className="main-heading">A Full-Cycle Game <strong className="c-green">Development</strong> Company.</h2>
+              <p>Working with Cobweb Games puts one production team on your project, handling design, art, engineering, and QA under a single brief and a single deadline. Your prototype, your art pipeline, and your test builds move through that same team on the same milestone schedule, so nothing gets lost in a handoff between people who have never spoken to each other. <br /><br /> We work with indie developers shipping their first commercial title, AA studios juggling several builds at once, and gaming brands that need a full-cycle game development company able to plug straight into their existing workflow. As a video game development company and game development studio, we cover end-to-end game development services in USA from your first prototype through your store submission, with nothing handed off to a third party along the way.</p>
             </div>
           </div>
         </div>
@@ -225,14 +232,14 @@ export default function GameDevelopment() {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <ul className="slider-lft">
-                <li><h3>Unity Game </h3></li>
-                <li><h3>Unreal Engine Game </h3></li>
-                <li><h3>Mobile Game </h3></li>
-                <li><h3>3D Game </h3></li>
-                <li><h3>Play to Earn Games</h3></li>
-                <li><h3>AI Game</h3></li>
+                <li><h3>Mobile Game Development</h3></li>
+                <li><h3>3D Game Development</h3></li>
+                <li><h3>Play-to-Earn Games</h3></li>
+                <li><h3>AI Game Development</h3></li>
                 <li><h3>Game Testing</h3></li>
                 <li><h3>Game Prototyping</h3></li>
+                <li><h3>Unity Game Development</h3></li>
+                <li><h3>Unreal Engine Game Development</h3></li>
               </ul>
             </div>
             <div className="col-lg-6">
@@ -241,10 +248,7 @@ export default function GameDevelopment() {
                   <figure className="img-wrap h-100">
                     <Image src="/assets/images/game-development/port-01.webp" alt="*" width={600} height={338} />
                   </figure>
-                  <h3>Unity Game</h3>
-                  <p>Whether 2D or 3D, our Unity expertise brings creative visions to life from concept
-                    through completion. Cobweb Studios raises the bar for game production services,
-                    empowering partners with industry-leading solutions.</p>
+                  <h3>Mobile Game Development</h3><p>Your mobile game needs to run great on the phone most players actually carry, not just the flagship sitting on a developer's desk. We <Link href="/mobile-game-development">build mobile games</Link> to provide monetization, app store submission, and post-launch support into the project from day one, so your game is actually finished when it hits the store, not just when the code compiles.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/unity-game-development" className="btn-size btn-purple">Learn More</Link></li>
                     <li><LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton></li>
@@ -254,11 +258,7 @@ export default function GameDevelopment() {
                   <figure className="img-wrap h-100">
                     <Image src="/assets/images/game-development/port-02.webp" alt="*" width={600} height={338} />
                   </figure>
-                  <h3>Unreal Engine Game</h3>
-                  <p>By leveraging Unreal&apos;s powerful tools, our specialists craft engrossing games according
-                    to client specifications. Our dedicated professionals steer projects through each
-                    milestone. Our partners benefit from our skilled guidance and industry knowledge to
-                    achieve commercial success.</p>
+                  <h3>3D Game Development</h3><p>Your <Link href="/3d-game-development">3D game</Link> gets modeled, rigged, and engine-integrated inside one pipeline, so the art never blows past the frame budget your engineers have to hit. What you see in review is what ships, running the way it was designed to run on the hardware your players actually own.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/unreal-engine-game-development" className="btn-size btn-purple">Learn More</Link></li>
                     <li><LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton></li>
@@ -268,10 +268,7 @@ export default function GameDevelopment() {
                   <figure className="img-wrap h-100">
                     <Image src="/assets/images/game-development/port-03.webp" alt="*" width={600} height={338} />
                   </figure>
-                  <h3>Mobile Game</h3>
-                  <p>With expertise across all mobile genres, from casual to immersive simulations, we
-                    transform concepts into compelling games. Through market analysis and idea refinement,
-                    our proven process delivers high quality. </p>
+                  <h3>Play-to-Earn Games</h3><p>We <Link href="/play-to-earn-game">build your play-to-earn game</Link> the way we build any other title, starting with a loop players actually want to return to, then layering in smart contract integration and token design. A P2E economy only works once there is a real game underneath it, and that is exactly the order we build in.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/mobile-game-development" className="btn-size btn-purple">Learn More</Link></li>
                     <li><LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton></li>
@@ -281,10 +278,7 @@ export default function GameDevelopment() {
                   <figure className="img-wrap h-100">
                     <Image src="/assets/images/game-development/port-04.webp" alt="*" width={600} height={338} />
                   </figure>
-                  <h3>3D Game</h3>
-                  <p>We specialize in creating immersive 3D game experiences that captivate players. Our
-                    talented team leverages cutting-edge technology and creative design to bring your vision
-                    to life, ensuring stunning visuals and engaging gameplay.</p>
+                  <h3>AI Game Development</h3><p>If you want AI in your game, we build NPC behavior, procedural content generation, and adaptive difficulty that change how your game actually plays, not a feature that just pads out a pitch deck. Every AI system we add has to make the game better to play, or it does not go in.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/3d-game-development" className="btn-size btn-purple">Learn More</Link></li>
                     <li><LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton></li>
@@ -294,11 +288,7 @@ export default function GameDevelopment() {
                   <figure className="img-wrap h-100">
                     <Image src="/assets/images/game-development/port-05.webp" alt="*" width={600} height={338} />
                   </figure>
-                  <h3>Play to Earn Games</h3>
-                  <p>We are at the forefront of the Play to Earn revolution, designing games that entertain
-                    and offer players the opportunity to earn real-world value. Our expertise in blockchain
-                    technology allows us to integrate secure and scalable Play-to-earn mechanisms seamlessly
-                    into our games.</p>
+                  <h3>Unity Game Development</h3><p>We build in Unity across 2D, 3D, AR, VR, and mobile, using the engine's full feature set on your project instead of a stock template. Our <Link href="/unity-game-development">certified Unity developers</Link> know where the engine moves fast on its own and where it needs real discipline to keep performing at scale.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/play-to-earn-game" className="btn-size btn-purple">Learn More</Link></li>
                     <li><LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton></li>
@@ -308,10 +298,7 @@ export default function GameDevelopment() {
                   <figure className="img-wrap h-100">
                     <Image src="/assets/images/game-development/port-06.webp" alt="*" width={600} height={338} />
                   </figure>
-                  <h3>AI Game</h3>
-                  <p>We harness the power of artificial intelligence to create smarter, more responsive, and
-                    immersive gaming experiences. Our AI-driven solutions enhance gameplay by providing
-                    dynamic environments, intelligent NPCs, and personalized player experiences.</p>
+                  <h3>Unreal Engine Game Development</h3><p>When your project needs Lumen, Nanite, or true console-grade fidelity, we build it in <Link href="/unreal-engine-game-development">Unreal Engine with developers</Link> who have shipped inside it under deadline pressure, not developers who just explored it in a tutorial.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/ai-game-development" className="btn-size btn-purple">Learn More</Link></li>
                     <li><LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton></li>
@@ -349,7 +336,7 @@ export default function GameDevelopment() {
         </div>
       </section>
 
-      <CtaTwo />
+      <CtaTwo heading={'Bring Your Wildest Ideas to <b class="c-green">Playable Reality.</b>'} description="Tell us your game, your platform, and your deadline, and we will tell you exactly what it takes to ship it, whether you need a game developer to fill one gap on your roster or want to hire remote game developers for the entire build." />
 
       <section className="game-category">
         <svg className="bg" width="1440" height="1042" viewBox="0 0 1440 1042" fill="none"
@@ -371,7 +358,7 @@ export default function GameDevelopment() {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h4>Categories</h4>
-              <h2 className="main-heading">Our Game <b className="c-green">Development</b> <br /> Categories</h2>
+              <h2 className="main-heading">Our Game Development Gamut.</h2>
             </div>
           </div>
           <div className="row mob-slider">
@@ -384,10 +371,7 @@ export default function GameDevelopment() {
                       alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>2D Animation</h3>
-                    <p>We bring your game&apos;s story characters to life with vibrant, expressive 2D visuals. We
-                      craft every frame with attention, ensuring smooth, engaging game animations that
-                      will make your game stand out.</p>
+                    <h3>2D Game Development</h3><p>Get sprite-based games for mobile, PC, and browser, with animation timing and physics tuned to feel right from the very first jump or swing, so no shaky mechanic gets a place to hide.</p>
                   </div>
                 </div>
               </div>
@@ -401,10 +385,7 @@ export default function GameDevelopment() {
                       alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>3D Animation</h3>
-                    <p>Step into the realm of three-dimensional excellence. Our 3D game animator specialists
-                      create engaging, realistic experiences, enhancing your game with detailed character
-                      movements and dynamic environments.</p>
+                    <h3>3D Game Development</h3><p>Get three-dimensional worlds built with LOD chains and draw call budgets that hold up on the hardware your players actually own, not just the development kit in the studio.</p>
                   </div>
                 </div>
               </div>
@@ -418,10 +399,7 @@ export default function GameDevelopment() {
                       alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>Character Animation</h3>
-                    <p>Characters are the heart of your game. Therefore, we focus on making every game
-                      character alive, infusing each model with depth so that every movement and
-                      expression feels authentic and alive.</p>
+                    <h3>Cross-Platform Development</h3><p>Get one codebase shipped across iOS, Android, and PC, maintained as a single build instead of three separate games slowly drifting apart from each other.</p>
                   </div>
                 </div>
               </div>
@@ -435,10 +413,7 @@ export default function GameDevelopment() {
                       alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>Game Trailers and NFT Game Teasers</h3>
-                    <p>Create hype around your game before it is released with our game trailers and NFT
-                      game teasers. We create compelling previews that highlight your game&apos;s best
-                      features, stirring anticipation among target audience.</p>
+                    <h3>AR/VR Game Development</h3><p>Get immersive titles for Quest, Vive, and PS VR, designed around the frame budget that real comfort in virtual reality demands, since a dropped frame in VR gets felt in the body, not just noticed on screen.</p>
                   </div>
                 </div>
               </div>
@@ -452,10 +427,7 @@ export default function GameDevelopment() {
                       alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>AR/VR Animation</h3>
-                    <p>Reveal the full gaming potential of AR/VR with our top-notch game animation. We
-                      enhance the interactive AR/VR feature with advanced visuals that immerse players
-                      deeper into virtual dimensions.</p>
+                    <h3>Web3 and Blockchain Games</h3><p>Get on-chain ownership and NFT integration built into a game designed to be played first, with trading built in as an extension of that experience, not the entire point of it.</p>
                   </div>
                 </div>
               </div>
@@ -469,10 +441,7 @@ export default function GameDevelopment() {
                       alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>VFX Animation</h3>
-                    <p>Our VFX animation services add a layer of polish and spectacle to your game. From
-                      cool effects to epic visual feast, we ensure every scene is visually stunning and
-                      memorable.</p>
+                    <h3>HTML5 and Web Games</h3><p>Get browser games that load in seconds and play the moment a link is clicked, with no install and no app store gatekeeper standing between your player and the game itself.</p>
                   </div>
                 </div>
               </div>
@@ -481,15 +450,13 @@ export default function GameDevelopment() {
         </div>
       </section>
 
-      <section className="team-sec4 next-image-background-host"
-        >
+      <section className="team-sec4 next-image-background-host">
         <Image className="next-image-background" src="/assets/images/game-art/team-bg.webp" alt="" fill sizes="100vw" />
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h4>Our Team</h4>
-              <h2 className="main-heading">The Team for <b className="c-green">Creating</b> Your <b
-                className="c-green">Ideal</b> Art</h2>
+              <h4>The Game Development Studio Behind Every Shipped Build.</h4>
+              <h2 className="main-heading">The Game Development Studio Behind Every Shipped Build.</h2>
             </div>
           </div>
           <div className="row align-items-center">
@@ -504,67 +471,37 @@ export default function GameDevelopment() {
                 <div className="col-lg-4 col-md-6">
                   <div className="box-wrap">
                     <div className="head">
-                      <h3>2D 3D Artists</h3>
-                      <span>01</span>
-                    </div>
-                    <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                      youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br />Working with Numerique
-                      Digital with the digital presence.</p>
+                      <h3>Game Programmers</h3></div><p>Hire game programmers who write code meant for production rather than a demo reel, building gameplay systems, networking, and performance-critical code that holds up once real players start putting weight on it.</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div className="box-wrap">
                     <div className="head">
-                      <h3>2D 3D Artists</h3>
-                      <span>02</span>
-                    </div>
-                    <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                      youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br />Working with Numerique
-                      Digital with the digital presence.</p>
+                      <h3>Game Designers</h3></div><p>Designers who treat the core loop as a technical document long before it becomes a pitch, specifying mechanics, economies, and progression systems in enough detail that production never has to guess at intent.</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div className="box-wrap">
                     <div className="head">
-                      <h3>2D 3D Artists</h3>
-                      <span>03</span>
-                    </div>
-                    <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                      youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br />Working with Numerique
-                      Digital with the digital presence.</p>
+                      <h3>2D and 3D Artists</h3></div><p>Production artists who deliver assets already matched to your poly count and your naming convention, so nothing needs to be reformatted or renamed before it can actually be used.</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div className="box-wrap">
                     <div className="head">
-                      <h3>2D 3D Artists</h3>
-                      <span>04</span>
-                    </div>
-                    <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                      youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br />Working with Numerique
-                      Digital with the digital presence.</p>
+                      <h3>QA Engineers</h3></div><p>Testers whose entire job is finding the crash before your players do, running device matrices and certification passes well ahead of the week the launch actually happens.</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div className="box-wrap">
                     <div className="head">
-                      <h3>2D 3D Artists</h3>
-                      <span>05</span>
-                    </div>
-                    <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                      youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br />Working with Numerique
-                      Digital with the digital presence.</p>
+                      <h3>Technical Artists</h3></div><p>The people standing between art and engineering, handling shaders, optimization, and pipeline tooling so that detailed assets keep running at full frame rate instead of quietly dragging performance down.</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div className="box-wrap">
                     <div className="head">
-                      <h3>2D 3D Artists</h3>
-                      <span>06</span>
-                    </div>
-                    <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                      youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br />Working with Numerique
-                      Digital with the digital presence.</p>
+                      <h3>Project Managers</h3></div><p>One point of contact and milestone-based reporting, so when you hire dedicated game developers through Cobweb, you always know exactly what last week's budget actually produced.</p>
                   </div>
                 </div>
               </div>
@@ -573,7 +510,7 @@ export default function GameDevelopment() {
         </div>
       </section>
 
-      <Platform />
+      <Platform heading="Key Devices &amp; Platforms" highlightText=" We Develop Games" subheading=" For." platforms={[{ title: 'PC Games', description: 'Steam, Epic, and proprietary distribution, with graphics settings scaled across the wide range of hardware PC players are actually running.', image: '/assets/images/h-sec-4-img-01.webp', width: 352, height: 359 }, { title: 'VR Games', description: 'Quest, Vive, Valve Index, and PS VR, where the frame budget stays non-negotiable from the very first prototype through to final ship.', image: '/assets/images/h-sec-4-img-02.webp', width: 353, height: 360 }, { title: 'Mobile Games & Apps', description: 'iOS and Android, performance-calibrated for the mid-range device that the median player is most likely holding.', image: '/assets/images/h-sec-4-img-03.webp', width: 354, height: 359 }]} />
 
       <section className="process-sec">
         <div className="marquee">
@@ -585,19 +522,19 @@ export default function GameDevelopment() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h6>Our Process</h6>
-              <h2 className="main-heading">Video Game Art <b className="c-green">Process</b></h2>
+              <h6>A Power-Packed Game Development Process.</h6>
+              <h2 className="main-heading">A Power-Packed Game Development Process.</h2>
             </div>
           </div>
           <div className="row align-items-center">
             <div className="col-lg-6">
               <ul className="process-slider-lft">
-                <li><h4>Character Design</h4></li>
-                <li><h4>Casual Art</h4></li>
-                <li><h4>Slots Games Art</h4></li>
-                <li><h4>Concept Art</h4></li>
-                <li><h4>Environment Design</h4></li>
-                <li><h4>Hidden Objects</h4></li>
+                <li><h4>Discovery and Production Brief</h4></li>
+                <li><h4>Prototyping</h4></li>
+                <li><h4>Pre-Production and Design</h4></li>
+                <li><h4>Full Production</h4></li>
+                <li><h4>Testing and Certification</h4></li>
+                <li><h4>Launch and LiveOps</h4></li>
               </ul>
             </div>
             <div className="col-lg-6">
@@ -605,61 +542,43 @@ export default function GameDevelopment() {
                 <li>
                   <div className="box-wrap">
                     <span>01</span>
-                    <h2>Character Design</h2>
-                    <p>Starloop Studios has end-to-end art support with multiple game art solutions to back
-                      the project on all production stages, securing synergy between teams and completing
-                      milestones on time and budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and
-                      our understanding of how great games should sound, feel, and look.</p>
+                    <h2>Discovery and Production Brief</h2>
+                    <p>Your idea gets turned into a technical document covering platform, audience, core loop, scope, and budget, laid out clearly enough that if the concept cannot survive this stage as pitched, we can say so while the fix still costs nothing.</p>
                   </div>
                 </li>
                 <li>
                   <div className="box-wrap">
                     <span>02</span>
-                    <h2>Casual Art</h2>
-                    <p>Starloop Studios has end-to-end art support with multiple game art solutions to back
-                      the project on all production stages, securing synergy between teams and completing
-                      milestones on time and budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and
-                      our understanding of how great games should sound, feel, and look.</p>
+                    <h2>Prototyping</h2>
+                    <p>A rough, playable build tests whether the mechanic has actually earned full production, and that decision gets made by watching how it plays in real hands, not by how convincing it sounds in a meeting.</p>
                   </div>
                 </li>
                 <li>
                   <div className="box-wrap">
                     <span>03</span>
-                    <h2>Slots Games Art</h2>
-                    <p>Starloop Studios has end-to-end art support with multiple game art solutions to back
-                      the project on all production stages, securing synergy between teams and completing
-                      milestones on time and budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and
-                      our understanding of how great games should sound, feel, and look.</p>
+                    <h2>Pre-Production and Design</h2>
+                    <p>Design documents, art direction, and technical architecture get locked alongside a milestone schedule everyone can see, so the expensive decisions happen here on paper instead of later inside a half-built engine.</p>
                   </div>
                 </li>
                 <li>
                   <div className="box-wrap">
                     <span>04</span>
-                    <h2>Concept Art</h2>
-                    <p>Starloop Studios has end-to-end art support with multiple game art solutions to back
-                      the project on all production stages, securing synergy between teams and completing
-                      milestones on time and budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and
-                      our understanding of how great games should sound, feel, and look.</p>
+                    <h2>Full Production</h2>
+                    <p>Art, code, and systems move forward together inside one pipeline, with weekly builds and milestone reviews that show playable progress instead of a status update dressed up as one.</p>
                   </div>
                 </li>
                 <li>
                   <div className="box-wrap">
                     <span>05</span>
-                    <h2>Environment Design</h2>
-                    <p>Starloop Studios has end-to-end art support with multiple game art solutions to back
-                      the project on all production stages, securing synergy between teams and completing
-                      milestones on time and budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and
-                      our understanding of how great games should sound, feel, and look.</p>
+                    <h2>Testing and Certification</h2>
+                    <p>Functionality, compatibility, performance, and platform certification testing run across the actual device matrix your audience uses, not a curated shortlist that happens to make the build look stable.</p>
                   </div>
                 </li>
                 <li>
                   <div className="box-wrap">
                     <span>06</span>
-                    <h2>Hidden Objects</h2>
-                    <p>Starloop Studios has end-to-end art support with multiple game art solutions to back
-                      the project on all production stages, securing synergy between teams and completing
-                      milestones on time and budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and
-                      our understanding of how great games should sound, feel, and look.</p>
+                    <h2>Launch and LiveOps</h2>
+                    <p>Store submission, launch-day support, and a post-launch content calendar come together to decide whether opening day turns into a lasting audience or just a brief spike that fades within a week.</p>
                   </div>
                 </li>
               </ul>
@@ -674,8 +593,8 @@ export default function GameDevelopment() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h3 className="sm-head">Why Choose Us</h3>
-              <h2 className="main-heading">What is in it <b className="c-green">For you</b></h2>
+              <h3 className="sm-head">What You Get From Us As A Full-Cycle Partner?</h3>
+              <h2 className="main-heading">What You Get From Us As A Full-Cycle Partner?</h2>
             </div>
           </div>
         </div>
@@ -686,40 +605,28 @@ export default function GameDevelopment() {
                 <li>
                   <div className="item-wrap">
                     <div className="content">
-                      <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                        youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with
-                        Numerique Digital with the digital presence.</p>
+                      <h4>Full IP Ownership</h4><p>Every asset and every line of code transfers to you the moment final payment clears, with an NDA already signed before a single detail of the project was shared.</p>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div className="item-wrap">
                     <div className="content">
-                      <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                        youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with
-                        Numerique Digital with the digital presence.</p>
+                      <h4>One Pipeline, No Translation Loss</h4><p>Art, development, and QA operate under one roof, so there is no vendor relay race and no mismatched deliverables between teams that never actually spoke to each other.</p>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div className="item-wrap">
                     <div className="content">
-                      <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                        youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with
-                        Numerique Digital with the digital presence.</p>
+                      <h4>Milestones You Can Play</h4><p>Every milestone arrives as a working build rather than a slide deck, so you always know precisely what last month's budget turned into.</p>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div className="item-wrap">
                     <div className="content">
-                      <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if
-                        youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with
-                        Numerique Digital with the digital presence.</p>
+                      <h4>Post-Launch Partnership</h4><p>Live ops, content updates, and platform recertification get planned before launch instead of negotiated afterward, once the game is already live and the clock is already running.</p>
                     </div>
                   </div>
                 </li>
@@ -738,7 +645,7 @@ export default function GameDevelopment() {
 
       <Technologies />
       <Reviews />
-      <Faqs />
+      <Faqs faqs={gameDevelopmentFaqs} />
       <FooterForm />
     </div>
   );

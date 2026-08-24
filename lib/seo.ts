@@ -175,8 +175,8 @@ export const PAGE_SEO: Record<string, { title: string; description: string }> = 
     description: 'Game Art',
   },
   '/game-development': {
-    title: 'Game Development | Cob Web',
-    description: 'Game Development',
+    title: 'Game Development Company USA | Full Cycle Studio | Cobweb Games',
+    description: 'Cobweb Games is a full-cycle game development company in the USA delivering end-to-end game development services. Hire dedicated game developers who ship titles that draw players.',
   },
   '/game-level-design': {
     title: 'Game Level Design | Cob Web',
