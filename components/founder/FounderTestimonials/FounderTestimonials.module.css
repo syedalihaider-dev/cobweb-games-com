@@ -98,7 +98,7 @@
 }
 
 .slide {
-  display: grid;
+  /* display: grid; */
   flex: 0 0 100%;
   gap: 17px;
   grid-template-columns: minmax(0, 2.15fr) minmax(290px, 1fr);
@@ -138,6 +138,7 @@
   min-height: 314px;
   overflow: hidden;
   position: relative;
+  display:none;
 }
 
 .clientImage {

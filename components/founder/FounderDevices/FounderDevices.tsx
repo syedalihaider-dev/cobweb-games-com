@@ -114,11 +114,11 @@ export default function FounderDevices() {
         <div className="row justify-content-center text-center mb-5">
           <div className="col-lg-10 col-xl-10">
             <h2 className={styles.mainTitle}>
-              <span className={styles.outlineText}>KEY DEVICES WE</span>
-              <span className={styles.solidText}>DEVELOP GAMES FOR</span>
+              <span className={styles.outlineText}>Games Built </span>
+              <span className={styles.solidText}>for Every Platform</span>
             </h2>
             <p className={styles.subtext}>
-              Every award we receive is a testament to our commitment to excellence. These honors confirm that our work makes a real difference and push us to raise the bar again. They remind us that trust is earned one project at a time.
+              From mobile and tablet to PC and console, our games are built to deliver a smooth, engaging experience across the devices players use every day. Each build is optimised for its platform, balancing performance, visuals, controls, and gameplay.
             </p>
           </div>
         </div>

@@ -3,12 +3,11 @@ import FounderStory from '@/components/founder/FounderStory/FounderStory';
 import FounderStats from '@/components/founder/FounderStats/FounderStats';
 import FounderStatements from '@/components/founder/FounderStatements/FounderStatements';
 import FounderJourney from '@/components/founder/FounderJourney/FounderJourney';
-import FounderTeam from '@/components/founder/FounderTeam/FounderTeam';
 import FounderRecognition from '@/components/founder/FounderRecognition/FounderRecognition';
 import FounderDevices from '@/components/founder/FounderDevices/FounderDevices';
 import FounderTestimonials from '@/components/founder/FounderTestimonials/FounderTestimonials';
 import FounderFaqs from '@/components/founder/FounderFaqs/FounderFaqs';
-
+import FooterForm from '../../components/FooterForm';
 import RouteLayout from '@/components/RouteLayout';
 
 export const metadata = {
@@ -29,11 +28,11 @@ export default function FounderPage() {
         <FounderStats />
         <FounderStatements />
         <FounderJourney />
-        <FounderTeam />
         <FounderRecognition />
         <FounderDevices />
         <FounderTestimonials />
         <FounderFaqs />
+        <FooterForm />
       </main>
     </RouteLayout>
   );

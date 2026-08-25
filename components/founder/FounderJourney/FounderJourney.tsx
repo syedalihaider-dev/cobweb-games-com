@@ -5,15 +5,16 @@ import Image from 'next/image';
 import styles from './FounderJourney.module.css';
 
 const journeyData = [
-  { id: 1, year: '2022', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2022.' },
-  { id: 2, year: '2023', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2023.' },
-  { id: 3, year: '2024', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2024.' },
-  { id: 4, year: '2025', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2025.' },
-  { id: 5, year: '2009', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry' },
-  { id: 6, year: '2012', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2012.' },
-  { id: 7, year: '2015', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2015.' },
-  { id: 8, year: '2017', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2017.' },
-  { id: 9, year: '2018', content: 'Aquamare Marine was established in Plymouth, UK, providing sales and support to the marine industry in 2018.' },
+  { id: 1, year: '2017', content: 'Founded with a vision to build exceptional games and create a studio driven by creativity and innovation.' },
+  { id: 2, year: '2018', content: 'Grew the team, expanded the project portfolio, and began establishing a strong presence in the industry.' },
+  { id: 3, year: '2019', content: 'Took on larger projects and built long-term relationships with clients and creative partners.' },
+  { id: 4, year: '2020', content: 'Scaled operations, strengthened production, and expanded into increasingly ambitious game projects.' },
+  { id: 5, year: '2021', content: 'Expanded globally, reaching new markets and taking on more complex cross-platform projects.' },
+  { id: 6, year: '2022', content: 'Entered a major growth phase, expanding the team, capabilities, and international client base.' },
+  { id: 7, year: '2023', content: 'Built a strong track record of delivering high-quality games for studios, publishers, and brands worldwide.' },
+  { id: 8, year: '2024', content: 'Scaled further with larger productions, stronger partnerships, and an increasingly global footprint.' },
+  { id: 9, year: '2025', content: 'Reached new levels of scale, experience, and production maturity across the gaming industry.' },
+  { id: 10, year: '2026', content: 'Nine years of growth, hundreds of creative challenges, and a proven track record have shaped a leading game development partner.' },
 ];
 
 /* 
@@ -21,8 +22,8 @@ const journeyData = [
  * Each year is rotated from center. Angles spread evenly from -50deg to +50deg.
  * Edge years (2022, 2018) fade out as they go off-screen.
  */
-const arcAngles = [-50, -37.5, -25, -12.5, 0, 12.5, 25, 37.5, 50];
-const arcOpacities = [0.25, 0.55, 0.85, 1, 1, 1, 0.85, 0.55, 0.25];
+const arcAngles = [-50, -38.9, -27.8, -16.7, -5.6, 5.6, 16.7, 27.8, 38.9, 50];
+const arcOpacities = [0.25, 0.45, 0.7, 0.9, 1, 1, 0.9, 0.7, 0.45, 0.25];
 
 const FounderJourney = () => {
   const [activeId, setActiveId] = useState(5);

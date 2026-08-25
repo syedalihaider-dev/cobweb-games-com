@@ -15,44 +15,44 @@ type Recognition = {
 
 const recognitions: Recognition[] = [
   {
-    year: '2024',
-    image: '/assets/images/founder/outlook-busniess.png',
+    year: '2022',
+    image: '/assets/images/founder/goodfirms.png',
     imageWidth: 253,
     imageHeight: 38,
     alt: 'Outlook Business Spotlight recognition',
-    description: 'Recognised by Outlook Business for our impact and innovation.',
+    description: 'Top Game Development Company | Goodfirms ',
   },
   {
-    year: '2024',
-    image: '/assets/images/founder/Group 104267.png',
+    year: '2023',
+    image: '/assets/images/founder/devlopers.png',
     imageWidth: 268,
     imageHeight: 145,
     alt: 'India CSR Award',
-    description: 'Honoured for making a meaningful impact through exceptional work.',
+    description: 'Top Mobile Game Developers | Top Developers',
   },
   {
-    year: '2026',
-    image: '/assets/images/founder/india-times.png',
+    year: '2024',
+    image: '/assets/images/founder/clutuch.png',
     imageWidth: 267,
     imageHeight: 250,
     alt: "TIME India's Fastest-Growing Companies 2026",
-    description: "The India's Fastest-Growing Companies 2026 Recognised by TIME and Statista",
-  },
-  {
-    year: '2026',
-    image: '/assets/images/founder/financial-times.png',
-    imageWidth: 252,
-    imageHeight: 115,
-    alt: 'Financial Times High-Growth Companies Asia-Pacific 2026',
-    description: 'Named among Asia-Pacific’s high-growth companies by the Financial Times.',
+    description: "Top Mobile Game Developers | Clutch ",
   },
   {
     year: '2025',
-    image: '/assets/images/founder/et-industry.png',
+    image: '/assets/images/founder/reviewer.png',
+    imageWidth: 252,
+    imageHeight: 115,
+    alt: 'Financial Times High-Growth Companies Asia-Pacific 2026',
+    description: 'Top Game Developers | Techreviewer',
+  },
+  {
+    year: '2026',
+    image: '/assets/images/founder/futura.png',
     imageWidth: 282,
     imageHeight: 56,
     alt: 'ET Industry Change Maker recognition',
-    description: 'Celebrated as an industry change maker for forward-thinking digital work.',
+    description: 'Top App Development Company | Futura',
   },
 ];
 
@@ -139,11 +139,11 @@ export default function FounderRecognition() {
         <div className="row justify-content-center">
           <div className="col-lg-10 col-xl-9 text-center">
             <h2 id="recognition-title" className={styles.heading}>
-              <span className={styles.outlineText}>RECOGNITION ROOTED</span>
-              <span className={styles.solidText}>IN RESULTS</span>
+              <span className={styles.outlineText}>Recognition That </span>
+              <span className={styles.solidText}>Speaks for Itself</span>
             </h2>
             <p className={styles.introduction}>
-              Every award we receive is a testament to our commitment to excellence. These honors confirm that our work makes a real difference and push us to raise the bar again. They remind us that trust is earned one project at a time.
+              The work has been recognised for the creativity, craft, and technical excellence behind every project. From innovative game experiences to standout visual production, these awards reflect a commitment to pushing the standard and creating work that gets noticed.
             </p>
           </div>
         </div>

@@ -12,9 +12,9 @@ const FounderHero = () => {
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className={styles.textContent}>
               <h1 className={styles.mainTitle}>
-                <span className={styles.solidText}>WHERE IT</span>
+                <span className={styles.solidText}>Top-Rated</span>
                 <br />
-                <span className={styles.outlineText}>ALL BEGAN</span>
+                <span className={styles.outlineText}>Game Development Company</span>
               </h1>
               <ul className="btn-wrap d-flex align-items-center">
                 <li>
@@ -28,9 +28,9 @@ const FounderHero = () => {
           </div>
           <div className="col-lg-6 col-md-12 pb-lg-3">
             <div className={styles.rightContent}>
-              <h3 className={styles.subTitle}>We are Brand Vision.</h3>
+              <h3 className={styles.subTitle}>Proven Gaming Talent</h3>
               <p className={styles.description}>
-                Cobweb Games is an award-winning branding, web design, and digital consultancy, strengthening identities and digital presence.
+                We have the proven talent and production capabilities to deliver high-quality games.
               </p>
             </div>
           </div>

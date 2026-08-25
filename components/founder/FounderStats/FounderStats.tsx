@@ -11,14 +11,11 @@ const FounderStats = () => {
           <div className="container">
             <h3 className={styles.mainText}>
               <span className={styles.solidText}>
-                We are a digital engineering powerhouse trusted by<br />
-                enterprise & Fortune 500s to transform their boldest visions into
+                We build experiences that look great, play better, and perform reliably. 
+
               </span>
               <br />
-              <span className={styles.outlineText}>
-                market-leading realities. Armed with top-tier talent, deep AI expertise<br />
-                and battle-tested frameworks, we don't just build solutions-we<br />
-                architect competitive advantages that scale.
+              <span className={styles.outlineText}> From game design and development to art, optimisation, and deployment, every stage is handled with the technical depth and production expertise needed to bring ambitious ideas to life.
               </span>
             </h3>
           </div>
@@ -31,9 +28,9 @@ const FounderStats = () => {
               <div className={`${styles.gridBox} ${styles.borderRight} ${styles.borderBottom}`}>
                 <div className={styles.statItem}>
                   <h2 className={`${styles.statNumber} ${styles.textPurple}`}>
-                    <Counter end={35} />+
+                    <Counter end={50} />+
                   </h2>
-                  <p className={styles.statLabel}>INDUSTRIES MASTERED</p>
+                  <p className={styles.statLabel}>Games Developed</p>
                 </div>
               </div>
             </div>
@@ -42,9 +39,9 @@ const FounderStats = () => {
               <div className={`${styles.gridBox} ${styles.borderRight} ${styles.borderBottom}`}>
                 <div className={styles.statItem}>
                   <h2 className={`${styles.statNumber} ${styles.textGreen}`}>
-                    <Counter end={15} />+
+                    <Counter end={10} />+
                   </h2>
-                  <p className={styles.statLabel}>GLOBAL RECOGNITIONS<br />AND AWARDS</p>
+                  <p className={styles.statLabel}>Years <br />Experience</p>
                 </div>
               </div>
             </div>
@@ -72,9 +69,9 @@ const FounderStats = () => {
               <div className={`${styles.gridBox} ${styles.borderRight}`}>
                 <div className={styles.statItem}>
                   <h2 className={`${styles.statNumber} ${styles.textPurple}`}>
-                    <Counter end={70} />+
+                    <Counter end={30} />+
                   </h2>
-                  <p className={styles.statLabel}>COUNTRIES POWERED<br />BY TECH INNOVATION</p>
+                  <p className={styles.statLabel}>Global<br />Clients</p>
                 </div>
               </div>
             </div>
@@ -83,9 +80,9 @@ const FounderStats = () => {
               <div className={`${styles.gridBox} ${styles.borderRight}`}>
                 <div className={styles.statItem}>
                   <h2 className={`${styles.statNumber} ${styles.textGreen}`}>
-                    <Counter end={5} />+
+                    <Counter end={15} />+
                   </h2>
-                  <p className={styles.statLabel}>GLOBAL EXCELLENCE<br />CENTERS</p>
+                  <p className={styles.statLabel}>Platforms</p>
                 </div>
               </div>
             </div>
@@ -94,9 +91,9 @@ const FounderStats = () => {
               <div className={styles.gridBox}>
                 <div className={styles.statItem}>
                   <h2 className={`${styles.statNumber} ${styles.textPurple}`}>
-                    <Counter end={1400} />+
+                    <Counter end={10} />M+
                   </h2>
-                  <p className={styles.statLabel}>ENGINEERS, DESIGNERS<br />& ARTISTS</p>
+                  <p className={styles.statLabel}>Players <br />Reached</p>
                 </div>
               </div>
             </div>
