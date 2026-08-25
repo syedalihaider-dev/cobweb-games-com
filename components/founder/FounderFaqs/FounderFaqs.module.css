@@ -123,6 +123,7 @@
 .section :global(.marquee) {
   margin: 66px -12px -5px;
   padding-top: 17px;
+  display:none;
 }
 
 @media (max-width: 1399px) {

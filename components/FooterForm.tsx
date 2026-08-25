@@ -57,6 +57,21 @@ const defaultBadges = [
     height: 213,
     alt: 'Good Firms',
     link: 'https://www.goodfirms.co/company/cobweb-games'
+  },
+  {
+    src: '/assets/images/clutch.png',
+    width: 382,
+    height: 99,
+    alt: 'Clutch',
+    link: 'https://clutch.co/profile/cobweb-games#reviews',
+    label: 'Clutch'
+  },
+  {
+    src: '/assets/images/thumbtack.png',
+    width: 548,
+    height: 213,
+    alt: 'Thumbtack',
+    link: 'https://www.thumbtack.com/ny/springfield-gardens/freelance-web-designers/cobweb-games-mobile-app-game-dev-company/service/578864202924269574?utm_medium=web&utm_source=txt&surface=sp'
   }
 ];
 

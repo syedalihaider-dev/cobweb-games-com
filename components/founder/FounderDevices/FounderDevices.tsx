@@ -114,8 +114,8 @@ export default function FounderDevices() {
         <div className="row justify-content-center text-center mb-5">
           <div className="col-lg-10 col-xl-10">
             <h2 className={styles.mainTitle}>
-              <span className={styles.outlineText}>Games Built </span>
-              <span className={styles.solidText}>for Every Platform</span>
+              <span className={styles.outlineText}>PLATFORMS </span>
+              <span className={styles.solidText}>Key Devices We Develop Games For</span>
             </h2>
             <p className={styles.subtext}>
               From mobile and tablet to PC and console, our games are built to deliver a smooth, engaging experience across the devices players use every day. Each build is optimised for its platform, balancing performance, visuals, controls, and gameplay.

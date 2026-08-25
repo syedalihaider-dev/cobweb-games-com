@@ -44,7 +44,7 @@ const FounderStatements = () => {
                 />
               </div>
               <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>COBWEB MISSION</h3>
+                <h3 className={styles.cardTitle}>MISSION</h3>
                 <div className={styles.titleDivider}></div>
                 <p className={styles.cardDescription}>
                   Our mission is to consistently understand client needs and industry trends, utilizing our gaming expertise to meaningfully connect people through innovative & next-gen gaming experiences.
@@ -66,7 +66,7 @@ const FounderStatements = () => {
                 />
               </div>
               <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>COBWEB VISION</h3>
+                <h3 className={styles.cardTitle}>VISION</h3>
                 <div className={styles.titleDivider}></div>
                 <p className={styles.cardDescription}>
                   Our vision is to build a reputation as a trusted gaming advisor and game development agency, consistently delivering value through games that outlast innovation, creativity and impact.

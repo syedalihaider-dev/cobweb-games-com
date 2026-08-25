@@ -113,11 +113,21 @@ const FounderJourney = () => {
       {/* Marquee */}
       <div className={styles.marqueeContainer}>
         <div className={styles.marqueeTrack}>
-          {[...Array(12)].map((_, i) => (
-            <span key={i} className={styles.marqueeItem}>
-              COBWEB&nbsp;&nbsp;<span className={styles.marqueeStar}>*</span>&nbsp;&nbsp;
-            </span>
-          ))}
+          {[
+            'End-to-End Development',
+            'Faster Time-To-Market',
+            'Cross-Platform Expertise',
+            'Scalable Game Solutions',
+            'Launch-Ready Games',
+          ].flatMap((item, index, arr) => [
+            <span key={`${item}-${index}`} className={styles.marqueeItem}>
+              {item}
+            </span>,
+            <span key={`${item}-star-${index}`} className={styles.marqueeStar} aria-hidden="true">
+              *
+            </span>,
+            ...(index === arr.length - 1 ? [] : []),
+          ])}
         </div>
       </div>
     </section>

@@ -230,6 +230,8 @@
 
 .marqueeStar {
   display: inline-block;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 @keyframes scroll {
