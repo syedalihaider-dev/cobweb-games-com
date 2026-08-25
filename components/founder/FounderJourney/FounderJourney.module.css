@@ -84,11 +84,12 @@
  */
 .arcCircle {
   border: 1px solid #ffffff1f;
-    border-radius: 50%;
-    width: 1900px;
-    height: 2050px;
-    margin: 100px auto -1840px;
-    position: relative;
+  border-radius: 50%;
+  width: 1900px;
+  height: 2050px;
+  margin: 100px auto -1840px;
+  position: relative;
+  z-index: 4;
 }
 
 /*
@@ -100,7 +101,8 @@
   top: -60px;
   left: 50%;
   width: 0;
-  height: 47%;            /* reaches from edge to centre */
+  height: 47%;
+  /* reaches from edge to centre */
   transform-origin: bottom center;
 }
 
@@ -187,6 +189,7 @@
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -233,6 +236,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -241,46 +245,68 @@
 /* ===========================
    Responsive
    =========================== */
-
-@media (max-width: 1600px) {
+@media (max-width: 1800px) {
   .arcCircle {
-    width: 2000px;
-    height: 2000px;
-    margin-bottom: -1700px;
+    width: 1600px;
+    height: 1750px;
+    margin: 170px auto -1660px;
   }
 }
 
-@media (max-width: 1400px) {
+
+@media (max-width: 1599px) {
+  .arcCircle {
+    width: 1450px;
+    height: 1624px;
+    margin-bottom: -1520px;
+    margin-top: 160px;
+  }
+
+  .yearSlot {
+    top: -59px;
+    left: 49%;
+  }
+}
+
+@media (max-width: 1399px) {
+
   .outlineText,
   .solidText {
     font-size: 48px;
   }
+
   .arcCircle {
-    width: 1800px;
-    height: 1800px;
-    margin-bottom: -1520px;
+    width: 1420px;
+    height: 1464px;
+    margin-bottom: -1350px;
   }
+
   .yearLabel {
     font-size: 42px;
   }
 }
 
 @media (max-width: 1199px) {
+
   .outlineText,
   .solidText {
     font-size: 38px;
   }
+
   .arcCircle {
     width: 1500px;
     height: 1500px;
     margin-bottom: -1250px;
   }
+
   .yearLabel {
     font-size: 36px;
   }
+
   .journeyPara {
     font-size: 20px;
   }
+
   .marqueeItem {
     font-size: 48px;
   }
@@ -290,37 +316,46 @@
   .journeySection {
     padding-top: 70px;
   }
+
   .outlineText,
   .solidText {
     font-size: 30px;
   }
+
   .arcCircle {
     width: 1200px;
     height: 1200px;
     margin-bottom: -980px;
   }
+
   .yearLabel {
     font-size: 28px;
     margin-bottom: 8px;
   }
+
   .yearDot {
     width: 10px;
     height: 10px;
   }
+
   .dotActive {
     width: 14px;
     height: 14px;
   }
+
   .journeyPara {
     font-size: 18px;
   }
+
   .marqueeItem {
     font-size: 36px;
   }
+
   .logoVectorWrapper {
     width: 280px;
     height: 280px;
   }
+
   .contentArea {
     margin-top: 30px;
   }
@@ -330,79 +365,97 @@
   .journeySection {
     padding-top: 50px;
   }
+
   .outlineText,
   .solidText {
     font-size: 24px;
   }
+
   .arcCircle {
     width: 900px;
     height: 900px;
     margin-bottom: -700px;
     margin-top: -30px;
   }
+
   .yearLabel {
     font-size: 22px;
     margin-bottom: 6px;
   }
+
   .yearDot {
     width: 8px;
     height: 8px;
   }
+
   .dotActive {
     width: 12px;
     height: 12px;
   }
+
   .journeyPara {
     font-size: 16px;
   }
+
   .marqueeItem {
     font-size: 28px;
     padding: 0 12px;
   }
+
   .logoVectorWrapper {
     width: 200px;
     height: 200px;
     top: 20px;
     left: -40px;
   }
+
   .arcArea {
     padding-bottom: 60px;
   }
+
   .contentArea {
     margin-top: 20px;
   }
 }
 
 @media (max-width: 575px) {
+
   .outlineText,
   .solidText {
     font-size: 20px;
   }
+
   .arcCircle {
     width: 700px;
     height: 700px;
     margin-bottom: -530px;
     margin-top: -20px;
   }
+
   .yearLabel {
     font-size: 16px;
     margin-bottom: 4px;
   }
+
   .yearDot {
     width: 6px;
     height: 6px;
   }
+
   .dotActive {
     width: 10px;
     height: 10px;
   }
+
   .journeyPara {
     font-size: 14px;
   }
+
   .marqueeItem {
     font-size: 22px;
     padding: 0 10px;
   }
+
   .arcArea {
     margin-top: 30px;
     padding-bottom: 40px;
@@ -410,18 +463,22 @@
 }
 
 @media (max-width: 375px) {
+
   .outlineText,
   .solidText {
     font-size: 17px;
   }
+
   .arcCircle {
     width: 600px;
     height: 600px;
     margin-bottom: -440px;
   }
+
   .yearLabel {
     font-size: 14px;
   }
+
   .marqueeItem {
     font-size: 18px;
   }
