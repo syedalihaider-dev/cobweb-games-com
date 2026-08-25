@@ -28,10 +28,10 @@ const recognitions: Recognition[] = [
     imageWidth: 268,
     imageHeight: 145,
     alt: 'India CSR Award',
-    description: 'Top Mobile Game Developers | Top Developers',
+    description: 'Top Mobile Game Developers | Top Developers ',
   },
   {
-    year: '2024',
+    year: '2025',
     image: '/assets/images/founder/clutuch.png',
     imageWidth: 267,
     imageHeight: 250,
@@ -39,7 +39,7 @@ const recognitions: Recognition[] = [
     description: "Top Mobile Game Developers | Clutch ",
   },
   {
-    year: '2025',
+    year: '2021',
     image: '/assets/images/founder/reviewer.png',
     imageWidth: 252,
     imageHeight: 115,
@@ -47,12 +47,12 @@ const recognitions: Recognition[] = [
     description: 'Top Game Developers | Techreviewer',
   },
   {
-    year: '2026',
-    image: '/assets/images/founder/futura.png',
+    year: '2025',
+    image: '/assets/images/founder/clutch-app.png',
     imageWidth: 282,
     imageHeight: 56,
     alt: 'ET Industry Change Maker recognition',
-    description: 'Top App Development Company | Futura',
+    description: 'Top App Development Company | Clutch',
   },
 ];
 
