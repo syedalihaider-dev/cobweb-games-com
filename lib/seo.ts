@@ -167,8 +167,8 @@ export const PAGE_SEO: Record<string, { title: string; description: string }> = 
     description: ' Need an environment design that makes players believe in the world before they enter it? Cobweb Games builds game environment concept art, visual development, and world-building documentation for any genre.',
   },
   '/game-animation': {
-    title: 'Game Animation | Cob Web',
-    description: 'Game Animation',
+    title: 'Game Animation Services | 2D and 3D Studio | Cobweb Games',
+    description: 'Game animation services engineered for engines, not showreels. 2D, 3D, character, cinematic, VFX, and mocap. Hire game animators who know how immersive visuals work.',
   },
   '/game-art': {
     title: 'Game Art | Cob Web',

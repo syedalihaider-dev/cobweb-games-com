@@ -12,6 +12,17 @@ import FooterForm from '../../components/FooterForm';
 import LiveChatButton from '@/components/LiveChatButton';
 import Link from 'next/link';
 
+const gameAnimationFaqs = [
+  ['How much do game animation services cost?', 'Simple 2D cycle sets start around $2,000 to $8,000. Full 3D character animation libraries run $10,000 to $60,000 depending on move count and fidelity. Cinematics and trailers get quoted per second of final footage, since that is what actually drives the cost.'],
+  ['Do you handle both 2D and 3D game animation?', 'Yes, under one roof. Your 2D sprite and rig-based animation and your full 3D character, creature, and cinematic work run through the same pipeline, which matters the moment your game or your marketing needs both to visually match.'],
+  ['Can I hire game animators for an ongoing project?', 'Yes. Game animators for hire through Cobweb can embed with your team on a dedicated or retainer basis, following a quick audit of your existing rigs and pipeline so nobody spends week one guessing at your conventions.'],
+  ['Which engines do you animate for?', 'Unity and Unreal Engine primarily, covering Mecanim, Animation Blueprints, Control Rig, and Sequencer. You get deliverables in engine-native formats, tested inside your actual build, never just inside the animation software.'],
+  ['Do you work with motion capture?', 'Yes. We provide motion capture animation services for games including capture cleanup, retargeting, and polish passes. Raw mocap always needs a human hand afterward, and that polish stage is where most of the real quality actually comes from.'],
+  ['Can you animate characters you did not originally design?', 'Yes. We regularly animate client-supplied characters after a technical review of the rig and topology. If your existing rig will fight the animation you need, we flag it honestly and fix it before a single keyframe gets set.'],
+  ['What does a game animation outsourcing engagement actually look like?', 'You get a small pilot batch first, a few clips to confirm style match, communication rhythm, and pipeline fit. Then milestone-based production with structured feedback rounds. Most clients start with one character set and scale from there once trust is established.'],
+  ['Do you produce game trailers too?', 'Yes. Full game trailer production services from script and storyboard through animation, edit, and final render. Trailers built by the same team that animates your game hold a visual consistency that stitched-together vendor work never quite manages to match.'],
+].map(([question, answer], index) => ({ id: index + 1, question, answer }));
+
 export default function GameAnimation() {
   useEffect(() => {
     let slickTimer: NodeJS.Timeout;
@@ -88,9 +99,9 @@ export default function GameAnimation() {
         <div className="container align-self-center">
           <div className="row">
             <div className="col-lg-6">
-              <h5>Game Animation</h5>
-              <h1>Game <b>Animation</b></h1>
-              <p>We offer end-to-end game art production services ranging from casual 2D characters to breathtaking 3D environments, masterfully crafted to convey your game vision.</p>
+              <h5>Top Rated Game Animation Studio</h5>
+              <h1>Game Animation Services Built for the Engine, <b>Not the Reel.</b></h1>
+              <p>Your characters deserve rigs that survive combat, cinematics that sell the moment, and clips that import clean the first time. Cobweb Games delivers game animation services for studios and founders who need motion that actually performs inside Unity or Unreal, not just inside a showreel.</p>
               <ul className="btn-wrap d-flex align-items-center mt-4">
                 <li>
                   <Link href="/contact-us" className="btn-size btn-purple popup">Get Started</Link>
@@ -136,8 +147,8 @@ export default function GameAnimation() {
               </figure>
             </div>
             <div className="col-lg-6">
-              <h2 className="main-heading">Game Art And <strong className="c-green">Design</strong> <b>Services</b></h2>
-              <p>Starloop Studios has end-to-end art support with multiple game art solutions to back the project on all production stages, securing synergy between teams and completing milestones on time and budget. <br /><br /> WeÃ¢â‚¬â„¢re driven by our passion for gaming and our understanding of how great games should sound, feel, and look.</p>
+              <h2 className="main-heading">A Game Animation Studio That Gets Judged Inside the Build.</h2>
+              <p>Send us a character, and you get back a rig built for your actual animation state machine, weight painting, joint limits, and blend-ready clips that hold up under real gameplay, not just in a turntable render. Rigging, animation, and engine integration all run through the same pipeline here, so what looks right in review still looks right at sixty frames per second in your build. <br /><br /> Cobweb Games works as your game animation outsourcing company for indie developers, AA studios, and publishers who need video game animation services at production scale, not a single freelancer juggling three other clients on the side. One team, one pipeline, and every clip formatted for Unity or Unreal before you ever have to ask.</p>
             </div>
           </div>
         </div>
@@ -160,7 +171,7 @@ export default function GameAnimation() {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h4>Categories</h4>
-              <h2 className="main-heading">Our Game <b className="c-green">Animations</b> <br /> Categories</h2>
+              <h2 className="main-heading">Video Game <b className="c-green">Animations</b> Services for Every Frame Immersion.</h2>
             </div>
           </div>
           <div className="row mob-slider">
@@ -172,7 +183,7 @@ export default function GameAnimation() {
                   </div>
                   <div className="content">
                     <h3>2D Animation</h3>
-                    <p>We bring your game&apos;s story characters to life with vibrant, expressive 2D visuals. We craft every frame with attention, ensuring smooth, engaging game animations that will make your game stand out.</p>
+                    <p>Get <Link href="/2d-animation">2D game animation services</Link> covering movement cycles, attack sequences, idles, and the transition frames that decide whether motion reads as fluid or mechanical. As a 2D game animation company, we hand back correctly packed sprite sheets built to the exact atlas specs your engine expects.</p>
                   </div>
                 </div>
               </div>
@@ -185,7 +196,7 @@ export default function GameAnimation() {
                   </div>
                   <div className="content">
                     <h3>3D Animation</h3>
-                    <p>Step into the realm of three-dimensional excellence. Our 3D game animator specialists create engaging, realistic experiences, enhancing your game with detailed character movements and dynamic environments.</p>
+                    <p>Get 3D game animation services engineered for the animation state machine: weight painting, joint limits, and blend-ready clips that move like living things instead of a glitchy mess of vertices. A 3D game animation company that has actually shipped, and the rigs prove it on delivery.</p>
                   </div>
                 </div>
               </div>
@@ -198,7 +209,7 @@ export default function GameAnimation() {
                   </div>
                   <div className="content">
                     <h3>Character Animation</h3>
-                    <p>Characters are the heart of your game. Therefore, we focus on making every game character alive, infusing each model with depth so that every movement and expression feels authentic and alive.</p>
+                    <p>Get game character animation services covering dialogue performance, combat systems, and the secondary motion that makes a character look inhabited instead of operated by remote control. Every clip is built to loop, blend, and interrupt cleanly the moment your player takes control back.</p>
                   </div>
                 </div>
               </div>
@@ -210,8 +221,8 @@ export default function GameAnimation() {
                     <Image className="lazy" src="/assets/images/game-animation/environment-animation.webp" alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>Game Trailers and NFT Game Teasers</h3>
-                    <p>Create hype around your game before it is released with our game trailers and NFT game teasers. We create compelling previews that highlight your game&apos;s best features, stirring anticipation among target audience.</p>
+                    <h3>Cinematic and Cutscene Animation</h3>
+                    <p>Get game cinematic animation services and game cutscene animation services that hold the quality bar your gameplay already set. Story beats staged, lit, and animated to land emotionally without a single dropped frame breaking the spell.</p>
                   </div>
                 </div>
               </div>
@@ -223,8 +234,8 @@ export default function GameAnimation() {
                     <Image className="lazy" src="/assets/images/game-animation/props-animation.webp" alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>AR/VR Animation</h3>
-                    <p>Reveal the full gaming potential of AR/VR with our top-notch game animation. We enhance the interactive AR/VR feature with advanced visuals that immerse players deeper into virtual dimensions.</p>
+                    <h3>VFX Animation</h3>
+                    <p>Get game VFX animation services from impact hits to full spellwork: particles, shaders, and timing tuned so every strike feels like it actually costs the target something. Spectacle that reinforces gameplay clarity instead of burying it under noise.</p>
                   </div>
                 </div>
               </div>
@@ -236,8 +247,34 @@ export default function GameAnimation() {
                     <Image className="lazy" src="/assets/images/game-animation/slot-machine-animation.webp" alt="*" width={356} height={225} />
                   </div>
                   <div className="content">
-                    <h3>VFX Animation</h3>
-                    <p>Our VFX animation services add a layer of polish and spectacle to your game. From cool effects to epic visual feast, we ensure every scene is visually stunning and memorable.</p>
+                    <h3>Trailer Animation and Production</h3>
+                    <p>Get a game trailer animation company embedded inside your animation partner. Announcement teasers, launch trailers, and store-page video built to sell the feeling of playing your game. Full game trailer production services from script through final render, no separate vendor required.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="box-wrap">
+                <div className="child-box">
+                  <div className="img-wrap">
+                    <Image className="lazy" src="/assets/images/game-animation/slot-machine-animation.webp" alt="*" width={356} height={225} />
+                  </div>
+                  <div className="content">
+                    <h3>Sprite and Cycle Animation</h3>
+                    <p>Get sprite animation services and game cycle animation services covering walk, run, idle, and the full movement library your character needs to exist believably in real time. Delivered pivot-correct, properly sized, and production-ready on the first pass.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="box-wrap">
+                <div className="child-box">
+                  <div className="img-wrap">
+                    <Image className="lazy" src="/assets/images/game-animation/slot-machine-animation.webp" alt="*" width={356} height={225} />
+                  </div>
+                  <div className="content">
+                    <h3>Motion Capture Animation</h3>
+                    <p>Get motion capture animation services for games that need human weight and nuance at scale: capture cleanup, retargeting, and hand-polished passes that keep raw mocap data from looking like raw mocap data on screen.</p>
                   </div>
                 </div>
               </div>
@@ -246,7 +283,7 @@ export default function GameAnimation() {
         </div>
       </section>
 
-      <CtaTwo />
+      <CtaTwo heading={'Reimagine Your Characters To A New <b class="c-green">Playable Reality.</b>'} description="Tell us the style, the engine, and the deadline, and we will tell you exactly what it takes to ship it, whether you need to hire game animator support for a single character or bring on a dedicated game animator for hire across an entire production." />
 
       <section className="inner-portfolio mb-5">
         <div className="container">
@@ -319,7 +356,7 @@ export default function GameAnimation() {
         <div className="pb-5"></div>
       </section>
 
-      <Platform />
+      <Platform heading="Key Devices &amp; Platforms" highlightText=" We Animate Games" subheading=" For." platforms={[{ title: 'PC Game', description: 'High-fidelity animation with scalable LOD systems tuned to the full hardware range your PC players actually run.', image: '/assets/images/h-sec-4-img-01.webp', width: 352, height: 359 }, { title: 'VR Game', description: 'Comfort-calibrated motion for Quest, Vive, Valve Index, and PS VR, where a dropped frame is a health issue, never just a footnote.', image: '/assets/images/h-sec-4-img-02.webp', width: 353, height: 360 }, { title: 'Mobile Game', description: 'Bone-count-disciplined animation that stays smooth on the mid-range device your median player actually owns, battery included.', image: '/assets/images/h-sec-4-img-03.webp', width: 354, height: 359 }]} />
 
       <section className="services-slider-sec next-image-background-host" >
         <Image className="next-image-background" src="/assets/images/game-art/services-bg.webp" alt="" fill sizes="100vw" />
@@ -339,7 +376,7 @@ export default function GameAnimation() {
                   <div className="item-wrap">
                     <div className="content">
                       <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
+                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
                     </div>
                   </div>
                 </li>
@@ -347,7 +384,7 @@ export default function GameAnimation() {
                   <div className="item-wrap">
                     <div className="content">
                       <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
+                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
                     </div>
                   </div>
                 </li>
@@ -355,7 +392,7 @@ export default function GameAnimation() {
                   <div className="item-wrap">
                     <div className="content">
                       <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
+                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
                     </div>
                   </div>
                 </li>
@@ -363,7 +400,7 @@ export default function GameAnimation() {
                   <div className="item-wrap">
                     <div className="content">
                       <h4>Bespoke 2D Character Design</h4>
-                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃ¢â‚¬â„¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
+                      <p>Are you confused about what the heck your analytics are telling you? Not sure if youÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢re actually can help decode your data for you. <br /><br /> Working with Numerique Digital with the digital presence.</p>
                     </div>
                   </div>
                 </li>
@@ -382,7 +419,7 @@ export default function GameAnimation() {
 
       <Technologies />
       <Reviews />
-      <Faqs />
+      <Faqs faqs={gameAnimationFaqs} />
       <FooterForm />
     </div>
   );
