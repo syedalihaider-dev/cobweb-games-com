@@ -61,7 +61,7 @@ const FounderJourney = () => {
         <div className="row justify-content-center">
           <div className="col-12 text-center">
             <h2 className={styles.mainHeading}>
-              <span className={styles.outlineText}>A Journey of Game Development, Growth and Innovation</span>
+              <span className={styles.outlineText}>A Journey of Game Development, Growth gand Innovation</span>
               <span className={styles.solidText}>EXCEPTIONAL RESULTS</span>
             </h2>
           </div>
