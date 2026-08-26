@@ -5,10 +5,10 @@ export function proxy(request) {
     .split(":")[0]
     .toLowerCase();
 
-  if (hostname === "cobwebgames.vercel.app") {
+  if (hostname === "cobweb-games-com.vercel.app") {
     const response = NextResponse.next();
 
-    response.headers.set("X-Robots-Tag", "noindex");
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
 
     return response;
   }
