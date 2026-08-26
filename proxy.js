@@ -1,15 +1,12 @@
 import { NextResponse } from "next/server";
 
 function proxy(request) {
-  const hostname = new URL(request.url).hostname;
+  const hostname = new URL(request.url).hostname.toLowerCase();
 
   if (hostname === "cobwebgames.vercel.app") {
     const response = NextResponse.next();
 
-    response.headers.set(
-      "X-Robots-Tag",
-      "noindex, nofollow"
-    );
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
 
     return response;
   }
