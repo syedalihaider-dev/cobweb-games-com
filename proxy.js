@@ -8,7 +8,7 @@ export function proxy(request) {
   if (hostname === "cobwebgames.vercel.app") {
     const response = NextResponse.next();
 
-    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+    response.headers.set("X-Robots-Tag", "noindex");
 
     return response;
   }
