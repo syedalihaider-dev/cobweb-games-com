@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 
-function proxy(request) {
-  const hostname = new URL(request.url).hostname.toLowerCase();
+export function proxy(request) {
+  const hostname = (request.headers.get("host") ?? new URL(request.url).host)
+    .split(":")[0]
+    .toLowerCase();
 
   if (hostname === "cobwebgames.vercel.app") {
     const response = NextResponse.next();
@@ -13,8 +15,6 @@ function proxy(request) {
 
   return NextResponse.next();
 }
-
-export default proxy;
 
 export const config = {
   matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
