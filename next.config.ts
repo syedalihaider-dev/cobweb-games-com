@@ -10,6 +10,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  async redirects() {
+    return [
+      // =========================
+      // Blog Subdomain Redirects (301)
+      // =========================
+      {
+        source: "/animation-service",
+        has: [
+          {
+            type: "host",
+            value: "blog.cobwebgames.com",
+          },
+        ],
+        destination: "https://www.cobwebgames.com/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
