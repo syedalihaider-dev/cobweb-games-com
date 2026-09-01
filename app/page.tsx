@@ -98,7 +98,7 @@ export default function Home() {
               <div className={`content ${styles.heroContent}`}>
                 <span className='hero-span'>Cobweb Games</span>
                 <h1 className={styles.heroHeading}>Game <b>Development </b>& Art Studio in the USA.</h1>
-                <p className={styles.heroDescription}>Bad game studios ship renders. Good ones ship games. We are a USA-based game development company and game art studio for indie developers, AA studios, and gaming brands that need production that actually reaches the end screen. Game art services, game animation, and full-cycle development on Unity and Unreal Engine. Assets built for the build, not the portfolio. Code written for the platform, not the demoooo. </p>
+                <p className={styles.heroDescription}>Bad game studios ship renders. Good ones ship games. We are a USA-based game development company and game art studio for indie developers, AA studios, and gaming brands that need production that actually reaches the end screen. Game art services, game animation, and full-cycle development on Unity and Unreal Engine. Assets built for the build, not the portfolio. Code written for the platform, not the demoo. </p>
                 <ul className="btn-wrap d-flex align-items-center">
                   <li>
                     <Link href="/contact-us" className="btn-size btn-purple popup">Get Started</Link>

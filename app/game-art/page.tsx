@@ -265,7 +265,7 @@ export default function GameArt() {
                     <Image src="/assets/images/game-art/art-img-01.webp" alt="*" width={600} height={338} />
                   </figure>
                   <h3>2D Art</h3>
-                  <p>Our 2D art service offers a rich blend of creativity and precision, tailored to bring
+                  <p>Our <Link href="/2d-art">2D art service</Link> offers a rich blend of creativity and precision, tailored to bring
                     your concepts to life with vibrant visuals and captivating designs. From concept
                     sketches to polished illustrations, we deliver high-quality 2D art assets for various
                     purposes, ensuring seamless integration into your projects.</p>
@@ -279,8 +279,9 @@ export default function GameArt() {
                     <Image src="/assets/images/game-art/art-img-02.webp" alt="*" width={600} height={338} />
                   </figure>
                   <h3>Environment Design</h3>
-                  <p>By seamlessly blending artistic vision with technical expertise, we deliver environment
-                    designs that perfectly balance aesthetics and functionality, ensuring a seamless
+                  <p>By seamlessly blending artistic vision with technical expertise, we deliver 
+                    <Link href="environment-design">environment
+                    designs</Link> that perfectly balance aesthetics and functionality, ensuring a seamless
                     integration into your project&apos;s framework.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/environment-design" className="btn-size btn-purple">Learn More</Link></li>
@@ -294,7 +295,7 @@ export default function GameArt() {
                   <h3>Character Design</h3>
                   <p>With a focus on personality, storytelling, and visual appeal, our talented team of
                     designers creates characters that resonate with audiences across various media
-                    platforms. Our character design service offers a comprehensive approach to bringing your
+                    platforms. Our <Link href="character-design">character design services</Link> offers a comprehensive approach to bringing your
                     imaginative characters to life.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/character-design" className="btn-size btn-purple">Learn More</Link></li>
@@ -307,10 +308,10 @@ export default function GameArt() {
                   </figure>
                   <h3>Game Level Design</h3>
                   <p>With a focus on player interaction and narrative progression, we excel in creating
-                    dynamic and memorable game levels that enhance the overall gaming experience and drive
+                    dynamic and memorable <Link href="game-level-design">game level design services</Link> that enhance the overall gaming experience and drive
                     player engagement.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
-                    <li><Link href="/game-level-design" className="btn-size btn-purple">Learn More</Link></li>
+                    <li><Link href="game-level-design" className="btn-size btn-purple">Learn More</Link></li>
                     <li><LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton></li>
                   </ul>
                 </li>
@@ -320,7 +321,7 @@ export default function GameArt() {
                   </figure>
                   <h3>3D Art</h3>
                   <p>From realistic renderings to stylized animations, our team of skilled artists specializes
-                    in creating 3D art assets that elevate your content&apos;s visual appeal and immersive
+                    in creating <Link href="/3d-art">3D art assets</Link> that elevate your content&apos;s visual appeal and immersive
                     quality. We deliver 3D artworks that meet the expectations of our clients.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/3d-art" className="btn-size btn-purple">Learn More</Link></li>
@@ -333,7 +334,7 @@ export default function GameArt() {
                   </figure>
                   <h3>3D Game Modeling</h3>
                   <p>Whether you need characters, props, or environmental assets, we specialize in delivering
-                    high-quality 3D models that enhance your game world&apos;s visual fidelity and immersion. We
+                    <Link href="/3d-game-modeling">high-quality 3D modeling</Link> that enhance your game world&apos;s visual fidelity and immersion. We
                     offer a comprehensive solution for creating intricate and realistic 3D models that form
                     the backbone of your gaming experience.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
@@ -346,7 +347,7 @@ export default function GameArt() {
                     <Image src="/assets/images/game-art/art-img-07.webp" alt="*" width={600} height={338} />
                   </figure>
                   <h3>3D Environment Design</h3>
-                  <p>Our 3D environment design service specializes in crafting immersive and visually stunning
+                  <p>Our <Link href="/3d-environment-design">3D environment designs</Link> service specializes in crafting immersive and visually stunning
                     digital landscapes that serve as the backdrop for your interactive experiences, while
                     offering environments that look breathtaking and provide a seamless and immersive
                     experience for players.</p>
@@ -360,8 +361,8 @@ export default function GameArt() {
                     <Image src="/assets/images/game-art/art-img-08.webp" alt="*" width={600} height={338} />
                   </figure>
                   <h3>3D Character Modeling</h3>
-                  <p>Whether you need humanoid heroes or fantastical creatures, we specialize in crafting 3D
-                    character models that convey emotion, personality, and charm, enhancing the overall
+                  <p>Whether you need humanoid heroes or fantastical creatures, we specialize in crafting <Link href="3d-character-modeling">3D
+                    character modeling design</Link> that convey emotion, personality, and charm, enhancing the overall
                     impact of your project.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
                     <li><Link href="/3d-character-modeling" className="btn-size btn-purple">Learn More</Link></li>
@@ -373,7 +374,7 @@ export default function GameArt() {
                     <Image src="/assets/images/game-art/art-img-09.webp" alt="*" width={600} height={338} />
                   </figure>
                   <h3>3D Illustration Services</h3>
-                  <p>Our 3D illustration services blend artistic creativity with technical precision to
+                  <p>Our <Link href="3d-illustration-services">3D illustration services</Link> blend artistic creativity with technical precision to
                     produce captivating visuals that communicate ideas, concepts, and narratives with
                     unparalleled depth and realism.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">
@@ -386,7 +387,7 @@ export default function GameArt() {
                     <Image src="/assets/images/game-art/art-img-10.webp" alt="*" width={600} height={338} />
                   </figure>
                   <h3>UI/UX Design</h3>
-                  <p>By combining aesthetic sensibility with usability principles, we craft UI/UX designs that
+                  <p>By combining aesthetic sensibility with usability principles, we craft <Link href="ui-ux-design">UI/UX designs</Link> that
                     look great and function seamlessly across various platforms, resulting in satisfied
                     users and increased engagement.</p>
                   <ul className="btn-wrap d-flex align-items-center mt-4">

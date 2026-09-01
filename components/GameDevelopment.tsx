@@ -12,57 +12,105 @@ export default function GameDevelopment() {
     { 
       key: "3d-game", 
       path: "3d-game-developmnt", 
-      title: "3D Game Development",
-      description: "Three-dimensional game development across PC, console, and VR. Full production pipeline from design through platform-ready build."
+      title: "Mobile Game Development Services",
+      description: <> <Link href="/mobile-game-development">Mobile game development</Link> for iOS and Android, performance-calibrated from the first line of code. App store submission and post-launch support are included in scope.
+      </>
     },
     { 
       key: "ai_game", 
       path: "ai-game", 
-      title: "AI Game Development",
-      description: "AI game development for NPC behavior, procedural content generation, adaptive difficulty, and AI-driven game systems that change the player experience."
+      title: "Play-to-Earn Games Development",
+      description: <><Link href="/play-to-earn-game">Play-to-earn game development</Link> with smart contract integration, token economy design, and the technical architecture that separates functional P2E from vaporware.
+
+      </>
     },
     { 
       key: "blockchain_game", 
       path: "blockchain-game", 
-      title: "Blockchain Game",
-      description: "Blockchain game development and web3 game development for on-chain ownership, NFT integration, and the infrastructure that makes decentralized game economies work at scale."
+      title: "Unity Game Development Services",
+      description: <><Link href="/unity-game-development">Unity game development</Link> across 2D, 3D, AR, VR, and mobile platforms. Custom Unity3D game development with the full engine feature set applied to your project.
+      </>
     },
     { 
       key: "game_prototyping", 
       path: "game-prototyping", 
-      title: "Game Prototyping",
-      description: "Rapid game prototyping to validate the core loop before full production investment. The prototype answers whether the game is fun. Everything else is implementation."
+      title: "Unreal Engine Game Development Services",
+      description: <> <Link href="/unreal-engine-game-development">Unreal Engine game development</Link> for projects where Lumen, Nanite, or the Unreal pipeline's advantages justify the engine choice. We recommend the engine that fits the project.
+
+
+      </>
     },
     { 
       key: "game_testing", 
       path: "game-testing", 
-      title: "Game Testing",
-      description: "QA and game testing across platforms and devices. Manual, automated, and platform certification testing for approved listings."
+      title: "3D Game Development",
+      description: <><Link href="/3d-game-development">Three-dimensional game development</Link> across PC, console, and VR. Full production pipeline from design through platform-ready build.
+      </>
     },
     { 
       key: "mobile_game", 
       path: "mobile-game", 
-      title: "Mobile Game",
-      description: "Mobile game development for iOS and Android, performance-calibrated from the first line of code. App store submission and post-launch support are included in scope."
+      title: "AI Game Development Company",
+      description: <>AI game development for NPC behavior, procedural content generation, adaptive difficulty, and AI-driven game systems that change the player experience.
+      </>
     },
     { 
       key: "earn_game", 
       path: "earn-games", 
-      title: "Play to Earn Games",
-      description: "Play-to-earn game development with smart contract integration, token economy design, and the technical architecture that separates functional P2E from vaporware."
+      title: "Blockchain Game Development",
+      description: <>Blockchain game development and web3 game development for on-chain ownership, NFT integration, and the infrastructure that makes decentralized game economies work at scale.
+      </>
     },
     { 
       key: "unity_game", 
       path: "unity-game", 
-      title: "Unity game",
-      description: "Unity game development across 2D, 3D, AR, VR, and mobile platforms. Custom Unity3D game development with the full engine feature set applied to your project."
+      title: "Game Prototyping Service",
+      description: <>Rapid <Link href="/game-prototyping">game prototyping</Link> to validate the core loop before full production investment. The prototype answers whether the game is fun. Everything else is implementation.
+      </>
     },
     { 
       key: "unreal_game", 
       path: "unreal-game", 
-      title: "Unreal engine game",
-      description: "Unreal Engine game development for projects where Lumen, Nanite, or the Unreal pipeline's advantages justify the engine choice. We recommend the engine that fits the project."
+      title: "Game Testing Provider",
+      description: <> <Link href="/game-testing">QA and game testing</Link> across platforms and devices. Manual, automated, and platform certification testing for approved listings.
+      </>
     }
+
+    // { 
+    //   key: "unreal_game", 
+    //   path: "unreal-game", 
+    //   title: "Android Game Development Services",
+    //   description: <> Android game development calibrated for the device fragmentation Android actually ships on, not the flagship your dev team uses.
+    //   </>
+    // },
+    // { 
+    //   key: "unreal_game", 
+    //   path: "unreal-game", 
+    //   title: "iOS Game Development Services",
+    //   description: <> iOS game development and App Store submission for mobile games targeting Apple's platform and hardware range.
+    //   </>
+    // },
+    // { 
+    //   key: "unreal_game", 
+    //   path: "unreal-game", 
+    //   title: "Web3 Game Development Services",
+    //   description: <> Experience Web3 game development, integrating decentralized infrastructure, wallet connectivity, and on-chain mechanics into playable experiences.
+    //   </>
+    // },
+    // { 
+    //   key: "unreal_game", 
+    //   path: "unreal-game", 
+    //   title: "2D Game Development Services",
+    //   description: <> 2D game development for mobile, PC, and browser-based platforms. Full production from design through release.
+    //   </>
+    // },
+    // { 
+    //   key: "unreal_game", 
+    //   path: "unreal-game", 
+    //   title: "VR Game Development Services",
+    //   description: <> VR game development for Oculus, HTC Vive, PS VR, and standalone headsets, built to the frame budget VR demands. Dropped frames in VR are not a performance note. They are a health issue.
+    //   </>
+    // }
   ];
 
   useEffect(() => {
@@ -139,7 +187,7 @@ export default function GameDevelopment() {
             <div className="content-wrap">
               <h2 className="main-heading">Cobweb Game <b className="c-green">Development</b> Services</h2>
               <p className="w-100 custom-height-scroll">
-We offer full-service game development from initial concept to worldwide launch. Our skilled teams have the expertise to bring any vision to life, whether it be for console, mobile, VR/AR, or other platforms. Through collaborative prototyping and an iterative polishing process, we focus on crafting immersive experiences that truly engage players.
+                  We offer <Link href="/game-development">full-service game development services</Link> from initial concept to worldwide launch. Our skilled teams have the expertise to bring any vision to life, whether it be for console, mobile, VR/AR, or other platforms. Through collaborative prototyping and an iterative polishing process, we focus on crafting immersive experiences that truly engage players.
               </p>
               <ul className="btn-wrap d-flex align-items-center">
                 <li>

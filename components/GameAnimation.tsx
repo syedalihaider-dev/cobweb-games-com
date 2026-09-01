@@ -12,43 +12,45 @@ export default function GameAnimation() {
     { 
       key: "2d_animation", 
       path: "2d-animation", 
-      title: "2D Animation",
-      description: "Our 2D Animation Services includes everything from character movement cycles, idle animations, attack sequences, and the transition frames that determine whether motion reads as fluid or mechanical. Delivered as correctly-packed sprite sheets."
+      title: "2D Animation Services",
+      description: <>Our <Link href="/2d-animation">2D Animation Services</Link> includes everything from character movement cycles, idle animations, attack sequences, and the transition frames that determine whether motion reads as fluid or mechanical. Delivered as correctly-packed sprite sheets.
+</>
     },
     { 
       key: "3d_animation", 
       path: "3d-animation", 
-      title: "3D Animation",
-      description: "3D animation services engineered for the animation state machine. Weight painting and joint limits handled so your character moves like a character and not a glitchy mess of vertices."
+      title: "3D Animation Services",
+      description: <><Link href="/3d-animation">3D animation services</Link> engineered for the animation state machine. Weight painting and joint limits handled so your character moves like a character and not a glitchy mess of vertices.
+</>
     },
     { 
       key: "cycle_animations", 
       path: "2d-animation", 
-      title: "Cycle Animations",
+      title: "Cycle Animations Services",
       description: "Walk cycles, run cycles, idle cycles, and the full movement library a character needs to exist believably in a real-time environment."
     },
     { 
       key: "environment_animation", 
       path: "3d-animation", 
-      title: "Environment Animation",
+      title: "Environment Animation Services",
       description: "Foliage, water, atmospheric effects, and interactive world elements. The ambient motion that makes a world feel alive rather than rendered."
     },
     { 
       key: "game_trailer", 
       path: "2d-animation", 
-      title: "Game Trailer Animation",
+      title: "Game Trailer Animation Services",
       description: "Cinematic trailer animation for announcements and launch campaigns. Built to create the feeling of playing the game rather than listing its features."
     },
     { 
       key: "vfx_cutscene", 
       path: "3d-animation", 
-      title: "VFX and Cutscene Animation",
+      title: "Visual Effects and Cutscene Animation Services",
       description: "VFX and cutscene animation that holds the visual quality standard that the rest of the production has established. Not the place to cut the budget."
     },
     { 
       key: "character_animation", 
       path: "2d-animation", 
-      title: "Character Animation",
+      title: "Character Animation Services",
       description: "Full character animation, including dialogue performance, combat systems, and the secondary motion that separates an inhabited character from one that appears to be operated."
     }
   ];
@@ -134,7 +136,8 @@ export default function GameAnimation() {
           <div className="col-lg-6">
             <div className="content-wrap">
               <h2 className="main-heading">Cobweb Game <b className="c-green">Animation</b> Services</h2>
-              <p>Let our Game animation expertise bring your game vision to life. As a leading Game animation studio, we can design breathtaking visual effects and animate characters with fluid realism. Whether you need 2D or 3D art, our professional animators will craft optimized animations to enhance gameplay and fulfill your creative goals. Outsource to our studio for top-quality character motions and spectacular scenes that captivate players from start to finish.</p>
+             <>Let our Game animation expertise bring your game vision to life. As a leading <Link href="/game-animation">Game animation studio</Link>, we can design breathtaking visual effects and animate characters with fluid realism. Whether you need 2D or 3D art, our professional animators will craft optimized animations to enhance gameplay and fulfill your creative goals. Outsource to our studio for top-quality character motions and spectacular scenes that captivate players from start to finish.
+             </>
               <ul className="btn-wrap d-flex align-items-center">
                 <li>
                   <Link href="/game-animation" className="btn-size btn-green popup">Read More</Link>
