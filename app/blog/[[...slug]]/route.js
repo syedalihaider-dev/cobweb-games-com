@@ -129,6 +129,16 @@ async function proxyRequest(request) {
     const replacement = `${requestUrl.origin}/blog`;
     bodyText = bodyText.replace(wpUrlRegex, replacement);
 
+    // Remove trailing slashes from canonical tags
+    bodyText = bodyText.replace(/<link[^>]+rel=["']canonical["'][^>]+>/ig, (match) => {
+      return match.replace(/(href=["'][^"']+)\/["']/, '$1"');
+    });
+
+    // Remove trailing slashes from og:url tags
+    bodyText = bodyText.replace(/<meta[^>]+property=["']og:url["'][^>]+>/ig, (match) => {
+      return match.replace(/(content=["'][^"']+)\/["']/, '$1"');
+    });
+
     return new Response(bodyText, {
       status: response.status,
       headers,
