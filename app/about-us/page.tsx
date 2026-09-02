@@ -17,7 +17,7 @@ export default function AboutUs() {
     <>
       <section
         className={`about-banner d-flex relative next-image-background-host ${styles.hero}`}
-        
+
       >
         <Image className="next-image-background" src="/assets/images/about/about-banner.webp" alt="" fill sizes="100vw" fetchPriority="high" loading="eager" />
         <div className={`container align-self-center ${styles.heroContent}`}>
