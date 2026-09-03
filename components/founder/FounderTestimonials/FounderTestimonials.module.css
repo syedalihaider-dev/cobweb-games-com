@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding: 180px 0px 80px;
+  padding: 80px 0px;
   position: relative;
   z-index: 1;
 }
@@ -214,7 +214,7 @@
 
 @media (max-width: 991px) {
   .section {
-    padding-bottom: 62px;
+    padding: 40px 0;
   }
 
   .marqueeItem {
@@ -222,7 +222,7 @@
   }
 
   .heading {
-    margin: 68px 0 38px;
+    margin: 0 0 30px;
   }
 
   .outlineText,
@@ -246,10 +246,6 @@
 }
 
 @media (max-width: 767px) {
-  .section {
-    padding-bottom: 52px;
-  }
-
   .marquee {
     padding: 9px 0 11px;
   }

@@ -120,7 +120,7 @@
 @media (max-width: 991px) {
   .heroSection {
     height: auto;
-    padding-top: 150px;
+    min-height: 440px;
   }
 
   .contentRow {
@@ -133,6 +133,10 @@
 }
 
 @media (max-width: 767px) {
+  .heroSection {
+    min-height: 320px;
+  }
+
   .mainTitle {
     margin-bottom: 10px;
   }
@@ -159,5 +163,12 @@
 
   .rightContent {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroSection {
+    min-height: 185px;
+    padding: 0;
   }
 }

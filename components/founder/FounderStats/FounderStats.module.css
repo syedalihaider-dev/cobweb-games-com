@@ -40,7 +40,17 @@
   position: relative;
   overflow: hidden;
   background-color: #1b1e26;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
+
+/* Borders Default (Desktop >= 992px) */
+.boxGames { border-right-color: rgba(255, 255, 255, 0.1); border-bottom-color: rgba(255, 255, 255, 0.1); }
+.boxYears { border-right-color: rgba(255, 255, 255, 0.1); border-bottom-color: rgba(255, 255, 255, 0.1); }
+.boxImage { border-bottom-color: rgba(255, 255, 255, 0.1); }
+.boxPattern { border-right-color: rgba(255, 255, 255, 0.1); }
+.boxClients { border-right-color: rgba(255, 255, 255, 0.1); }
+.boxPlatforms { border-right-color: rgba(255, 255, 255, 0.1); }
 
 .imageBox {
   padding: 0;
@@ -48,14 +58,6 @@
 
 .officeImage {
   object-fit: cover;
-}
-
-.borderRight {
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.borderBottom {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .patternBox {
@@ -101,69 +103,118 @@
 }
 
 /* Responsive adjustments */
+
+@media (max-width: 1399px) {
+  .gridBox {
+    height: 300px;
+  }
+  .statNumber {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .statLabel {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .gridBox {
+    height: 240px;
+  }
+  .statNumber {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .statLabel {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 991px) {
   .topTextWrapper {
     padding: 40px 0;
   }
-
   .mainText {
     font-size: 20px;
     line-height: 30px;
   }
-
   .mainText br {
     display: none;
   }
 
+  .gridBox {
+    height: 220px;
+  }
+  .imageBox {
+    height: 300px;
+  }
+  
   .statNumber {
     margin-bottom: 10px;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 50px;
   }
-
   .statLabel {
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
   }
 
+  /* Reset all borders for Tablet */
   .gridBox {
-    height: 150px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+  
+  /* Tablet Borders (768px - 991px) */
+  .boxGames { border-right-color: rgba(255, 255, 255, 0.1); border-bottom-color: rgba(255, 255, 255, 0.1); }
+  .boxYears { border-bottom-color: rgba(255, 255, 255, 0.1); }
+  .boxImage { border-bottom-color: rgba(255, 255, 255, 0.1); }
+  
+  .boxClients { border-right-color: rgba(255, 255, 255, 0.1); }
+  .boxPlatforms { border-right-color: rgba(255, 255, 255, 0.1); }
+}
+
+@media (max-width: 767px) {
+  .gridBox {
+    height: 180px;
+  }
+  .imageBox {
+    height: 250px;
   }
 
-  .borderRight {
-    border-right: none;
+  .statNumber {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .statLabel {
+    font-size: 12px;
   }
 
-  .borderBottom {
-    border-bottom: none;
+  /* Reset borders for Mobile */
+  .gridBox {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
   }
+  
+  /* Mobile Borders (<768px) */
+  .boxGames { border-right-color: rgba(255, 255, 255, 0.1); border-bottom-color: rgba(255, 255, 255, 0.1); }
+  .boxYears { border-bottom-color: rgba(255, 255, 255, 0.1); }
+  .boxImage { border-bottom-color: rgba(255, 255, 255, 0.1); }
+  
+  .boxClients { border-right-color: rgba(255, 255, 255, 0.1); border-bottom-color: rgba(255, 255, 255, 0.1); }
+  .boxPlatforms { border-bottom-color: rgba(255, 255, 255, 0.1); }
+}
 
-  /* Re-apply borders for tablet grid */
-  .col-md-6:nth-child(odd) .gridBox {
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+@media (max-width: 375px) {
+  .statItem {
+    padding: 10px;
   }
-
-  .col-md-6 .gridBox {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .statNumber {
+    font-size: 32px;
+    line-height: 32px;
   }
-
-  /* Remove bottom border from last two items */
-  .col-md-6:nth-last-child(-n+2) .gridBox {
-    border-bottom: none;
-  }
-
-  .patternBox {
-    display: none;
-    /* Often decorative boxes are hidden on smaller screens, but let's keep it just in case, or hide it to save space */
+  .statLabel {
+    font-size: 11px;
   }
 }
 
-@media (max-width: 575px) {
-  .gridBox {
-    border-right: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-  }
-
-  .col-sm-6:last-child .gridBox {
-    border-bottom: none !important;
-  }
-}

@@ -8,7 +8,7 @@ const FounderHero = () => {
     <section className={styles.heroSection}>
       <div className={styles.overlay}></div>
       <div className="container h-100">
-        <div className={`row h-100 align-items-end pb-5 ${styles.contentRow}`}>
+        <div className={`row h-100 align-items-end ${styles.contentRow}`}>
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className={styles.textContent}>
               {/* <h1 className={styles.mainTitle}>

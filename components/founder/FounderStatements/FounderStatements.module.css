@@ -1,11 +1,10 @@
 .statementsSection {
-  background-color: #1b1e26;
   /* Matches global dark theme */
   background-image: url('/assets/images/founder/vector-line.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 80px 0;
   position: relative;
   overflow: hidden;
 }
