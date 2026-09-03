@@ -11,7 +11,7 @@ const FounderHero = () => {
         <div className={`row h-100 align-items-end pb-5 ${styles.contentRow}`}>
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className={styles.textContent}>
-              <h1 className={styles.mainTitle}>
+              {/* <h1 className={styles.mainTitle}>
                 <span className={styles.solidText}>Top-Rated</span>
                 <br />
                 <span className={styles.outlineText}>Game Development Company</span>
@@ -23,16 +23,16 @@ const FounderHero = () => {
                 <li>
                   <LiveChatButton className="chat btn-size btn-green">LIVE CHAT</LiveChatButton>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="col-lg-6 col-md-12 pb-lg-3">
-            <div className={styles.rightContent}>
+            {/* <div className={styles.rightContent}>
               <h3 className={styles.subTitle}>Proven Gaming Talent</h3>
               <p className={styles.description}>
                 We have the proven talent and production capabilities to deliver high-quality games.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

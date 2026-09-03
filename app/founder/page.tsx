@@ -10,6 +10,10 @@ import FounderTestimonials from '@/components/founder/FounderTestimonials/Founde
 import FounderFaqs from '@/components/founder/FounderFaqs/FounderFaqs';
 import FooterForm from '../../components/FooterForm';
 import RouteLayout from '@/components/RouteLayout';
+import Link from 'next/link';
+import BannerBadgesSlider from '@/components/BannerBadgesSlider';
+import LiveChatButton from '@/components/LiveChatButton';
+import styles from '../about-us/AboutUs.module.css';
 
 export const metadata = {
   title: 'Founder | Cobweb Games',
@@ -17,18 +21,78 @@ export const metadata = {
   robots: {
     index: false,
     follow: false,
-   },
+  },
 };
 
 export default function FounderPage() {
   return (
     <RouteLayout>
+      <style>{`
+        body {
+          background-color: #1B1E26 !important;
+        }
+      `}</style>
       <main>
+        <section
+          className={`about-banner d-flex relative next-image-background-host ${styles.hero}`}
+
+        >
+          <Image className="next-image-background" src="/assets/images/about/about-banner.webp" alt="" fill sizes="100vw" fetchPriority="high" loading="eager" />
+          <div className={`container align-self-center ${styles.heroContent}`}>
+            <div className="row">
+              <div className="col-lg-12 text-center">
+                <h5>From the Frame to the Build</h5>
+                <h1>The New Frontier Of <b>Game Development</b></h1>
+                <p>The story of a studio that spent years perfecting worlds on screen, then rebuilt everything for worlds people could actually play in.</p>
+                <ul className={`btn-wrap d-flex align-items-center justify-content-center mt-4 ${styles.heroActions}`}>
+                  <li>
+                    <Link href="/contact-us" className="btn-size btn-purple popup">Get Started</Link>
+                  </li>
+                  <li>
+                    <LiveChatButton className="chat btn-size btn-green">Live Chat</LiveChatButton>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="banner-badges old-about-slider">
+            <ul className="d-flex align-items-center justify-content-center">
+              <li>
+                <Image className="lazy" src="/assets/images/logos/logo-01.webp" alt="*" width={148} height={109} />
+              </li>
+              <li>
+                <Image className="lazy" src="/assets/images/logos/logo-02.webp" alt="*" width={149} height={109} />
+              </li>
+              <li>
+                <Image className="lazy" src="/assets/images/logos/logo-03.webp" alt="*" width={148} height={109} />
+              </li>
+              <li>
+                <Image className="lazy" src="/assets/images/logos/logo-04.webp" alt="*" width={149} height={109} />
+              </li>
+              <li>
+                <Image className="lazy" src="/assets/images/logos/logo-05.webp" alt="*" width={128} height={128} />
+              </li>
+              <li>
+                <Image className="lazy" src="/assets/images/logos/logo-06.webp" alt="*" width={148} height={109} />
+              </li>
+            </ul>
+          </div>
+          {/* Banner Badges - Slider on mobile/tablet, static on desktop */}
+          <BannerBadgesSlider />
+        </section>
+        <div className="marquee founder-marquee">
+          <span>Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b></span>
+          <span>Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b></span>
+        </div>
         <FounderHero />
+        <div className="marquee founder-marquee">
+          <span>Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b></span>
+          <span>Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b></span>
+        </div>
         <FounderStory />
         <FounderStats />
-        <FounderStatements />
-        <section className="team-sec4 next-image-background-host" >
+        {/* <FounderStatements /> */}
+        {/* <section className="team-sec4 next-image-background-host" >
           <Image className="next-image-background" src="/assets/images/about/about-sec4-bg.webp" alt="" fill sizes="100vw" />
           <div className="container">
             <div className="row">
@@ -102,14 +166,13 @@ export default function FounderPage() {
               </div>
             </div>
           </div>
-        </section>
-
+        </section> */}
         <FounderJourney />
         <FounderRecognition />
         <FounderDevices />
         <FounderTestimonials />
         <FounderFaqs />
-        <FooterForm />
+        {/* <FooterForm /> */}
       </main>
     </RouteLayout>
   );

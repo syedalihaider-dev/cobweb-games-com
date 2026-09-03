@@ -2683,6 +2683,25 @@
     padding-bottom: 60px;
 }
 
+:global(.marquee.founder-marquee) {
+    transform: inherit;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-left: -20px;
+    opacity: .6;
+}
+
+:global(.marquee.founder-marquee span) {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 :global(.about-sec2) {
     padding: 50px 0 120px;
 }

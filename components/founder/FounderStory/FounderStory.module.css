@@ -1,11 +1,9 @@
 .storySection {
-  background-color: #1b1e26;
-  /* Dark background matching the theme */
   background-image: url('/assets/images/founder/vector-line.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 100px 0; 
   position: relative;
   z-index: 1;
 }
@@ -23,10 +21,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-.textContent {
-  padding-right: 20px;
 }
 
 .title {
@@ -92,12 +86,52 @@
   margin: 0;
 }
 
-.imageWrapper {
+.textContent {
   position: relative;
+  /* Normal height, dictating the row's height */
+}
+
+/* Progress Bar Styles */
+.progressBarWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.progressBarTrack {
+  width: 4px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBarFill {
   width: 100%;
+  background-color: #2CFF28;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  transition: height 0.1s ease-out;
+}
+
+/* Image Scroll Wrapper */
+.imageScrollWrapper {
+  height: 100%; /* Matches left content height */
+  position: relative;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  will-change: transform, top;
 }
 
 .portraitImage {
@@ -112,14 +146,24 @@
   .storySection {
     padding: 40px 0;
   }
+  
+  .textContent {
+    margin-bottom: 30px;
+  }
+
+  .imageScrollWrapper {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    transform: none !important;
+    top: 0 !important;
+  }
 
   .authorInfo {
     margin-top: 25px;
-  }
-
-  .textContent {
-    padding-right: 0;
-    margin-bottom: 30px;
   }
 
   .portraitImage {
@@ -128,7 +172,6 @@
 }
 
 @media (max-width: 767px) {
-
   .outlineText,
   .solidText {
     font-size: 25px;

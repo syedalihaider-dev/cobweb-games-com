@@ -7,7 +7,7 @@ const FounderStats = () => {
   return (
     <section className={styles.statsSection}>
       <div className={`container-fluid px-0 ${styles.statsContainer}`}>
-        <div className={styles.topTextWrapper}>
+        {/* <div className={styles.topTextWrapper}>
           <div className="container">
             <h3 className={styles.mainText}>
               <span className={styles.solidText}>
@@ -19,7 +19,7 @@ const FounderStats = () => {
               </span>
             </h3>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.gridWrapper}>
           <div className="row g-0">
@@ -34,7 +34,7 @@ const FounderStats = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className={`${styles.gridBox} ${styles.borderRight} ${styles.borderBottom}`}>
                 <div className={styles.statItem}>
@@ -45,12 +45,12 @@ const FounderStats = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-6 col-md-12">
               <div className={`${styles.gridBox} ${styles.imageBox} ${styles.borderBottom}`}>
-                <Image 
-                  src="/assets/images/founder/founder-office.png" 
-                  alt="Office setup" 
+                <Image
+                  src="/assets/images/founder/founder-office.png"
+                  alt="Office setup"
                   fill
                   sizes="(max-width: 991px) 100vw, 50vw"
                   className={styles.officeImage}
@@ -64,7 +64,7 @@ const FounderStats = () => {
                 {/* Empty with diagonal lines */}
               </div>
             </div>
-            
+
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className={`${styles.gridBox} ${styles.borderRight}`}>
                 <div className={styles.statItem}>
@@ -75,7 +75,7 @@ const FounderStats = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className={`${styles.gridBox} ${styles.borderRight}`}>
                 <div className={styles.statItem}>
@@ -86,7 +86,7 @@ const FounderStats = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className={styles.gridBox}>
                 <div className={styles.statItem}>

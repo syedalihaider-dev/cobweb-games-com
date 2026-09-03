@@ -98,7 +98,7 @@ export default function FounderTestimonials() {
                   <p className={styles.quote}>{testimonial.quote}</p>
                   <p className={styles.name}>{testimonial.name}</p>
                 </div>
-                {/* <div className={styles.imagePanel}>
+                <div className={styles.imagePanel}>
                   <Image
                     src={testimonial.image}
                     alt={`Client testimonial from ${testimonial.name}`}
@@ -106,7 +106,7 @@ export default function FounderTestimonials() {
                     sizes="(max-width: 991px) 100vw, 34vw"
                     className={styles.clientImage}
                   />
-                </div> */}
+                </div>
               </article>
             ))}
           </div>

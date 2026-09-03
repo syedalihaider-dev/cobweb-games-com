@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { defaultFaqs } from '@/components/Faqs';
 import styles from './FounderFaqs.module.css';
+import journeyStyles from '../FounderJourney/FounderJourney.module.css';
 
 const founderFaqs = defaultFaqs.slice(0, 6);
 
@@ -53,11 +54,25 @@ export default function FounderFaqs() {
         </div>
       </div>
 
-      <div className="marquee" aria-hidden="true">
-        <span>COBWEB <b>*</b> COBWEB <b>*</b></span>
-        <span>COBWEB <b>*</b> COBWEB <b>*</b></span>
-        <span>COBWEB <b>*</b> COBWEB <b>*</b></span>
-        <span>COBWEB <b>*</b> COBWEB <b>*</b></span>
+      {/* Marquee */}
+      <div className={journeyStyles.marqueeContainer}>
+        <div className={journeyStyles.marqueeTrack}>
+          {[
+            'End-to-End Development',
+            'Faster Time-To-Market',
+            'Cross-Platform Expertise',
+            'Scalable Game Solutions',
+            'Launch-Ready Games',
+          ].flatMap((item, index, arr) => [
+            <span key={`${item}-${index}`} className={journeyStyles.marqueeItem}>
+              {item}
+            </span>,
+            <span key={`${item}-star-${index}`} className={journeyStyles.marqueeStar} aria-hidden="true">
+              *
+            </span>,
+            ...(index === arr.length - 1 ? [] : []),
+          ])}
+        </div>
       </div>
     </section>
   );
