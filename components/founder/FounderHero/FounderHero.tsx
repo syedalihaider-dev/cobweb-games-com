@@ -19,7 +19,7 @@ const FounderHero = () => {
           loading='eager'
         />
       </div>
-      <div className={styles.overlay}></div>
+      {/* <div className={styles.overlay}></div> */}
     </section>
   );
 };
