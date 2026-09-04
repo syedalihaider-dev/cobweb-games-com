@@ -151,7 +151,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 991px) {
   .teamSection {
     padding: 80px 0;
   }
@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 767px) {
   .teamSection {
     padding: 60px 0;
   }
@@ -196,7 +196,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 575px) {
   .founderName {
     font-size: 28px;
   }

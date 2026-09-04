@@ -137,7 +137,7 @@ export default function FounderRecognition() {
 
       <div className="container position-relative">
         <div className="row justify-content-center">
-          <div className="col- col-xl-9 text-center">
+          <div className="col-lg-10 col-xl-9 text-center">
             <h2 id="recognition-title" className={styles.heading}>
               <span className={styles.outlineText}>Recognition That </span>
               <span className={styles.solidText}>Speaks for Itself</span>

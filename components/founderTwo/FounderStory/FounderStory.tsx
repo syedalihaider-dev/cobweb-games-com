@@ -11,17 +11,17 @@ const FounderStory = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (!sectionRef.current) return;
-
+      
       const { top, height } = sectionRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-
+      
       // Start progress when the section's top hits a bit below the middle of the screen
       const startPoint = windowHeight * 0.7;
-
+      
       // We want progress to reach 1 when the bottom of the section is near the middle/bottom of the viewport
       // Total scroll distance to measure
       const scrollDistance = height;
-
+      
       let progress = (startPoint - top) / scrollDistance;
       progress = Math.max(0, Math.min(1, progress));
       setScrollProgress(progress);
@@ -30,7 +30,7 @@ const FounderStory = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll);
     handleScroll();
-
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
@@ -49,12 +49,12 @@ const FounderStory = () => {
           priority
         />
       </div>
-
+      
       <div className="container">
         <div className="row">
-
+          
           {/* Left Content */}
-          <div className="col-6">
+          <div className="col-lg-6 col-md-12 mb-lg-0">
             <div className={styles.textContent}>
               <h2 className={styles.title}>
                 <span className={styles.solidText}>Here’s how it all</span>
@@ -92,42 +92,31 @@ const FounderStory = () => {
               </div>
 
               <div className={styles.authorInfo}>
-                <h4 className={styles.authorName}>Zain Khan
-                  <a href="/" className={styles.authorLink}>
-                    <Image
-                      src="/assets/images/founder/linkedin.png"
-                      alt="LinkedIn"
-                      width={18}
-                      height={18}
-                      className={styles.linkedinIcon}
-                    />
-                  </a>
-                </h4>
-                <p className={styles.authorTitle}>Founder, Cobweb Games</p>
+                <h4 className={styles.authorName}>We haven't looked back since.</h4>
               </div>
             </div>
           </div>
 
           {/* Progress Bar (Desktop only) */}
-          <div className="col-1  justify-content-center">
-            <div className={styles.progressBarWrapper}>
-              <div className={styles.progressBarTrack}>
-                <div
-                  className={styles.progressBarFill}
-                  style={{ height: `${scrollProgress * 100}%` }}
-                />
-              </div>
-            </div>
+          <div className="col-lg-1 d-none d-lg-flex justify-content-center">
+             <div className={styles.progressBarWrapper}>
+                <div className={styles.progressBarTrack}>
+                   <div 
+                     className={styles.progressBarFill} 
+                     style={{ height: `${scrollProgress * 100}%` }}
+                   />
+                </div>
+             </div>
           </div>
 
           {/* Right Image */}
-          <div className="col-5">
+          <div className="col-lg-5 col-md-12">
             <div className={styles.imageScrollWrapper}>
-              <div
+              <div 
                 className={styles.imageWrapper}
-                style={{
+                style={{ 
                   top: `${scrollProgress * 100}%`,
-                  transform: `translateY(-${scrollProgress * 100}%)`,
+                  transform: `translateY(-${scrollProgress * 100}%)`, 
                 }}
               >
                 <Image

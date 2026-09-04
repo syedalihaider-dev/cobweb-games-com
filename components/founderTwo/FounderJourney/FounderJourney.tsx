@@ -68,8 +68,8 @@ const FounderJourney = () => {
         </div>
       </div>
 
-      {/* Desktop Arc Timeline */}
-      <div className={styles.arcArea}>
+      {/* Desktop Arc Timeline - Hidden on lg and smaller */}
+      <div className={`d-none d-xl-block ${styles.arcArea}`}>
         <div className={styles.arcContainer}>
           <div className={styles.arcCircle}>
             {journeyData.map((item, index) => {
@@ -100,7 +100,7 @@ const FounderJourney = () => {
         {/* Desktop Content */}
         <div className="container position-relative" style={{ zIndex: 2 }}>
           <div className="row justify-content-center">
-            <div className="col- col- col- col-11">
+            <div className="col-lg-6 col-md-8 col-sm-10 col-11">
               <div className={styles.contentArea}>
                 <p className={styles.journeyPara} key={activeId}>
                   {activeContent}
@@ -111,10 +111,10 @@ const FounderJourney = () => {
         </div>
       </div>
 
-      {/* Tablet & Mobile Accordion */}
-      <div className={`container ${styles.accordionArea}`}>
+      {/* Tablet & Mobile Accordion - Hidden on xl and larger */}
+      <div className={`d-xl-none container ${styles.accordionArea}`}>
         <div className="row justify-content-center">
-          <div className="col-12 col-">
+          <div className="col-12 col-md-10">
             <div className={styles.accordionList}>
               {journeyData.map((item) => {
                 const isOpen = openAccordionId === item.id;

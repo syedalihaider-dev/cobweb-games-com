@@ -146,7 +146,7 @@
     height: 220px;
   }
   .imageBox {
-    height: 220px;
+    height: 300px;
   }
   
   .statNumber {
@@ -179,7 +179,7 @@
     height: 180px;
   }
   .imageBox {
-    height: 180px;
+    height: 250px;
   }
 
   .statNumber {
@@ -188,6 +188,12 @@
   }
   .statLabel {
     font-size: 12px;
+  }
+
+  /* Reset borders for Mobile */
+  .gridBox {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
   }
   
   /* Mobile Borders (<768px) */

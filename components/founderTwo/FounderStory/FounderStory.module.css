@@ -78,23 +78,12 @@
   font-size: 20px;
   margin-bottom: 5px;
   font-family: 'Orbitron', sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .authorTitle {
   color: #ffffff;
   font-size: 16px;
   margin: 0;
-}
-
-.authorLink{
-  width: 18px;
-  height: auto;
-  display: block;
-  position: relative;
-  z-index: 1;
 }
 
 .textContent {
@@ -182,36 +171,43 @@
 }
 
 @media (max-width: 991px) {
-  .solidText,
-  .outlineText {
-    font-size: 28px;
-    line-height: 35px;
+  .textContent {
+    margin-bottom: 30px;
+  }
+
+  .imageScrollWrapper {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    transform: none !important;
+    top: 0 !important;
+  }
+
+  .authorInfo {
+    margin-top: 25px;
+  }
+
+  .portraitImage {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  .solidText,
-  .outlineText {
-    font-size: 20px;
-    line-height: 28px;
+  .outlineText,
+  .solidText {
+    font-size: 25px;
+    line-height: 35px;
   }
 
-  .paragraphs p {
-    margin-bottom: 15px;
+  .afterWrapper {
+    width: 200px;
+    bottom: -100px;
+  }
+
+  .paragraphs {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 575px) {
-  .paragraphs p {
-    margin-bottom: 10px;
-    font-size: 12px;
-  }
-
-  .authorName{
-    font-size: 16px;
-  }
-  .authorTitle{
-    font-size: 12px;
   }
 }

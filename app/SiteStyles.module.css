@@ -5469,7 +5469,7 @@
     }
 
     :global(.banner-badges) {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 }
 
@@ -8746,7 +8746,7 @@
 
     :global(.about-banner) {
         min-height: auto;
-        padding: 100px 0 50px;
+        padding: 100px 0 80px;
     }
 
     :global(.about-banner h1) {
@@ -8761,7 +8761,8 @@
     }
 
     :global(.about-banner .banner-badges ul li img) {
-        width: 50%;
+        width: 80%;
+        margin: 0 auto;
     }
 
     :global(.about-sec2) {
@@ -9627,6 +9628,14 @@
     :global(.home-banner .content .play-btn a span.icon) {
         width: 50px;
         height: 50px;
+    }
+
+    :global(.about-banner .banner-badges ul li) {
+        width: 50px;
+    }
+
+    :global(.about-banner .banner-badges ul li img) {
+        width: 100%;
     }
 
     :global(.home-banner .content .play-btn a span) {

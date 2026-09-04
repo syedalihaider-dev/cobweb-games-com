@@ -18,7 +18,7 @@ const FounderStatements = () => {
 
       <div className="container position-relative" style={{ zIndex: 2 }}>
         <div className="row justify-content-center mb-5">
-          <div className="col- text-center">
+          <div className="col-lg-10 text-center">
             <h2 className={styles.mainTitle}>
               <span className={styles.outlineText}>OUR</span>{' '}
               <span className={styles.solidText}>CORE</span>{' '}
@@ -32,7 +32,7 @@ const FounderStatements = () => {
 
         <div className="row g-4 justify-content-center">
           {/* Mission Card */}
-          <div className="col- col-">
+          <div className="col-lg-6 col-md-10">
             <div className={styles.card}>
               <div className={styles.cardImageWrapper}>
                 <Image 
@@ -54,7 +54,7 @@ const FounderStatements = () => {
           </div>
 
           {/* Vision Card */}
-          <div className="col- col-">
+          <div className="col-lg-6 col-md-10">
             <div className={styles.card}>
               <div className={styles.cardImageWrapper}>
                 <Image 

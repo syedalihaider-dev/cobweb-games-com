@@ -50,7 +50,7 @@ const FounderTeam = () => {
       <div className="container position-relative" style={{ zIndex: 2 }}>
         <div className="row">
           {/* Left Column: Founder Info */}
-          <div className="col- col-xl-6 mb-5 mb-lg-0">
+          <div className="col-lg-6 col-xl-6 mb-5 mb-lg-0">
             <div className={styles.founderInfoBox}>
               <h2 className={styles.founderName}>CARL CAHILL</h2>
               <p className={styles.founderTitle}>Founder and Creative Director</p>
@@ -85,10 +85,10 @@ const FounderTeam = () => {
           </div>
 
           {/* Right Column: Team Grid */}
-          <div className="col- col-xl-6">
+          <div className="col-lg-6 col-xl-6">
             <div className="row g-4 g-lg-5">
               {teamMembers.map((member, index) => (
-                <div key={index} className="col- col-">
+                <div key={index} className="col-md-6 col-sm-6">
                   <div className={styles.teamCard}>
                     <div className={styles.teamImageWrapper}>
                       <Image

@@ -200,7 +200,6 @@
     opacity: 0;
     transform: translateY(12px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -359,13 +358,8 @@
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* ===========================
@@ -377,178 +371,48 @@
     width: 1600px;
     height: 1600px;
   }
-
   .arcContainer {
     height: 370px;
   }
-
   .yearLabel {
     font-size: 42px;
   }
 }
 
 @media (max-width: 1399px) {
-
   .outlineText,
   .solidText {
     font-size: 48px;
   }
-
   .arcCircle {
     width: 1450px;
     height: 1450px;
   }
-
   .arcContainer {
     height: 340px;
   }
-
   .yearLabel {
     font-size: 38px;
   }
 }
 
 @media (max-width: 1199px) {
-
   .outlineText,
   .solidText {
-    font-size: 30px;
+    font-size: 38px;
   }
-
   .arcCircle {
-    width: 1100px;
-    height: 1100px;
+    width: 1350px;
+    height: 1350px;
   }
-
   .arcContainer {
-    height: 250px;
+    height: 310px;
   }
-
   .yearLabel {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 34px;
   }
-
   .journeyPara {
-    font-size: 16px;
-  }
-
-  .yearSlot {
-    top: 0;
-    height: 50%;
-  }
-
-  .yearInner {
-    top: -40px;
-  }
-
-  .logoVectorWrapper {
-    width: 250px;
-  }
-}
-
-@media (max-width: 992px) {
-
-  .outlineText,
-  .solidText {
-    font-size: 25px;
-  }
-
-  .arcCircle {
-    top: 40px;
-    width: 900px;
-    height: 900px;
-  }
-
-  .arcArea {
-    margin-top: 40px;
-    padding-bottom: 20px;
-  }
-
-  .arcContainer {
-    height: 200px;
-  }
-
-  .yearLabel {
-    font-size: 18px;
-  }
-
-  .journeyPara {
-    font-size: 14px;
-  }
-
-  .yearSlot {
-    top: 0;
-    height: 50%;
-  }
-
-  .yearInner {
-    top: -40px;
-  }
-
-  .logoVectorWrapper {
-    width: 250px;
-  }
-}
-
-@media (max-width: 767px) {
-
-  .outlineText,
-  .solidText {
-    font-size: 25px;
-  }
-
-  .arcCircle {
-    top: 40px;
-    width: 600px;
-    height: 600px;
-  }
-
-  .arcArea {
-    margin-top: 40px;
-    padding-bottom: 20px;
-  }
-
-  .arcContainer {
-    height: 150px;
-  }
-
-  .yearLabel {
-    font-size: 18px;
-  }
-
-  .journeyPara {
-    font-size: 14px;
-  }
-
-  .yearSlot {
-    top: 0;
-    height: 50%;
-  }
-
-  .yearInner {
-    top: -40px;
-  }
-
-  .logoVectorWrapper {
-    width: 150px;
-  }
-}
-
-@media (max-width: 575px) {
-  .arcCircle {
-    top: 40px;
-    width: 500px;
-    height: 500px;
-  }
-
-  .arcArea {
-    margin-top: 40px;
-    padding-bottom: 20px;
-  }
-
-  .arcContainer {
-    height: 130px;
+    font-size: 20px;
   }
 }
 
@@ -556,40 +420,34 @@
    Responsive — Tablet & Mobile
    =========================== */
 
-@media (max-width: 499px) {
+@media (max-width: 991px) {
   .journeySection {
     padding-top: 40px;
   }
-
   .outlineText,
   .solidText {
     font-size: 30px;
   }
-
   .logoVectorWrapper {
     width: 280px;
     height: 280px;
   }
 }
 
-@media (max-width: 499px) {
-
+@media (max-width: 767px) {
   .outlineText,
   .solidText {
     font-size: 24px;
   }
-
   .logoVectorWrapper {
     width: 200px;
     height: 200px;
     top: 20px;
     left: -40px;
   }
-
   .accordionYear {
     font-size: 20px;
   }
-
   .accordionContent {
     font-size: 15px;
     padding-left: 28px;
@@ -597,8 +455,7 @@
   }
 }
 
-@media (max-width: 499px) {
-
+@media (max-width: 575px) {
   .outlineText,
   .solidText {
     font-size: 20px;
@@ -606,30 +463,8 @@
 }
 
 @media (max-width: 375px) {
-
   .outlineText,
   .solidText {
     font-size: 17px;
-  }
-}
-
-/* Custom breakpoint for switching layouts at 500px */
-@media (min-width: 500px) {
-  .accordionArea {
-    display: none !important;
-  }
-
-  .arcArea {
-    display: block !important;
-  }
-}
-
-@media (max-width: 499px) {
-  .accordionArea {
-    display: block !important;
-  }
-
-  .arcArea {
-    display: none !important;
   }
 }

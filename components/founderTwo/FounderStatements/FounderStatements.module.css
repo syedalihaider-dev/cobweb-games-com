@@ -116,7 +116,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 991px) {
   .statementsSection {
     padding: 40px 0;
   }
@@ -133,7 +133,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 767px) {
   .statementsSection {
     padding: 60px 0;
   }
@@ -175,7 +175,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 575px) {
   .outlineText,
   .solidText {
     font-size: 30px;

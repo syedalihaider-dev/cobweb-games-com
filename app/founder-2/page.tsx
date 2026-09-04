@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import FounderHero from '@/components/founder/FounderHero/FounderHero';
-import FounderStory from '@/components/founder/FounderStory/FounderStory';
-import FounderStats from '@/components/founder/FounderStats/FounderStats';
-import FounderJourney from '@/components/founder/FounderJourney/FounderJourney';
-import FounderRecognition from '@/components/founder/FounderRecognition/FounderRecognition';
-import FounderDevices from '@/components/founder/FounderDevices/FounderDevices';
-import FounderTestimonials from '@/components/founder/FounderTestimonials/FounderTestimonials';
-import FounderFaqs from '@/components/founder/FounderFaqs/FounderFaqs';
+import FounderHero from '@/components/founderTwo/FounderHero/FounderHero';
+import FounderStory from '@/components/founderTwo/FounderStory/FounderStory';
+import FounderStats from '@/components/founderTwo/FounderStats/FounderStats';
+import FounderJourney from '@/components/founderTwo/FounderJourney/FounderJourney';
+import FounderRecognition from '@/components/founderTwo/FounderRecognition/FounderRecognition';
+import FounderDevices from '@/components/founderTwo/FounderDevices/FounderDevices';
+import FounderTestimonials from '@/components/founderTwo/FounderTestimonials/FounderTestimonials';
+import FounderFaqs from '@/components/founderTwo/FounderFaqs/FounderFaqs';
 import RouteLayout from '@/components/RouteLayout';
 import Link from 'next/link';
 import BannerBadgesSlider from '@/components/BannerBadgesSlider';
@@ -29,41 +29,12 @@ export default function FounderPage() {
         body {
           background-color: #1B1E26 !important;
         }
-        .banner-badges{
-          background-color: transparent !important;
-        }
-        .founder-marquee {
-          display: flex !important;
-        }
-        @media (max-width: 991px) {
-          .founder-marquee {
-            padding-top: 20px !important;
-          }
-          .founder-marquee span {
-            font-size: 24px !important;
-            line-height: 24px !important;
-          }
-          .founder-marquee span b {
-            font-size: 40px !important;
-            width: 25px !important;
-          }
-        }
-        @media (max-width: 575px) {
-          .founder-marquee {
-            padding-top: 10px !important;
-          }
-          .founder-marquee span {
-            font-size: 16px !important;
-            line-height: 16px !important;
-          }
-          .founder-marquee span b {
-            font-size: 24px !important;
-            width: 15px !important;
-          }
-        }
       `}</style>
       <main>
-        <section className={`about-banner d-flex relative next-image-background-host ${styles.hero}`}>
+        <section
+          className={`about-banner d-flex relative next-image-background-host ${styles.hero}`}
+
+        >
           <Image className="next-image-background" src="/assets/images/about/about-banner.webp" alt="" fill sizes="100vw" fetchPriority="high" loading="eager" />
           <div className={`container align-self-center ${styles.heroContent}`}>
             <div className="row">
@@ -82,7 +53,7 @@ export default function FounderPage() {
               </div>
             </div>
           </div>
-          <div className="banner-badges">
+          <div className="banner-badges old-about-slider">
             <ul className="d-flex align-items-center justify-content-center">
               <li>
                 <Image className="lazy" src="/assets/images/logos/logo-01.webp" alt="*" width={148} height={109} />
@@ -104,6 +75,8 @@ export default function FounderPage() {
               </li>
             </ul>
           </div>
+          {/* Banner Badges - Slider on mobile/tablet, static on desktop */}
+          <BannerBadgesSlider />
         </section>
         <div className="marquee founder-marquee">
           <span>Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b> Where It All Began <b>*</b></span>

@@ -212,7 +212,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 991px) {
   .section {
     padding: 40px 0;
   }
@@ -245,7 +245,7 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 767px) {
   .marquee {
     padding: 9px 0 11px;
   }

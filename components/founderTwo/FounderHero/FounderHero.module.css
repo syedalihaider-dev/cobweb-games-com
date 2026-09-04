@@ -1,6 +1,12 @@
 .heroSection {
   position: relative;
   width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url('/assets/images/founder/founder-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
   z-index: 1;
@@ -111,7 +117,12 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 499px) {
+@media (max-width: 991px) {
+  .heroSection {
+    height: auto;
+    min-height: 440px;
+  }
+
   .contentRow {
     padding-bottom: 40px;
   }
@@ -121,7 +132,11 @@
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 767px) {
+  .heroSection {
+    min-height: 320px;
+  }
+
   .mainTitle {
     margin-bottom: 10px;
   }
@@ -142,7 +157,18 @@
     font-size: 14px;
   }
 
+  .heroSection {
+    background-position: left;
+  }
+
   .rightContent {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroSection {
+    min-height: 185px;
+    padding: 0;
   }
 }

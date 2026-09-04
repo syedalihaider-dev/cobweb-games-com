@@ -112,7 +112,7 @@ export default function FounderDevices() {
       </div>
       <div className="container">
         <div className="row justify-content-center text-center mb-5">
-          <div className="col- col-xl-10">
+          <div className="col-lg-10 col-xl-10">
             <h2 className={styles.mainTitle}>
               <span className={styles.outlineText}>PLATFORMS </span>
               <span className={styles.solidText}>Key Devices We Develop Games For</span>
@@ -124,7 +124,7 @@ export default function FounderDevices() {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-">
+          <div className="col-lg-12">
             <div 
               className={styles.sliderWrapper}
               onTouchStart={handleTouchStart}
