@@ -14,7 +14,7 @@ import LiveChatButton from '@/components/LiveChatButton';
 import styles from '../about-us/AboutUs.module.css';
 
 export const metadata = {
-  title: 'Founder | Cobweb Games',
+  title: 'Founder | Cobweb Games ',
   description: 'The story behind Cobweb Games.',
   robots: {
     index: false,
