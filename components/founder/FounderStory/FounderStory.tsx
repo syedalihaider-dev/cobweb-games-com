@@ -93,7 +93,7 @@ const FounderStory = () => {
 
               <div className={styles.authorInfo}>
                 <h4 className={styles.authorName}>Zain Khan
-                  <a href="/" className={styles.authorLink}>
+                  <a href="https://www.linkedin.com/in/zain-k-2a8506184/" target='blank' className={styles.authorLink}>
                     <Image
                       src="/assets/images/founder/linkedin.png"
                       alt="LinkedIn"
