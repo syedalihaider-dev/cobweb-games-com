@@ -526,6 +526,128 @@ export default function PlayToEarnGame() {
 
   return (
     <div className="play-to-earn-game-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/play-to-earn-game",
+  "url": "https://www.cobwebgames.com/play-to-earn-game",
+  "name": "Play to Earn Game Development Services",
+  "description": "P2E game development services with the tokenomics discipline that separates functional Web3 games from vaporware. Cobweb Games builds NFT games, GameFi platforms, and blockchain economies that survive their own success.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between Play to Earn and traditional games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ownership. In traditional games, your items belong to the publisher's database. In P2E they belong to your wallet, provably, and survive even if the game does not. Everything else about good game design stays identical."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which blockchain is best for P2E game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Polygon or Immutable for most game economies: low fees, high throughput, gaming-native tooling. Solana for extreme transaction volume. Ethereum mainnet for high-value assets where security premium matters. The honest answer depends on your gas profile and audience, and we model it before recommending."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Play to Earn game development cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A focused P2E title with tokenomics, contracts, and wallet integration: $80,000 to $200,000. Mid-scale titles with marketplaces and multiplayer: $200,000 to $500,000. Full GameFi ecosystems and MMO-scale economies: $500,000 plus. Audit costs are scoped separately and never skipped."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a P2E game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Six to nine months for a focused title including audit cycles. Twelve to twenty-four months for large-scale economies. Audits add four to eight weeks and are not compressible, by design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do players own their in-game assets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Assets are minted to player wallets as NFTs or tokens. Ownership is on-chain and independent of our servers or yours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate NFTs into existing games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after a technical audit of the existing codebase and economy. The integration is designed so Web3 features are additive for interested players and invisible to everyone else."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop custom tokenomics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Custom token models designed, simulated, and stress-tested against extraction behavior before deployment. Copy-pasted tokenomics from a successful game is how economies die in a new context."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build an NFT marketplace for my game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In-game and web marketplaces with royalty enforcement, auction mechanics, and the trading UX that does not require a tutorial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which crypto wallets can be integrated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MetaMask, WalletConnect-compatible wallets, Coinbase Wallet, Phantom for Solana, and embedded wallet solutions that onboard mainstream players without a seed phrase ceremony."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide post-launch support and LiveOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Economy monitoring, emission tuning, event operations, contract upgrades where architecture permits, and security response. A P2E game without LiveOps is a countdown timer."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Play to Earn Game Development",
+      "item": "https://www.cobwebgames.com/play-to-earn-game"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

@@ -88,6 +88,203 @@ export default function Home() {
 
   return (
     <>
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "ProfessionalService"
+  ],
+  "@id": "https://www.cobwebgames.com/#organization",
+  "name": "Cobweb Games",
+  "alternateName": "Cobweb Games Studio",
+  "url": "https://www.cobwebgames.com/",
+  "logo": "https://www.cobwebgames.com/assets/images/logo.svg",
+  "image": "https://www.cobwebgames.com/assets/images/logo.svg",
+  "description": "Cobweb Games is a San Francisco-based game development company founded in 2017. The company specializes in end-to-end game development, game art, game animation, AR/VR experiences, Unreal Engine development, and mobile game development for clients worldwide.",
+  "telephone": "+1-855-773-1064",
+  "email": "support@cobwebgames.com",
+  "priceRange": "$$-$$$",
+  "foundingDate": "2017",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "580 California Street",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "postalCode": "94104",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.787116,
+    "longitude": -122.3976582
+  },
+  "openingHours": "Mo-Fr 09:30-18:00",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": [
+    "Game Development",
+    "Game Art",
+    "Game Animation",
+    "Mobile Game Development",
+    "AR Development",
+    "VR Development",
+    "Unreal Engine Development"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Game Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Game Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Game Art"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Game Animation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AR Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VR Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Unreal Engine Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile Game Development"
+        }
+      }
+    ]
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-855-773-1064",
+    "contactType": "customer support",
+    "email": "support@cobwebgames.com",
+    "areaServed": "US",
+    "availableLanguage": "English"
+  },
+  "sameAs": [
+    "https://www.facebook.com/people/Cobweb-Games/61563748882713/",
+    "https://www.linkedin.com/company/cobweb-games1",
+    "https://www.youtube.com/@cobweb-games",
+    "https://www.instagram.com/cobweb.games/",
+    "https://www.trustpilot.com/review/cobwebgames.co",
+    "https://clutch.co/profile/cobweb-games"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "2",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/",
+  "url": "https://www.cobwebgames.com/",
+  "name": "Home - Cobweb Games",
+  "datePublished": "2017-01-01T00:00:00+00:00",
+  "dateModified": "2026-07-09T00:00:00+00:00",
+  "description": "Cobweb Games is a San Francisco-based game development company specializing in end-to-end game development, game art, game animation, AR/VR development, Unreal Engine development, and mobile game development.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com/#website",
+    "url": "https://www.cobwebgames.com/",
+    "name": "Cobweb Games",
+    "description": "Game Development Company",
+    "inLanguage": "en-US",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.cobwebgames.com/?s={search_term_string}"
+      },
+      "query-input": {
+        "@type": "PropertyValueSpecification",
+        "valueRequired": "http://schema.org/True",
+        "valueName": "search_term_string"
+      }
+    }
+  }
+}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "url": "https://www.cobwebgames.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "url": "https://www.cobwebgames.com/about-us"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Game Development",
+      "url": "https://www.cobwebgames.com/game-development"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Game Art",
+      "url": "https://www.cobwebgames.com/game-art"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Game Animation",
+      "url": "https://www.cobwebgames.com/game-animation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Contact Us",
+      "url": "https://www.cobwebgames.com/contact-us"
+    }
+  ]
+}) }} />
       {/* Hero Section - exact replica of PHP home-banner */}
       <section className={`home-banner d-flex next-image-background-host ${styles.hero}`} >
         <Image className="next-image-background" src="/assets/images/home-banner.webp" alt="" fill sizes="100vw" fetchPriority="high" loading="eager" />

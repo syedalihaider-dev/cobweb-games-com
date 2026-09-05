@@ -444,6 +444,128 @@ export default function GameTesting() {
 
   return (
     <div className="game-testing-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/game-testing",
+  "url": "https://www.cobwebgames.com/game-testing",
+  "name": "Game Testing Services by Gamers",
+  "description": "Game testing services run by people who play games, not just run scripts. Cobweb Games provides QA across mobile, PC, console, AR/VR, and every platform your game ships on.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of game testing do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Functional, compatibility, compliance, balance, localization, performance, regression, multiplayer/network, accessibility, audio, and user acceptance testing. The test plan is built to the game's specific requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does game testing improve the player experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By catching the bugs, the balance failures, and the UX friction points that turn a good game into a game that reviews as technically broken or unplayable. The player experience is the output that QA is protecting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools are used in game testing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JIRA and TestRail for test management and bug tracking. Platform-specific debugging tools (Xcode Instruments, Android Profiler, PS5, and Xbox developer kits). Device labs for hardware compatibility testing. Network condition simulators for mobile connectivity testing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the benefits of outsourcing game testing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Specialized expertise that the internal team does not maintain. Device library coverage that the internal team does not own. QA capacity that scales to the build cycle without permanent headcount. Platform certification knowledge that keeps current with each platform holder's requirement updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I hire a reliable game testing company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for examples of titles they have tested that shipped. Ask what their bug reporting format looks like. Ask how they handle regression testing. Ask who specifically will be working on your title and what platforms they have tested. A QA company that can answer all of those questions specifically is ready to test your game."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to hire game testers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A dedicated mobile QA engagement for a single platform starts at $2,000 to $5,000. Full platform certification QA for console submission runs $5,000 to $15,000. Ongoing QA for a live game is structured as a monthly retainer. Specific quotes within 48 hours of a build brief"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I choose a company that specializes only in mobile testing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if the title ships exclusively on mobile and will never be ported. Most titles benefit from a QA partner who has cross-platform experience, even if the current build targets a single platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between device testing and simulator testing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Device testing runs the build on actual hardware. Simulator testing runs it in a software emulation environment. Simulators catch many issues efficiently. They do not catch hardware-specific rendering artifacts, thermal throttling behavior, or the performance characteristics of specific GPU models. Device testing is required for platform compliance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if a mobile testing company is actually good?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First-attempt App Store and Google Play approval rates on previous client titles. The ability to name specific compliance requirements that changed in the last two update cycles. Bug reports with reproduction steps specific enough to fix. These are the metrics that distinguish competent mobile QA from coverage theater."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need separate iOS and Android testing expertise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. iOS and Android have different compliance requirements, different rendering behaviors, different performance profiles, and different hardware fragmentation challenges. A tester expert in one is not automatically an expert in the other. We have dedicated specialists for each platform."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Game Testing",
+      "item": "https://www.cobwebgames.com/game-testing"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

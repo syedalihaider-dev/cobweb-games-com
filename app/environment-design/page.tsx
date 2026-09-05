@@ -416,6 +416,136 @@ export default function EnvironmentDesign() {
 
   return (
     <div className="environment-design-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/environment-design",
+  "url": "https://www.cobwebgames.com/environment-design",
+  "name": "Environment Design Services for Games & Interactive Worlds",
+  "description": "Need an environment design that makes players believe in the world before they enter it? Cobweb Games builds game environment concept art, visual development, and world-building documentation for any genre.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are environment design services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Environment design services cover the visual development of game spaces: the concept art, mood boards, style guides, and design documentation that define what a game environment looks like before 3D production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between environment design and 3D environment modeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Environment design is the concept and visual development stage. Environment modeling is the 3D production stage. Design precedes modeling. A well-designed environment concept makes the 3D production faster and more accurate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you create environment concepts for existing games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. DLC locations, seasonal environments, and expansion world areas all require environment design work within an established visual system. We brief from the existing art direction and extend it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an environment design project take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single environment concept package takes one to two weeks from brief to delivery. Full world-building development for a new IP takes four to eight weeks, depending on the scope of the visual system being established."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you design environments for different art styles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The design process is calibrated to the visual style the game requires. Stylized, realistic, and everything in between are handled with equal production rigor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you create mood boards and visual references?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mood board development is a standard component of the environment design process. It is the stage where the visual direction is confirmed before the production investment is committed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide environment design documentation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Style guides, material palettes, design rules, and production documentation are standard deliverables. Documentation is what prevents the environment from becoming visually inconsistent across a production timeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can your concepts be used for 3D production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our environment concepts are produced specifically as production reference: turnarounds, material callouts, proportion notes, and the design documentation the 3D team needs to build accurately from the concept."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns the environment artwork after project completion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Full IP ownership of all environment concepts and documentation transfers to you on final payment. We retain no rights to use, reference, or repurpose the work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work with our existing art direction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Working within an established visual system is a specific design skill that requires understanding the rules before extending them. We start with a thorough art direction review before producing any new concepts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What deliverables are included in an environment design project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Final concept illustrations, mood boards, style guide documentation, material palette references, and design notes. All deliverables in the formats specified at the brief stage."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Environment Design",
+      "item": "https://www.cobwebgames.com/environment-design"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

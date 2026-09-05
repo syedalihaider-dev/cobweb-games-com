@@ -135,6 +135,286 @@ export default function Page2dArt() {
 
   return (
     <div className="2d-art-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "ProfessionalService"
+  ],
+  "@id": "https://www.cobwebgames.com/#organization",
+  "name": "Cobweb Games",
+  "alternateName": "Cobweb Games Studio",
+  "url": "https://www.cobwebgames.com/",
+  "logo": "https://www.cobwebgames.com/assets/images/logo.svg",
+  "image": "https://www.cobwebgames.com/assets/images/logo.svg",
+  "description": "Cobweb Games is a San Francisco-based game development company founded in 2017. The company specializes in end-to-end game development, game art, game animation, AR/VR experiences, Unreal Engine development, and mobile game development for clients worldwide.",
+  "telephone": "+1-855-773-1064",
+  "email": "support@cobwebgames.com",
+  "priceRange": "$$-$$$",
+  "foundingDate": "2017",
+
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "580 California Street",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "postalCode": "94104",
+    "addressCountry": "US"
+  },
+
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.787116,
+    "longitude": -122.3976582
+  },
+
+  "openingHours": "Mo-Fr 09:30-18:00",
+
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+
+  "serviceType": [
+    "Game Development",
+    "Game Art",
+    "Game Animation",
+    "Mobile Game Development",
+    "AR Development",
+    "VR Development",
+    "Unreal Engine Development"
+  ],
+
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Game Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Game Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Game Art"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Game Animation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AR Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VR Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Unreal Engine Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile Game Development"
+        }
+      }
+    ]
+  },
+
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-855-773-1064",
+    "contactType": "customer support",
+    "email": "support@cobwebgames.com",
+    "areaServed": "US",
+    "availableLanguage": "English"
+  },
+
+  "sameAs": [
+    "https://www.facebook.com/people/Cobweb-Games/61563748882713/",
+    "https://www.linkedin.com/company/cobweb-games1",
+    "https://www.youtube.com/@cobweb-games",
+    "https://www.instagram.com/cobweb.games/",
+    "https://www.trustpilot.com/review/cobwebgames.co",
+    "https://clutch.co/profile/cobweb-games"
+  ],
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "2",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "url": "https://www.cobwebgames.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "url": "https://www.cobwebgames.com/about-us"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Game Development",
+      "url": "https://www.cobwebgames.com/game-development"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Game Art",
+      "url": "https://www.cobwebgames.com/game-art"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Game Animation",
+      "url": "https://www.cobwebgames.com/game-animation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Contact Us",
+      "url": "https://www.cobwebgames.com/contact-us"
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/2d-art",
+  "url": "https://www.cobwebgames.com/2d-art",
+  "name": "2D Game Art Studio for High-Quality Game Assets & Design | Cobweb Games",
+  "description": "Need a 2D game art studio that delivers production-ready assets? Cobweb Games builds custom 2D game art for mobile, PC, and VR. Characters, environments, UI, animation.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "We craft extraordinary, immersive games that captivate and inspire.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does 2D game art cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Single 2D character with front and side views plus expression sheet: $300 to $800. Animation sprite sheet packages: $500 to $2,000. Environment tileset and background: $800 to $3,000 per scene. Itemized quotes within 48 hours of a project brief."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a 2D game art project take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Single character: five to ten business days from approved reference. Animation package: two to three weeks. Environment tileset: two to four weeks, depending on scene count. Project timelines milestone at kickoff."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you match our existing art style?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Style matching starts with a reference audit and a test asset for approval before full production begins. We establish the visual rules from your existing art before producing anything new."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide source files and ownership rights?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Full source files in every delivery. Full IP ownership transfers on final payment. Your assets, your rights, your pipeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you create assets for Unity and Unreal Engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Unity and Unreal Engine integration is standard in our pipeline. We deliver in the formats, at the specifications, and with the import documentation each engine requires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer dedicated 2D artists for hire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dedicated game artists on retainer for studios needing consistent production capacity across live game content cycles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information do you need to start a project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Art style reference, asset list, target platform, engine, resolution requirements, naming convention, and timeline. The more specific the brief, the tighter the first delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle both concept art and final production assets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. End-to-end 2D game art production from concept through final deliverable. We can also pick up at any stage if a reference or concept already exists."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "2D Art",
+      "item": "https://www.cobwebgames.com/2d-art"
+    }
+  ]
+}) }} />
        <section className="game-banner d-flex relative">
         <div className="container align-self-center">
           <div className="row">

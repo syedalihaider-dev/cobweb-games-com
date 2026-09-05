@@ -473,6 +473,160 @@ export default function GamePrototyping() {
 
   return (
     <div className="game-prototyping-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/game-prototyping",
+  "url": "https://www.cobwebgames.com/game-prototyping",
+  "name": "Game Prototyping Services for Faster Game Validation",
+  "description": "Game prototyping services that answer whether your game is fun before you spend a production budget finding out. Cobweb Games builds playable prototypes, vertical slices, and MVPs for studios, publishers, and startups.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a game prototype and a vertical slice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A prototype tests whether a mechanic or concept works, usually with placeholder art and minimal polish. A vertical slice is a fully polished, representative section of the finished game, built to show what the final product will actually look and feel like. Prototypes answer is this fun. Vertical slices answer is this real."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does game prototyping cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A focused core mechanic prototype typically starts at $5,000 to $15,000 depending on platform and scope. A full vertical slice for publisher or investor pitching runs $25,000 to $75,000 depending on length and fidelity. Itemized quotes within 48 hours of a brief."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a prototype from my game design document (GDD)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We review the GDD, identify the highest-risk assumptions worth testing first, and scope a prototype around answering those specifically rather than trying to build the entire document at once."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you prototype multiplayer games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Networked prototypes tested against real latency conditions, not a same-room LAN test that hides the actual problems multiplayer games run into."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I own the prototype and source code after delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Full IP ownership of the prototype, its code, and its assets transfers to you on final payment. We retain no rights to reuse or reference the work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a prototype be turned into a full game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Prototype code is often production-adjacent by design, and many of our prototyping engagements convert directly into full development contracts with the same team that built the original."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which game engines are best for prototyping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity for most fast-iteration prototypes given its rapid build cycle. Unreal when visual fidelity is part of what the prototype needs to prove. Godot for lightweight 2D concepts. We recommend the engine that answers your question fastest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many gameplay mechanics should a prototype include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As few as possible. A prototype testing one mechanic in isolation produces a clean, trustworthy answer. A prototype testing five mechanics at once produces a muddy result where you cannot tell which mechanic caused the reaction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help prepare a prototype for publishers or investors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Publisher and investor-facing prototypes are scoped differently from internal validation prototypes, with the polish and pacing calibrated to hold an external audience's attention in a pitch meeting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you sign an NDA before discussing game ideas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, always, before any concept details are shared. Signed before the first substantive conversation, not after we have already heard the pitch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What deliverables are included in a game prototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The playable build, source files, a playtesting findings report, and an honest recommendation on next steps. What is included beyond that is scoped to the specific brief."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many prototype iterations are included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two structured iteration rounds based on playtesting findings are standard. Additional iteration rounds are scoped and priced if the findings suggest the concept needs more testing before a decision can be made responsibly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide playtesting and user feedback reports?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Structured internal playtesting with documented findings is a standard part of every prototype engagement, not an optional add-on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between an MVP and a game prototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A prototype tests whether an idea works, often disposably. An MVP is a minimum but real, shippable version of the product, built to be shown to actual players or investors and potentially to become the foundation of the live product. Prototypes are disposable by design. MVPs are not."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Game Prototyping",
+      "item": "https://www.cobwebgames.com/game-prototyping"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

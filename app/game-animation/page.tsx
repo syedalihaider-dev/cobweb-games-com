@@ -95,6 +95,112 @@ export default function GameAnimation() {
 
   return (
     <div className="game-animation-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/game-animation",
+  "url": "https://www.cobwebgames.com/game-animation",
+  "name": "Game Animation Services | 2D and 3D Studio",
+  "description": "Game animation services engineered for engines, not showreels. 2D, 3D, character, cinematic, VFX, and mocap. Hire game animators who know how immersive visuals work.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much do game animation services cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple 2D cycle sets start around $2,000 to $8,000. Full 3D character animation libraries run $10,000 to $60,000 depending on move count and fidelity. Cinematics and trailers get quoted per second of final footage, since that is what actually drives the cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle both 2D and 3D game animation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, under one roof. Your 2D sprite and rig-based animation and your full 3D character, creature, and cinematic work run through the same pipeline, which matters the moment your game or your marketing needs both to visually match."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hire game animators for an ongoing project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Game animators for hire through Cobweb can embed with your team on a dedicated or retainer basis, following a quick audit of your existing rigs and pipeline so nobody spends week one guessing at your conventions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which engines do you animate for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity and Unreal Engine primarily, covering Mecanim, Animation Blueprints, Control Rig, and Sequencer. You get deliverables in engine-native formats, tested inside your actual build, never just inside the animation software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with motion capture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide motion capture animation services for games including capture cleanup, retargeting, and polish passes. Raw mocap always needs a human hand afterward, and that polish stage is where most of the real quality actually comes from."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you animate characters you did not originally design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We regularly animate client-supplied characters after a technical review of the rig and topology. If your existing rig will fight the animation you need, we flag it honestly and fix it before a single keyframe gets set."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a game animation outsourcing engagement actually look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You get a small pilot batch first, a few clips to confirm style match, communication rhythm, and pipeline fit. Then milestone-based production with structured feedback rounds. Most clients start with one character set and scale from there once trust is established."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you produce game trailers too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Full game trailer production services from script and storyboard through animation, edit, and final render. Trailers built by the same team that animates your game hold a visual consistency that stitched-together vendor work never quite manages to match."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Game Animation",
+      "item": "https://www.cobwebgames.com/game-animation"
+    }
+  ]
+}) }} />
       <section className="game-banner d-flex relative">
         <div className="container align-self-center">
           <div className="row">

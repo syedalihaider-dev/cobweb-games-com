@@ -31,6 +31,144 @@ const UnrealPortfolio = () => {
   return (
     <section className="inner-portfolio">
       <div className="container">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/unreal-engine-game-development",
+  "url": "https://www.cobwebgames.com/unreal-engine-game-development",
+  "name": "Unreal Engine Game Development Company",
+  "description": "Unreal Engine game development company that builds high-quality 2D, 3D, multiplayer, and AR/VR games with full source code ownership.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why choose Unreal Engine over Unity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose Unreal when the visual ceiling, open-world scale, or built-in multiplayer replication justifies the heavier engine. Choose Unity for lighter builds, faster mobile pipelines, and broader low-end device reach. We recommend the engine that fits the project, not the one we are most comfortable in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of games are best suited for Unreal Engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High-fidelity 3D titles: open world, FPS, RPG, racing, horror, simulation, and any project where Lumen, Nanite, or the Unreal pipeline's advantages justify the engine choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop games using Unreal Engine 5?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UE5 is our primary Unreal version, with Nanite, Lumen, World Partition, and MetaHuman in active production use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build AAA-quality games with Unreal Engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, at AA-to-AAA production scale. AAA-scale briefs get AAA-scale treatment; the scope conversation happens honestly before any commitment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Unreal Engine game development cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Focused UE title: $80,000 to $250,000. Mid-scale multiplayer or console production: $250,000 to $600,000. Open-world and AAA-adjacent scale: $600,000 plus. The GDD sets the number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does Unreal Engine game development take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Focused titles: six to twelve months. Mid-tier: twelve to eighteen. Large-scale productions: eighteen to thirty-six. Milestones committed in writing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop multiplayer Unreal games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Replication architecture, dedicated servers, EOS or Steamworks, and anti-cheat, designed in week one where it belongs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you migrate my Unity game to Unreal Engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after a technical audit. Engine migration is a rebuild of systems, not a file conversion, and we scope it honestly: what ports, what gets rebuilt, what it costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide Blueprint and C++ development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, both, in the standard production split: C++ for core systems and performance paths, Blueprint for design iteration and content logic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you develop VR and AR games in Unreal Engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Meta Quest and PC VR with the frame discipline immersive platforms enforce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I own the Unreal Engine source code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Full project source and asset ownership transfers on final payment. Unreal's engine licensing terms apply to the engine itself; everything we build is yours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide post-launch support and LiveOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Content updates, engine upgrades, platform recertification, and live economy support on retainer, structured before launch."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Unreal Engine Game Development",
+      "item": "https://www.cobwebgames.com/unreal-engine-game-development"
+    }
+  ]
+}) }} />
         <div className="row">
           <div className="col-lg-12 text-center">
             <h4>Our Projects</h4>

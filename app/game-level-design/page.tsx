@@ -414,6 +414,160 @@ export default function GameLevelDesign() {
 
   return (
     <div className="game-level-design-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/game-level-design",
+  "url": "https://www.cobwebgames.com/game-level-design",
+  "name": "Game Level Design",
+  "description": "Game Level Design",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does high-quality level design affect my game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Level design is where game systems become player experiences. A well-designed level makes the gameplay feel more responsive, the combat feel more tense, and the exploration feel more rewarding, because the spatial decisions that surround those systems were made in service of the intended experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's involved in level design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Spatial planning, encounter design, pacing management, navigation design, visual affordance design, environmental storytelling, blockout production, asset placement, lighting direction, and playtesting. Every stage is a production discipline in itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Cobweb Games deliver exceptional level design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By briefing every level on the specific experience it needs to create before making any spatial decisions. The experience requirement drives the design. The design drives the production. That order of operations is not universal, and it is the difference our clients consistently note."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does level concept art creation contribute to game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Level concept art locks the visual and narrative direction of a level before the 3D production investment is committed. It gives the environment art team, the gameplay programmer, and the narrative designer a shared visual reference so they are all building toward the same level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the purpose of level progression in game design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Level progression sequences the player's experience across the arc of the level so that tension builds, understanding deepens, and the resolution the player earns at the end feels proportionate to the journey. It is the design of the emotional arc, not just the placement of the encounters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is involved in level modeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Translating the approved blockout into production-quality 3D environments: environment asset placement, scene dressing, terrain, lighting, and the visual detail that makes the designed space feel like a real place rather than a grey box with textures applied."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you ensure art style and mechanics blend seamlessly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By keeping both requirements in the same brief. The level designer, the environment artist, and the gameplay programmer all work from the same level design document. When the spatial decisions serve both the visual design and the gameplay system, the blend is structural rather than cosmetic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sets your game level design services apart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We brief on the experience before we design the space. Most level design processes start with the layout. We start with what the player needs to feel. The layout follows from that requirement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is covered in your game level design services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Documentation, blockout, concept art, full 3D production, playtesting, optimization, and deployment preparation. From design brief to platform-ready level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there specific genres for which you provide bespoke level design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Action, combat, puzzle, open world, RPG, horror, strategy, multiplayer competitive, mobile casual, and VR. Each genre has specific level design requirements, and we brief accordingly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the average timeframe to design a game level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Documentation and blockout for a single level: one to two weeks. Full production, including 3D modeling, asset placement, lighting, and playtesting: three to six weeks, depending on scale and complexity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you able to optimize the levels I have already built?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Level audit and optimization is a specific service. We assess the existing level, identify the specific problems, and propose structural and technical solutions before agreeing on the scope of the remediation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to develop a game level design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single mobile level from documentation through production typically starts at $5,000 to $15,000. A PC or console level at full production quality runs $15,000 to $40,000. Open world zone design and large-scale multiplayer maps are scoped individually. Detailed quotes within 48 hours of a brief."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you ensure levels enhance player engagement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By testing the intended experience against the actual experience through structured playtesting at every production stage, not once at the end. Player engagement is verified, not assumed."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Game Level Design",
+      "item": "https://www.cobwebgames.com/game-level-design"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

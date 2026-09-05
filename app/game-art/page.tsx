@@ -172,6 +172,88 @@ export default function GameArt() {
 
   return (
     <div className="game-art-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/game-art",
+  "url": "https://www.cobwebgames.com/game-art",
+  "name": "Game Art",
+  "description": "Game Art",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Cobweb Games' approach to game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our approach focuses on collaboration, efficiency, and quality. We emphasize strong communication with clients, iterative development, and technical expertise to realize creative visions within realistic budgets and schedules."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it typically take to complete projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Project timelines vary depending on the scope of work involved. Please provide details when requesting a quote for an estimate tailored to your specific needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you have examples of previous work I can review?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, please visit our website portfolio to browse galleries highlighting our work across various styles and genres. If you need to view any other specific samples, please contact us directly with your request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer revisions or modifications after a project is completed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We allocate time to integrate one round of minor changes or tweaks at no extra cost. Additional revisions require approval and may incur additional charges to cover staff time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to develop a game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Costs vary widely based on factors like genre, platforms, technical complexity, etc. For more information, contact our team."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Game Art",
+      "item": "https://www.cobwebgames.com/game-art"
+    }
+  ]
+}) }} />
        <section className="game-banner d-flex relative">
         <div className="container align-self-center">
           <div className="row">

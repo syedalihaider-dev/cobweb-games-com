@@ -497,6 +497,144 @@ export default function Page3dGameModeling() {
 
   return (
     <div className="3d-game-modeling-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/3d-game-modeling",
+  "url": "https://www.cobwebgames.com/3d-game-modeling",
+  "name": "3D Game Modeling Services for High-Quality Game Assets",
+  "description": "Need 3D game modeling that ships game-ready, not portfolio-ready? Cobweb Games delivers custom 3D game models, characters, environments, and props for any platform or engine.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes a 3D model game-ready?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Game-ready means the model passes engine import without tech artist remediation: correct scale, clean normals, proper UV unwrapping with no unintended overlaps, polycount within the brief specification, and pivots in sensible locations. We test in the target engine before every delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you balance visual quality with optimization?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The visual quality target is established in the brief and the optimization constraints are established alongside it. Both are defined before modeling begins. Quality and optimization are not competing requirements. They are simultaneous specifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you create modular assets for large game worlds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Modular asset kit design is a specific production discipline. We design kits for maximum visual variety from minimum asset count, with snapping tolerances defined for the level design tools the production uses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you support co-development with internal art teams?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We integrate into existing team pipelines rather than requiring studios to adapt their workflow to ours. Style guide alignment and naming convention matching are established in discovery before production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you maintain consistency across large asset libraries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A shared style guide, a named art director reviewing every stage, and a technical specification that applies uniformly across the full asset library. Consistency is a production discipline, not a quality control pass at the end."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in your 3D asset delivery package?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Final mesh files in the formats specified at kickoff, PBR texture sets, LOD chain assets were scoped, integration documentation, and source files. All named to your convention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can assets be adapted for multiple platforms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Multi-platform asset production with platform-specific LODs and texture resolution tiers is a standard production option. The base model is built once. The platform variants derive from it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you create assets based on concept art only?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Concept art is the preferred starting point. We also work from reference images, technical drawings, and written descriptions. The more specific the reference, the fewer revision cycles the accuracy review requires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you handle revisions during production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two structured revision rounds per milestone are standard. Every revision note is documented and confirmed before changes are made. The scope of revisions is defined before production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What industries besides gaming use your 3D models?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Architecture and real estate visualization, film and television VFX, product marketing, VR training, and metaverse platform development. The production standards are the same regardless of the destination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you optimize existing assets created by another studio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after a technical audit of the existing asset library. We assess what exists, identify the specific issues, and scope the remediation before agreeing to the work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide long-term live game asset support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Live game asset production on a retainer basis for studios managing ongoing content updates, seasonal events, and DLC production. Same team, same pipeline, same quality standard."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "3D Game Modeling",
+      "item": "https://www.cobwebgames.com/3d-game-modeling"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

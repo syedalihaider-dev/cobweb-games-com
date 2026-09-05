@@ -163,6 +163,112 @@ export default function GameDevelopment() {
 
   return (
     <div className="game-development-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/game-development",
+  "url": "https://www.cobwebgames.com/game-development",
+  "name": "Game Development Company USA | Full Cycle Studio",
+  "description": "Cobweb Games is a full-cycle game development company in the USA delivering end-to-end game development services. Hire dedicated game developers who ship titles that draw players.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does game development cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple 2D or casual games typically run $25,000 to $80,000. Mid-tier titles with custom systems land between $80,000 and $250,000. Feature-complete multiplayer or AAA-grade productions start around $500,000, with scope deciding the final number during discovery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to develop a game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple mobile games take three to six months. Mid-tier mobile or PC titles run eight to eighteen months. VR titles or larger-scope productions can stretch from twelve to thirty-six months, with content volume moving the timeline more than any single feature."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Cobweb different from a typical game development agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical game development agency introduces talent and steps back once the match is made. Cobweb runs the production itself, with art, engineering, and QA operating inside one pipeline under a single point of contact, removing the coordination tax that quietly eats into most outsourced budgets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hire dedicated game developers for a project that is already underway?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can hire dedicated game developers as an embedded extension of your existing team, following a technical audit of your current codebase and pipeline. We will tell you honestly what already exists and what shipping actually requires before agreeing to scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you a game development company in the USA, or do you work with international teams too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both. Cobweb Games operates as a game development company in the USA market while running a delivery pipeline built for remote collaboration worldwide, with structured overlap hours and documented milestone reviews that hold up across time zones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which engine do you recommend, Unity or Unreal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Whichever one the project actually calls for. Unity tends to suit mobile, 2D, and mid-scope 3D work best, with faster builds and a lighter footprint. Unreal earns its overhead when console-grade fidelity, Lumen, or Nanite genuinely matter to the game being built."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I need a game developer but do not have a full brief ready yet. What do you need from me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A game concept, target platform, core feature list, reference titles, target audience, and a rough timeline get you most of the way there. If you have less than that, our discovery session builds the brief with you from scratch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after my game launches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The live phase begins. Player feedback starts arriving immediately, platforms update their requirements, and content updates keep the audience you worked to acquire actually engaged. Post-launch support and development retainers get scoped before launch, so nothing stalls once the game is live."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Game Development",
+      "item": "https://www.cobwebgames.com/game-development"
+    }
+  ]
+}) }} />
       <section className="game-banner d-flex relative">
         <div className="container align-self-center">
           <div className="row">

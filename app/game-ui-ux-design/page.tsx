@@ -415,6 +415,208 @@ export default function GameUIUX() {
 
   return (
     <div className="game-ui-ux-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/game-ui-ux-design",
+  "url": "https://www.cobwebgames.com/game-ui-ux-design",
+  "name": "Game UI/UX Design Services Geared Toward Your Players",
+  "description": "Game UI/UX design that serves gameplay rather than decorating it. Cobweb Games builds wireframes, mobile UI, video game UI, and UX systems for PC, VR, and mobile.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are game UI/UX design services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Game UI design covers the visual design of in-game interfaces: HUDs, menus, inventories, and all on-screen elements. Game UX design covers the information architecture, navigation flow, and player behavior systems that determine whether those elements serve the player's needs. Both are required. One without the other produces interfaces that either work but look poor or look good but do not work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between game UI and UX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UI is what the player sees. UX is how the player navigates and what the player can find. Good UX is invisible. The player gets what they need without thinking about it. Good UI makes the UX visible in the right way at the right moment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes good UX design for games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Player-first information architecture. The player's question at each moment is answered by what the player sees at that moment. Navigation that does not require the player to remember a path. Feedback that confirms the player's action without interrupting the gameplay is part of it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with different game genres?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every genre has different UI/UX requirements. The information hierarchy in an FPS HUD and the information hierarchy in a strategy game's map overlay solve completely different player problems. We brief to the genre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you create interfaces for both mobile and desktop platforms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mobile and desktop UI/UX are different disciplines with different navigation paradigms, different input affordances, and different player behavioral contexts. We design for both and treat them as distinct briefs rather than adapting one to the other."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools do you use for UI/UX design in gaming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Figma for wireframing, prototyping, and component library design. Unity UI Toolkit and Unreal UMG for implementation. PureRef for UI reference collection. Integration testing in the target engine confirms the design works in the build."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you redesign the UI/UX of an existing game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UX audit and UI redesign for existing games is a specific service. We audit the current interface against specific player behavior data or playtest findings, identify the friction points, and propose and execute the redesign."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you ensure the UI supports gameplay and player immersion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By designing from the gameplay requirement outward rather than from visual preferences inward. The UI element serves a player's information need. If we cannot identify the information needed, the element does not belong in the interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work on partial UI/UX tasks or only full projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Partial engagements for specific systems, screen redesigns, or UX audit and recommendation without full production are available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate UI/UX assets directly into my development pipeline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Implementation support for Unity UI Toolkit and Unreal UMG is available alongside design production."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is UI/UX design important in game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the player's ability to find what they need and do what they want is the surface through which every other system in the game is experienced. Great gameplay behind a confusing interface is not experienced as great gameplay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you approach mobile game UI design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thumb reach zones first. Text readability at real-world screen brightness is second. One-handed play scenarios third. The visual design last. That order ensures the design works for the player before it looks good for the screenshot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you conduct UX research for games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Playtest observation, heat map analysis where available, player interview data, and competitive analysis of UI/UX decisions in comparable titles. We want to know what the player is actually doing, not what the designer expected them to do."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does your UI/UX design process guide players through the game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By establishing an information hierarchy that surfaces the right information at the moment the player needs it, and by designing navigation flows that match the mental model the player already has about how the game works."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you ensure consistency across different screen sizes and devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Responsive design systems are built from the most constrained target device outward. The 375-point mobile screen determines the design baseline. The PC version expands from there rather than contracting from a PC design that was never going to fit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you perform usability testing before final implementation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Prototype testing before visual design is committed and playtest review of the implemented interface before the build is locked are standard stages in our UI/UX process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What role does art direction play in UI/UX design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Art direction establishes the visual language in which the UI exists. The UI needs to be visually consistent with the game's world without competing with it for the player's attention at the wrong moment. The art direction brief and the UX brief are reviewed simultaneously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you design interfaces for similar games or genres I can reference?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Portfolio examples available by genre and platform. Ask during the brief session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of games and platforms do you specialize in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PC, mobile, and VR games across action, RPG, strategy, casual, and competitive genres. The UI/UX requirements of each are treated as distinct disciplines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Cobweb Games stand out among UI/UX design companies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We start every UI/UX brief from the gameplay requirement and the player's information needs, not from visual references the art director found compelling. That starting point produces interfaces that serve players rather than interfaces that look like they serve players."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Game UI/UX Design",
+      "item": "https://www.cobwebgames.com/game-ui-ux-design"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

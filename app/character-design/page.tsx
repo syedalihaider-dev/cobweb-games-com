@@ -482,6 +482,120 @@ export default function CharacterDesign() {
 
   return (
     <div className="character-design-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/character-design",
+  "url": "https://www.cobwebgames.com/character-design",
+  "name": "Character Design Services for Games",
+  "description": "Need character design that survives the animation rig and holds up across a 60-hour campaign? Cobweb Games builds game characters from concept through production-ready delivery.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between 2D and 3D character design services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2D character design produces flat illustration output: concept art, turnarounds, and expression sheets. 3D character design produces a dimensional model output ready for animation and engine integration. Most game productions require both stages in sequence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to design and develop a character?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single character from brief to approved final package typically takes two to three weeks. Full cast development for a game with a large character roster is structured as a series of projects with milestone-based delivery per character group."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you match existing art styles or character designs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Style matching and design system extension are more demanding than creating from scratch. We start with a style audit and a test character approved before the full production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats do you deliver for characters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2D designs delivered as layered PSD and flat PNG at the specified resolution. 3D characters delivered as FBX and OBJ with PBR texture sets. Source files included in the final package."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide character animation or just static designs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Character design is our primary service. Character animation is a separate production stage that we also handle. The design package includes the animation documentation that makes the subsequent animation production efficient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide character turnaround and expression sheets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Turnarounds and expression sheets are standard components of every character design package. These are not optional. They are the documents that prevent the character from becoming something different every time a new team member works with the design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can characters be prepared for Unity and Unreal Engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Characters designed for Unity and Unreal Engine compatibility have the topology, rig-readiness documentation, and export specifications the engines require confirmed in the design brief."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you design characters for animation as well as games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Character design for animation productions requires different documentation than game character design. Animation-specific expression sheets, action poses, and the design documentation that animators use are produced to the animation pipeline's requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you also create creatures, monsters, and NPCs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Creature design, monster design, and supporting NPC library development are active services. The design brief for each character type is different, and we treat the brief accordingly."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Character Design",
+      "item": "https://www.cobwebgames.com/character-design"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

@@ -490,6 +490,136 @@ export default function Page3dIllustrationServices() {
 
   return (
     <div className="3d-illustration-services-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/3d-illustration-services",
+  "url": "https://www.cobwebgames.com/3d-illustration-services",
+  "name": "3D Illustration Services",
+  "description": "3D Illustration Services",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are 3D illustration services used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Game key art, store page visuals, social media promotional content, press kit artwork, seasonal event illustration, and any marketing context where a single high-quality image needs to communicate the game's identity and appeal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you create artwork for Steam and app stores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Steam capsule artwork, header images, and screenshot illustration to Valve's specifications. iOS and Android feature graphics to Apple's and Google's requirements. Platform specs are confirmed at a brief stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in a 3D illustration project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Creative brief review, visual reference and moodboard development, composition draft, modeling and scene assembly, lighting and rendering, post-production, revision round, and final delivery in every specified format."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you create cinematic-style game artwork?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cinematic 3D illustration at the production quality of feature animation marketing is a core service. The brief defines the production ambition, and the budget defines the scale of the production."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you follow an existing art direction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Working within an established art direction is more demanding than creating from scratch, and we approach it accordingly. Style guide review and a reference alignment process happen before production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What resolution formats do you deliver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "4K standard for marketing use. Print resolution on request. Platform-specific dimensions for all major storefronts. All formats specified at the brief stage and delivered in the final package."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a 3D illustration take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard key art illustration can be completed in two to three weeks from a brief sign-off. Rush delivery for campaign deadlines is available. Timeline confirmed at kickoff with specific dates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you create artwork for live game events and updates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Live ops illustration with hard event deadlines is a production format we handle regularly. Delivery timelines are built backward from the server event date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide layered source files?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Layered PSD source files are included in the delivery package. Format and layer organization specified at a brief stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can illustrations be adapted for multiple marketing channels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A master illustration can be adapted to multiple aspect ratios and channel specifications. Multi-channel adaptation is priced as a package."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What industries besides gaming use your illustration services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entertainment and media, board game and tabletop publishing, VR experience marketing, and metaverse platform brand identity. The production standards are the same regardless of the platform."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "3D Illustration Services",
+      "item": "https://www.cobwebgames.com/3d-illustration-services"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

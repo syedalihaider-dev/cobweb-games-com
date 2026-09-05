@@ -549,6 +549,144 @@ export default function UnityGameDevelopment() {
 
   return (
     <div className="unity-game-development-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/unity-game-development",
+  "url": "https://www.cobwebgames.com/unity-game-development",
+  "name": "Unity Game Development Company",
+  "description": "Unity game development company that ships across ten platforms from one codebase. Cobweb Games builds 2D, 3D, multiplayer, and AR/VR Unity games with full source code ownership.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Unity game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Game development using the Unity engine: a C#-based, cross-platform engine that ships to mobile, PC, console, web, and VR from a shared codebase. It powers more games than any other engine on earth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why should I choose Unity for game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fastest path to multi-platform release, the largest talent and asset ecosystem, and production costs meaningfully below engine alternatives for most project profiles. For photorealistic AAA targets, we will honestly point you at Unreal instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platforms does Unity support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Android, iOS, Windows, macOS, PlayStation, Xbox, Nintendo Switch, WebGL, and the full Meta Quest and PC VR range. We ship to all of them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Unity game development cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple mobile or 2D title: $25,000 to $80,000. Mid-tier cross-platform game: $80,000 to $250,000. Large multiplayer or console-grade production: $250,000 plus. Scope drives the number, and the GDD locks it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a Unity game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple titles: three to six months. Mid-tier: six to twelve months. Large productions: twelve to twenty-four. Milestone plan committed in writing before production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop both 2D and 3D Unity games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dedicated pipelines for both, with the engine features and optimization disciplines specific to each."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you port my existing game to Unity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after a technical audit of the existing codebase. We tell you what survives the port, what needs rebuilding, and what it costs before agreeing to scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop multiplayer Unity games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Photon Fusion, FishNet, or Mirror selected against your player counts, sync model, and budget, with server infrastructure and matchmaking in scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate AR and VR features into Unity games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ARKit, ARCore, and the Quest platform, with the frame-rate discipline immersive hardware makes mandatory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I own the Unity game source code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Full source code and asset ownership transfers on final payment. No license-back clauses, no reuse rights retained."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide post-launch maintenance and LiveOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Retainers cover content updates, engine and OS compatibility, store policy changes, and live economy tuning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you provide dedicated Unity developers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Senior Unity engineers embedded in your team and workflow, scaling from one developer to a full squad."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Unity Game Development",
+      "item": "https://www.cobwebgames.com/unity-game-development"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

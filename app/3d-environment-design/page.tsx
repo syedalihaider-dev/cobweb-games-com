@@ -423,6 +423,160 @@ export default function Page3dEnvironmentDesign() {
 
   return (
     <div className="3d-environment-design-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/3d-environment-design",
+  "url": "https://www.cobwebgames.com/3d-environment-design",
+  "name": "3D Environment Design Services for Immersive Game Worlds | Cobweb Games",
+  "description": "Need a 3D environment design without the frame budget disaster? Cobweb Games builds performance-first environments for Unity and Unreal Engine across every genre and platform.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "We craft extraordinary, immersive games that captivate and inspire.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is 3D environment design in games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3D environment design covers all visual elements forming a game world: terrain, buildings, props, vegetation, lighting, and atmosphere. It determines what a player sees when they look at the world they are playing in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does 3D environment design cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Single interior scene: $1,500 to $5,000. Exterior environment set with terrain: $3,000 to $12,000. Full modular environment kit: $5,000 to $20,000. Itemized quotes within 48 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to create a 3D game environment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Single interior scene: one to two weeks. Exterior with terrain and props: two to four weeks. Large-scale modular kit: four to eight weeks. Dates confirmed at kickoff."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you create environments for Unreal Engine and Unity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Both are primary delivery targets. Engine-specific configurations, material documentation, and import testing are standard in every delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you optimize environments for mobile games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mobile environment optimization is built into the production spec from day one. Draw counts, texture compression, and LOD chains designed for mobile hardware from the first mesh."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide stylized and realistic environment art?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Style is established in the concept approval stage and maintained through a visual bible every team member works from."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What software is used for 3D environment modeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maya, Blender, and 3ds Max for modeling. Houdini for procedural generation. ZBrush for organic detail. Substance Painter for texturing. Unreal Engine and Unity for integration and lighting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between environment art and level design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Level design defines spatial layout and gameplay flow. Environment art makes that structure visually complete. We provide environment art and level design support, not standalone level design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are modular environments in games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standardized, pre-built pieces that snap together to form varied spaces. A well-designed kit produces high visual variety from a limited asset count with minimum draw call cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide source files and ownership rights?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Full source files and full IP ownership transfer on final payment. Your world, your assets, your rights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work with existing game assets and pipelines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pipeline audit and asset library review are part of every discovery session. We integrate into established pipelines rather than asking studios to adapt to ours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hire dedicated environment artists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dedicated environment artists on retainer for studios with ongoing content production. Same artists, same pipeline, consistent output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats do you deliver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FBX and OBJ for meshes. PNG and TGA for textures. SBSAR for Substance materials. Source files in native format. Specs confirmed in the brief."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle large-scale environment production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Large-scale environment production is on our record. Team and production management scale to the volume."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "3D Environment Design",
+      "item": "https://www.cobwebgames.com/3d-environment-design"
+    }
+  ]
+}) }} />
        <section className="game-banner d-flex relative">
         <div className="container align-self-center">
           <div className="row">

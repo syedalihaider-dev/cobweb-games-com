@@ -486,6 +486,136 @@ export default function MobileGameDevelopment() {
 
   return (
     <div className="mobile-game-development-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/mobile-game-development",
+  "url": "https://www.cobwebgames.com/mobile-game-development",
+  "name": "Mobile Game Development Services for iOS and Android",
+  "description": "Mobile game development services calibrated for the devices players actually own. Cobweb Games builds, optimizes, ships, and maintains iOS and Android games that survive contact with real hardware.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What mobile game development services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Full-cycle mobile game development: concept, design documentation, UI/UX, programming, art integration, multiplayer infrastructure, QA, store submission, and post-launch LiveOps for iOS and Android. Also porting, optimization of existing games, and dedicated team extensions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop games for Android and iOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Both platforms, native or cross-platform, with platform-specific optimization and store submission handled in scope. Most projects ship to both stores from a shared codebase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which game engine is best for mobile game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity for most mobile projects: mature mobile pipeline, small builds, huge device compatibility. Unreal when the visual target demands it and the device tier list can carry it. Godot for lightweight 2D. We recommend the engine that fits the project, not the one we feel like using."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does mobile game development cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple casual game: $25,000 to $80,000. Mid-tier title with custom characters and IAP systems: $80,000 to $250,000. Feature-complete with multiplayer and AAA art: $500,000 plus. Scope drives the number. Itemized quote within 48 hours of a brief."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to develop a mobile game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple mobile game: three to six months. Mid-tier: eight to eighteen months. The timeline is set by scope and content volume, and we commit to it in the milestone plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you develop multiplayer mobile games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Real-time and asynchronous multiplayer with matchmaking, server infrastructure, and anti-cheat. Networking architecture is a week-one design decision, not a week-twenty addition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you publish games to the App Store and Google Play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We handle the full submission process for both stores under your developer accounts: builds, metadata, content ratings, and policy compliance. The game ships under your name and you keep the store relationship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you update and maintain my mobile game after launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. LiveOps retainers cover content updates, events, economy tuning, OS compatibility updates, and bug fixes. Structure it before launch, not after."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you integrate in-app purchases and ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. StoreKit and Google Play Billing, ad mediation, rewarded video, and battle pass systems, designed into the game economy rather than duct-taped onto it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I own the game source code and assets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Full IP ownership of all code and assets transfers to you on final payment. We retain no rights to reference, reuse, or resell your work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you port my existing game to mobile devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after a technical audit of the existing codebase. We assess what exists, redesign controls and UI for touch, rebuild the performance budget for mobile hardware, and tell you honestly what the port will take before agreeing to scope."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Mobile Game Development",
+      "item": "https://www.cobwebgames.com/mobile-game-development"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

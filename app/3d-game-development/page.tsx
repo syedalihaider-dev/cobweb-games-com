@@ -413,6 +413,112 @@ export default function Page3dGameDevelopment() {
 
   return (
     <div className="3d-game-development-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/3d-game-development",
+  "url": "https://www.cobwebgames.com/3d-game-development",
+  "name": "3D Game Development Services",
+  "description": "Need a 3D game development company that ships games, not just milestones? Cobweb Games provides full-cycle 3D game development for PC, mobile, and console across Unity and Unreal Engine.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is 3D game development, and how is it different from 2D?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3D game development creates interactive experiences in three-dimensional space using polygonal models, real-time rendering, and depth-based physics. 2D development operates in a flat coordinate system. The production complexity, art pipeline, and technical requirements are substantially different. 3D projects require larger art teams, more complex rendering pipelines, and significantly higher hardware demands on both development infrastructure and the target player platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What factors influence the cost of 3D game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scope and feature count, visual fidelity target, platform count, team size required to deliver on schedule, whether original IP is being developed, multiplayer infrastructure, and post-launch support scope. A simple mobile 3D casual game and a PC action RPG with multiplayer have different cost structures. The design document determines the cost. The quote follows from the document."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Cobweb Games handle large-scale AAA game development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with the qualification that AAA game development at the scale of the largest published titles requires team sizes that function more like publishers than studios. We handle AA-scale productions with AAA-quality production standards and have the team depth to take on large-scale projects. The scope discussion happens before any commitment is made."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop original game concepts or work from client-provided ideas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both. We develop original IP for clients who want a complete creative and production service, and we execute client-provided concepts with the production rigor that turns a brief into a shipped game. The creative ownership structure is established in the contract before production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you ensure quality throughout the development process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Milestone-based reviews with documented criteria. QA at every stage rather than accumulated at the end. Art direction reviews that catch visual drift before it accumulates across a full asset library. Code reviews that catch architectural problems before they become rebuild conversations. Quality is a production discipline built into the process, not a final inspection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate blockchain or NFT elements into a 3D game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Blockchain game development, NFT integration, smart contract implementation, and token economy design are active services. The technical architecture for on-chain game systems is designed in the discovery phase, not added to an existing codebase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What post-launch services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Live operations, content updates, DLC development, platform recertification, performance optimization based on live data, bug fixes, and the ongoing development that sustains a game past the launch window. Scoped and structured before launch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with Cobweb Games' 3D game development services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send us the concept brief, the target platform, the genre, your timeline requirements, and a rough budget range. We review the brief, schedule a discovery session, and produce a scoped proposal. No commitment required at the brief stage."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "3D Game Development",
+      "item": "https://www.cobwebgames.com/3d-game-development"
+    }
+  ]
+}) }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}

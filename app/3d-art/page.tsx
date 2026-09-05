@@ -270,6 +270,120 @@ export default function Page3dArt() {
 
   return (
     <div className="3d-art-page">
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.cobwebgames.com/3d-art",
+  "url": "https://www.cobwebgames.com/3d-art",
+  "name": "3D Game Art Studio for Custom Models, Characters & Environments | Cobweb Games",
+  "description": "Need a 3D game art studio that delivers game-ready assets without the topology problems? Cobweb Games builds 3D characters, environments, and hard surface models for Unity and Unreal.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.cobwebgames.com#website",
+    "url": "https://www.cobwebgames.com",
+    "name": "Cobweb Games",
+    "description": "We craft extraordinary, immersive games that captivate and inspire.",
+    "inLanguage": "en-US"
+  }
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does 3D game art cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A production-ready 3D character from concept through textured and engine-ready delivery typically runs $800 to $3,000, depending on complexity and poly tier. Environment assets range from $200 to $1,500 per prop or modular set. Itemized quotes within 48 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a 3D modeling project take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Single character: one to two weeks from approved concept. Environment asset set: two to four weeks. Complex vehicles or hero props: one to three weeks, depending on detail level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you match our existing art style?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Style match starts with an audit of your existing assets and a test piece before full production begins. We build to the approved visual target, not an approximation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you create game-ready assets for Unity and Unreal Engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Unity and Unreal Engine are our primary delivery targets. Asset specs, import settings, and file formats are confirmed at the pipeline discussion before production starts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide source files and ownership rights?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Full source files delivered with every project. Full IP ownership transfers on final payment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hire dedicated 3D artists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dedicated 3D game artists on a retainer basis for studios managing long-term content pipelines or live game operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats do you deliver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FBX and OBJ for meshes. PNG and TGA for textures at the resolution specified in the brief. SBSAR for Substance materials where applicable. Source files in the native application format."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you create both stylized and realistic 3D art?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our team works across the full style range, from mobile-casual stylized through semi-realistic to AAA-adjacent photorealistic. Style direction is established in the concept approval stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle large-scale game art production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We have managed large-scale 3D game art production runs. The team scales to the volume, and the production management process scales with it."
+      }
+    }
+  ]
+}) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cobwebgames.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "3D Art",
+      "item": "https://www.cobwebgames.com/3d-art"
+    }
+  ]
+}) }} />
       {/* Hero Section */}
        <section className="game-banner d-flex relative">
         <div className="container align-self-center">
