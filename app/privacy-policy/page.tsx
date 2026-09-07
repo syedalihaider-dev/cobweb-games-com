@@ -5,7 +5,7 @@ import LiveChatButton from '@/components/LiveChatButton';
 import styles from './PrivacyPolicy.module.css';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Privacy Policy | Cobweb Games' },
+  title: { absolute: 'Privacy Policy | Cobweb Games ' },
   description: 'Learn how Cobweb Games collects, uses, and protects your information.',
   alternates: { canonical: '/privacy-policy' },
 };
