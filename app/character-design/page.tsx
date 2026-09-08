@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-
 import { useEffect } from 'react';
 import CtaTwo from '../../components/CtaTwo';
 import Platform from '../../components/Platform';
@@ -456,9 +455,9 @@ export default function CharacterDesign() {
   useEffect(() => {
     let timer: NodeJS.Timeout;
     const initSlick = () => {
-       
+
       if (typeof window !== 'undefined' && window.$ && Reflect.has(window.$.fn, 'slick')) {
-         
+
         const $ = window.$;
         $('.mob-slider').not('.slick-initialized').slick({
           dots: true,
@@ -482,125 +481,131 @@ export default function CharacterDesign() {
 
   return (
     <div className="character-design-page">
-        {/* Schema Markup */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.cobwebgames.com/character-design",
-  "url": "https://www.cobwebgames.com/character-design",
-  "name": "Character Design Services for Games",
-  "description": "Need character design that survives the animation rig and holds up across a 60-hour campaign? Cobweb Games builds game characters from concept through production-ready delivery.",
-  "inLanguage": "en-US",
-  "isPartOf": {
-    "@type": "WebSite",
-    "@id": "https://www.cobwebgames.com#website",
-    "url": "https://www.cobwebgames.com",
-    "name": "Cobweb Games",
-    "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
-    "inLanguage": "en-US"
-  }
-}) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What's the difference between 2D and 3D character design services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "2D character design produces flat illustration output: concept art, turnarounds, and expression sheets. 3D character design produces a dimensional model output ready for animation and engine integration. Most game productions require both stages in sequence."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to design and develop a character?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A single character from brief to approved final package typically takes two to three weeks. Full cast development for a game with a large character roster is structured as a series of projects with milestone-based delivery per character group."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you match existing art styles or character designs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Style matching and design system extension are more demanding than creating from scratch. We start with a style audit and a test character approved before the full production begins."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What file formats do you deliver for characters?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "2D designs delivered as layered PSD and flat PNG at the specified resolution. 3D characters delivered as FBX and OBJ with PBR texture sets. Source files included in the final package."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide character animation or just static designs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Character design is our primary service. Character animation is a separate production stage that we also handle. The design package includes the animation documentation that makes the subsequent animation production efficient."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide character turnaround and expression sheets?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Turnarounds and expression sheets are standard components of every character design package. These are not optional. They are the documents that prevent the character from becoming something different every time a new team member works with the design."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can characters be prepared for Unity and Unreal Engine?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Characters designed for Unity and Unreal Engine compatibility have the topology, rig-readiness documentation, and export specifications the engines require confirmed in the design brief."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you design characters for animation as well as games?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Character design for animation productions requires different documentation than game character design. Animation-specific expression sheets, action poses, and the design documentation that animators use are produced to the animation pipeline's requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you also create creatures, monsters, and NPCs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Creature design, monster design, and supporting NPC library development are active services. The design brief for each character type is different, and we treat the brief accordingly."
-      }
-    }
-  ]
-}) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.cobwebgames.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Character Design",
-      "item": "https://www.cobwebgames.com/character-design"
-    }
-  ]
-}) }} />
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.cobwebgames.com/character-design",
+          "url": "https://www.cobwebgames.com/character-design",
+          "name": "Character Design Services for Games",
+          "description": "Need character design that survives the animation rig and holds up across a 60-hour campaign? Cobweb Games builds game characters from concept through production-ready delivery.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://www.cobwebgames.com#website",
+            "url": "https://www.cobwebgames.com",
+            "name": "Cobweb Games",
+            "description": "Play exciting free online games at Cobweb Games. Discover action, puzzle, arcade, racing, strategy, and many more games to enjoy anytime.",
+            "inLanguage": "en-US"
+          }
+        })
+      }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What's the difference between 2D and 3D character design services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2D character design produces flat illustration output: concept art, turnarounds, and expression sheets. 3D character design produces a dimensional model output ready for animation and engine integration. Most game productions require both stages in sequence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to design and develop a character?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A single character from brief to approved final package typically takes two to three weeks. Full cast development for a game with a large character roster is structured as a series of projects with milestone-based delivery per character group."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you match existing art styles or character designs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Style matching and design system extension are more demanding than creating from scratch. We start with a style audit and a test character approved before the full production begins."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats do you deliver for characters?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2D designs delivered as layered PSD and flat PNG at the specified resolution. 3D characters delivered as FBX and OBJ with PBR texture sets. Source files included in the final package."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide character animation or just static designs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Character design is our primary service. Character animation is a separate production stage that we also handle. The design package includes the animation documentation that makes the subsequent animation production efficient."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide character turnaround and expression sheets?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Turnarounds and expression sheets are standard components of every character design package. These are not optional. They are the documents that prevent the character from becoming something different every time a new team member works with the design."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can characters be prepared for Unity and Unreal Engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Characters designed for Unity and Unreal Engine compatibility have the topology, rig-readiness documentation, and export specifications the engines require confirmed in the design brief."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you design characters for animation as well as games?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Character design for animation productions requires different documentation than game character design. Animation-specific expression sheets, action poses, and the design documentation that animators use are produced to the animation pipeline's requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you also create creatures, monsters, and NPCs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Creature design, monster design, and supporting NPC library development are active services. The design brief for each character type is different, and we treat the brief accordingly."
+              }
+            }
+          ]
+        })
+      }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.cobwebgames.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Character Design",
+              "item": "https://www.cobwebgames.com/character-design"
+            }
+          ]
+        })
+      }} />
       {/* ============================================================
           HERO SECTION
           ============================================================ */}
-           <section className=" game-banner d-flex relative">
-       <div className="container align-self-center">
+      <section className=" game-banner d-flex relative">
+        <div className="container align-self-center">
           <div className="row">
             <div className="col-lg-8">
               <h5>Character Design</h5>
@@ -630,7 +635,7 @@ export default function CharacterDesign() {
           ============================================================ */}
       <section
         className="team-sec4 inner-game-services next-image-background-host"
-        
+
       >
         <Image className="next-image-background" src="/assets/images/game-art/team-bg.webp" alt="" fill sizes="100vw" />
         <div className="container">
@@ -768,7 +773,7 @@ export default function CharacterDesign() {
       {/* ============================================================
           CTA SECTION
           ============================================================ */}
-      <CtaTwo 
+      <CtaTwo
         heading={characterDesignCtaData.heading}
         description={characterDesignCtaData.description}
         imageSrc={characterDesignCtaData.imageSrc}
@@ -777,7 +782,7 @@ export default function CharacterDesign() {
       {/* ============================================================
           PLATFORM SECTION
           ============================================================ */}
-      <Platform 
+      <Platform
         heading="Custom Character Design for "
         highlightText="Every"
         subheading=" Game Genre"
@@ -787,7 +792,7 @@ export default function CharacterDesign() {
       {/* ============================================================
           WHY CHOOSE US - SECTION 1
           ============================================================ */}
-      <WhyChooseUsSection 
+      <WhyChooseUsSection
         slides={characterDesignData.section1.slides}
         smHeading={characterDesignData.section1.smHeading}
         mainHeading={characterDesignData.section1.mainHeading}
@@ -795,11 +800,11 @@ export default function CharacterDesign() {
         sliderId="services-slider-char-design-1"
         autoplaySpeed={4000}
       />
-      
+
       {/* ============================================================
           WHY CHOOSE US - SECTION 2 (Benefits)
           ============================================================ */}
-      <WhyChooseUsSection 
+      <WhyChooseUsSection
         slides={characterDesignData.section2.slides}
         smHeading={characterDesignData.section2.smHeading}
         mainHeading={characterDesignData.section2.mainHeading}
@@ -807,11 +812,11 @@ export default function CharacterDesign() {
         sliderId="services-slider-char-design-2"
         autoplaySpeed={4000}
       />
-      
+
       {/* ============================================================
           WHY CHOOSE US - SECTION 3 (Workflow)
           ============================================================ */}
-      <WhyChooseUsSection 
+      <WhyChooseUsSection
         slides={characterDesignData.section3.slides}
         smHeading={characterDesignData.section3.smHeading}
         mainHeading={characterDesignData.section3.mainHeading}
@@ -823,7 +828,7 @@ export default function CharacterDesign() {
       {/* ============================================================
           PORTFOLIO SECTION
           ============================================================ */}
-      <ThreeDEnvironmentPortfolio 
+      <ThreeDEnvironmentPortfolio
         badgeText="Our Projects"
         heading="Character Design <b class='c-green'>Portfolio</b>"
         images={characterDesignPortfolioImages}
@@ -832,7 +837,7 @@ export default function CharacterDesign() {
       {/* ============================================================
           TEAM SECTION
           ============================================================ */}
-      <TwoDArtTeam 
+      <TwoDArtTeam
         badgeText="Our Team"
         mainHeading="Meet Our <b class='c-green'>Character Design</b> Team"
         teamMembers={characterDesignTeam}
@@ -857,7 +862,7 @@ export default function CharacterDesign() {
       {/* ============================================================
           REVIEWS SECTION
           ============================================================ */}
-      <Reviews 
+      <Reviews
         badgeText="Trusted by Game Studios and Entertainment Brands"
         mainHeading='Client <b class="c-green">Testimonials</b> and Reviews'
         reviews={characterDesignReviews}
@@ -871,7 +876,7 @@ export default function CharacterDesign() {
       {/* ============================================================
           FOOTER FORM SECTION
           ============================================================ */}
-      <FooterForm 
+      <FooterForm
         heading="Hire a Character Design Studio for Your Next Project"
         description="Tell us who the character is, what they do in the game, and what the player should feel about them. The visual brief comes after."
         formTitle="Discuss Your Character Vision"

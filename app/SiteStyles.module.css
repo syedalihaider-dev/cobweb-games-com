@@ -3,6 +3,7 @@
  * Existing selectors are intentionally global to preserve the original design
  * while component-specific changes remain in colocated *.module.css files.
  */
+ 
 @font-face {
     font-family: icomoon;
     src: url('/assets/fonts/icomoon.eot?tafxk1');

@@ -168,6 +168,22 @@ const FooterForm: React.FC<FooterFormProps> = ({
     setResult('');
 
     try {
+      let ipInfo = { ip: 'not fill by user', country: 'not fill by user', region: 'not fill by user', city: 'not fill by user' };
+      try {
+        const ipRes = await fetch('https://ipinfo.io/json');
+        if (ipRes.ok) {
+          const ipData = await ipRes.json();
+          ipInfo = {
+            ip: ipData.ip || 'not fill by user',
+            country: ipData.country || 'not fill by user',
+            region: ipData.region || 'not fill by user',
+            city: ipData.city || 'not fill by user',
+          };
+        }
+      } catch (e) {
+        console.error('Failed to fetch IP data', e);
+      }
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -177,12 +193,10 @@ const FooterForm: React.FC<FooterFormProps> = ({
           customQuote: isCustomQuote ? form.customQuote : '',
           formName: 'Website Contact Form',
           pageUrl: window.location.href,
-          // Location enrichment is optional. Avoid client-side third-party IP
-          // lookups, which browsers and privacy extensions commonly block.
-          ip2loc_ip: 'not fill by user',
-          ip2loc_country: 'not fill by user',
-          ip2loc_region: 'not fill by user',
-          ip2loc_city: 'not fill by user',
+          ip2loc_ip: ipInfo.ip,
+          ip2loc_country: ipInfo.country,
+          ip2loc_region: ipInfo.region,
+          ip2loc_city: ipInfo.city,
         }),
       });
       const data = (await response.json()) as { success?: boolean; message?: string };
