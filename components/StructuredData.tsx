@@ -84,33 +84,22 @@ const structuredData = [
   },
   {
     '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    '@id': homeUrl,
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
     url: homeUrl,
-    name: 'Home - Cobweb Games',
-    datePublished: '2017-01-01T00:00:00+00:00',
-    dateModified: '2026-07-09T00:00:00+00:00',
-    description:
-      'Cobweb Games is a San Francisco-based game development company specializing in end-to-end game development, game art, game animation, AR/VR development, Unreal Engine development, and mobile game development.',
+    name: 'Cobweb Games',
+    description: 'Game Development Company',
     inLanguage: 'en-US',
-    isPartOf: {
-      '@type': 'WebSite',
-      '@id': `${SITE_URL}/#website`,
-      url: homeUrl,
-      name: 'Cobweb Games',
-      description: 'Game Development Company',
-      inLanguage: 'en-US',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: {
-          '@type': 'EntryPoint',
-          urlTemplate: `${homeUrl}?s={search_term_string}`,
-        },
-        'query-input': {
-          '@type': 'PropertyValueSpecification',
-          valueRequired: 'http://schema.org/True',
-          valueName: 'search_term_string',
-        },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${homeUrl}?s={search_term_string}`,
+      },
+      'query-input': {
+        '@type': 'PropertyValueSpecification',
+        valueRequired: 'http://schema.org/True',
+        valueName: 'search_term_string',
       },
     },
   },
