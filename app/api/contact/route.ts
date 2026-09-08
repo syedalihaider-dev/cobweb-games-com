@@ -32,12 +32,12 @@ export async function POST(request: Request) {
 
     // Construct SMTP Transporter
     const transporter = nodemailer.createTransport({
-      host: 'host.stagingtestserver.com',
-      port: 465,
-      secure: true, // true for 465, false for other ports
+      host: 'smtppro.zoho.com',
+      port: 587,
+      secure: false, // true for 465, false for other ports
       auth: {
         user: 'no-reply@cobwebgames.com',
-        pass: 'w&fmaUg8[uqF',
+        pass: 'D5gny@jp',
       },
     });
 
@@ -93,7 +93,7 @@ export async function POST(request: Request) {
       'murtaza.khan@sybrid.com',
       'ppc@iceanimations.com',
       'hassan.ali@iceanimations.com',
-      'aleehaiderbalti@gmail.com'
+      'ali.haider@canvasdigital.org'
     ];
 
     // Send Mail
