@@ -32,7 +32,7 @@ export async function POST(request: Request) {
 
     // Construct SMTP Transporter
     const transporter = nodemailer.createTransport({
-      host: 'maltaserver.stagingtestserver.com',
+      host: 'host.stagingtestserver.com',
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
@@ -93,7 +93,7 @@ export async function POST(request: Request) {
       'murtaza.khan@sybrid.com',
       'ppc@iceanimations.com',
       'hassan.ali@iceanimations.com',
-      'ali.haider@canvasdigital.org'
+      'aleehaiderbalti@gmail.com'
     ];
 
     // Send Mail
