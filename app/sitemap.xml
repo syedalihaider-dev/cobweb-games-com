@@ -7,9 +7,45 @@
   </url>
   <url>
     <loc>https://www.cobwebgames.com/blog</loc>
-    <lastmod>2026-09-03T23:16:38+00:00</lastmod>
+    <lastmod>2026-09-11T19:56:51+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cobwebgames.com/blog/how-much-does-mobile-game-development-cost</loc>
+    <lastmod>2026-09-11T19:56:51+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.cobwebgames.com/blog/how-to-choose-a-game-development-company</loc>
+    <lastmod>2026-09-11T19:34:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.cobwebgames.com/blog/how-much-does-it-cost-to-develop-a-game</loc>
+    <lastmod>2026-09-08T22:01:39+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.cobwebgames.com/blog/blueprints-vs-c-in-unreal-engine-what-should-your-game-use</loc>
+    <lastmod>2026-09-08T21:47:31+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.cobwebgames.com/blog/unity-for-2d-vs-3d-games-which-projects-fit-best</loc>
+    <lastmod>2026-09-08T21:06:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.cobwebgames.com/blog/manual-vs-automated-game-testing</loc>
+    <lastmod>2026-09-08T20:42:41+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cobwebgames.com/blog/unity-game-development-when-is-unity-the-right-engine</loc>
