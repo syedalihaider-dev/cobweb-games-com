@@ -1564,6 +1564,12 @@
     position: relative;
 }
 
+:global(.home-services .slider-sec p.text-white a) {
+    display: block;
+    vertical-align: bottom;
+    color: #2cff28 !important;
+}
+
 :global(.home-services .slider-sec ul.slider-content) {
     height: 300px;
 }

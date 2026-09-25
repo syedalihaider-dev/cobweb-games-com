@@ -1,4 +1,4 @@
-const WORDPRESS_URL = "https://blog.cobwebgames.com";
+const WORDPRESS_URL = "https://blog.cobwebgames.com/";
 
 function buildPublicUrl(request, wordpressLocation) {
   try {
@@ -48,6 +48,8 @@ async function proxyRequest(request) {
     "accept-language",
     "cookie",
     "referer",
+    "content-type",
+    "x-requested-with",
   ];
   for (const header of headersToForward) {
     const val = request.headers.get(header);
@@ -66,14 +68,20 @@ async function proxyRequest(request) {
   let redirectCount = 0;
   const maxRedirects = 3;
 
+  const fetchOptions = {
+    method: request.method,
+    headers: forwardHeaders,
+    redirect: "manual",
+    cache: "no-store",
+  };
+
+  if (request.method !== "GET" && request.method !== "HEAD") {
+    fetchOptions.body = await request.arrayBuffer();
+  }
+
   // Follow internal redirects (like trailing-slash corrections) server-side
   while (redirectCount < maxRedirects) {
-    response = await fetch(currentUrl, {
-      method: request.method,
-      headers: forwardHeaders,
-      redirect: "manual",
-      cache: "no-store",
-    });
+    response = await fetch(currentUrl, fetchOptions);
 
     if (response.status >= 300 && response.status < 400) {
       const location = response.headers.get("location");
@@ -123,11 +131,21 @@ async function proxyRequest(request) {
   ) {
     let bodyText = await response.text();
 
-    // Match http:// or https:// blog.cobwebgames.com, EXCEPT for static/API paths
-    const wpUrlRegex = /https?:\/\/blog\.cobwebgames\.com(?!(\/wp-(?:content|includes|json|admin|login)|xmlrpc))/g;
     const requestUrl = new URL(request.url);
     const replacement = `${requestUrl.origin}/blog`;
+
+    // Rewrite ALL WordPress URLs to go through the proxy
+    // EXCEPT wp-content and wp-includes (static assets served directly is fine,
+    // but wp-admin/admin-ajax.php and wp-json MUST go through proxy for AJAX/Load More to work)
+    const wpUrlRegex = /https?:\/\/blog\.cobwebgames\.com(?!(\/wp-(?:content|includes)))/g;
     bodyText = bodyText.replace(wpUrlRegex, replacement);
+
+    // Also rewrite any JS variables like ajaxurl that WordPress themes inject
+    // e.g. var ajaxurl = "https://blog.cobwebgames.com/wp-admin/admin-ajax.php";
+    bodyText = bodyText.replace(
+      /(["'])https?:\/\/blog\.cobwebgames\.com(\/wp-(?:admin|json)[^"']*)/g,
+      `$1${requestUrl.origin}/blog$2`
+    );
 
     // Remove trailing slashes from canonical tags
     bodyText = bodyText.replace(/<link[^>]+rel=["']canonical["'][^>]+>/ig, (match) => {
@@ -156,5 +174,9 @@ export async function GET(request) {
 }
 
 export async function HEAD(request) {
+  return proxyRequest(request);
+}
+
+export async function POST(request) {
   return proxyRequest(request);
 }
