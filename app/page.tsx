@@ -88,17 +88,19 @@ export default function Home() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.cobwebgames.com/",
-  "url": "https://www.cobwebgames.com/",
-  "name": "Home - Cobweb Games",
-  "datePublished": "2017-01-01T00:00:00+00:00",
-  "dateModified": "2026-07-09T00:00:00+00:00",
-  "description": "Cobweb Games is a San Francisco-based game development company specializing in end-to-end game development, game art, game animation, AR/VR development, Unreal Engine development, and mobile game development.",
-  "inLanguage": "en-US"
-}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.cobwebgames.com/",
+          "url": "https://www.cobwebgames.com/",
+          "name": "Home - Cobweb Games",
+          "datePublished": "2017-01-01T00:00:00+00:00",
+          "dateModified": "2026-07-09T00:00:00+00:00",
+          "description": "Cobweb Games is a San Francisco-based game development company specializing in end-to-end game development, game art, game animation, AR/VR development, Unreal Engine development, and mobile game development.",
+          "inLanguage": "en-US"
+        })
+      }} />
       {/* Hero Section - exact replica of PHP home-banner */}
       <section className={`home-banner d-flex next-image-background-host ${styles.hero}`} >
         <Image className="next-image-background" src="/assets/images/home-banner.webp" alt="" fill sizes="100vw" fetchPriority="high" loading="eager" />
@@ -224,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* Reconstructed Homepage Sections */}
-      <AboutContent/>
+      <AboutContent />
       <WhatIsDifferent />
       <CtaOne />
       <GameArt />
